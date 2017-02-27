@@ -1,0 +1,63 @@
+/* Text Styles */
+.zusHelpIFrameDialog hr { color: #000000}
+.zusHelpIFrameDialog body, .zusHelpIFrameDialog table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+.zusHelpIFrameDialog span.f_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+.zusHelpIFrameDialog span.f_Comment /* Comment */
+{
+}
+.zusHelpIFrameDialog span.f_CourierFixed /* Courier Fixed */
+{
+ font-size: 9pt;
+ font-family: 'Courier New';
+}
+.zusHelpIFrameDialog span.f_Heading1 /* Heading1 */
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #ffffff;
+}
+.zusHelpIFrameDialog span.f_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+.zusHelpIFrameDialog span.f_Notes /* Notes */
+{
+}
+/* Paragraph styles */
+.zusHelpIFrameDialog p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.zusHelpIFrameDialog .p_CodeExample /* Code Example */
+{
+ white-space: nowrap;
+}
+.zusHelpIFrameDialog .p_Comment /* Comment */
+{
+}
+.zusHelpIFrameDialog .p_Heading1 /* Heading1 */
+{
+}
+.zusHelpIFrameDialog .p_ImageCaption /* Image Caption */
+{
+}
+.zusHelpIFrameDialog .p_Notes /* Notes */
+{
+}

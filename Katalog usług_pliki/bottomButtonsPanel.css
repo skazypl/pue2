@@ -1,0 +1,25 @@
+.bottom-buttons-panel {
+	text-align: right;
+	width: 100%;
+	height: 30px;
+	position: relative;
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+	
+/*	border: 1px solid blue;*/
+}
+
+.bottom-buttons-panel-container-node {
+	position:absolute;
+	margin: 0px !important;
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+}
+
+.bottom-buttons-panel-container-node-left {
+	left: 0px;
+}
+
+.bottom-buttons-panel-container-node-right {
+	right: 0px;
+}

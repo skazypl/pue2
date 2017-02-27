@@ -1,0 +1,1274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" class="dj_gecko dj_contentbox">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+	
+	<title>PORTAL ZUSNPI - PANEL OGÓLNY</title>
+	<link href="favicon.ico" rel="shortcut icon">
+	
+	<meta http-equiv="Cache-Control" content="max-age=0">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	
+	<!-- #20848 - clickjacking -->
+	<meta http-equiv="X-Frame-Options" content="deny">
+	
+	
+	
+	
+	
+
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+<link media="all" href="index.css" type="text/css" rel="stylesheet">
+</head>
+<body class="claro"><textarea id="dijit._editor.RichText.value" style="display: none; position: absolute; top: -100px; left: -100px; height: 3px; width: 3px; overflow: hidden;"></textarea>
+
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- PROBLEM Z IE -->
+	<!-- <link type="text/css" rel="stylesheet" href="/portal/js/dojo/controls/css/zusnpi/zusnpi.css" /> -->
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	 
+
+		 
+	
+
+
+
+<div style="visibility: hidden; position: absolute; left: 0px; top: 0px;" class="splashscreen" widgetid="zusnpi_layout_splash_Splashscreen_0">
+	<table style="height: 100%;" width="100%" border="0">	
+		<tbody><tr style="color: black; z-index: 1000; background: transparent none repeat scroll 0% 0%;">
+			<td style="width: 100%;" align="center" valign="middle">
+				<div class="loadingPanelLoaderImage">
+				</div>
+				<br>
+				<span dojoattachpoint="textNode">Proszę czekać</span><br><span dojoattachpoint="additionalTextNode">Trwa wysyłanie danych...</span>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+
+
+
+
+
+<!--<script type="text/javascript" src="js/obw/ObwDokumentyPrzychodzace.js"></script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<script type="text/javascript" src="/portal/js/kpr/wizyty/fullcalendar/jquery.qtip.js"></script>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="visibility: hidden; position: absolute; left: 0px; top: 0px;" class="splashscreen" widgetid="zusnpi_layout_splash_Splashscreen_1">
+	<table style="height: 100%;" width="100%" border="0">	
+		<tbody><tr style="color: black; z-index: 1000; background: transparent none repeat scroll 0% 0%;">
+			<td style="width: 100%;" align="center" valign="middle">
+				<div class="loadingPanelLoaderImage">
+				</div>
+				<br>
+				<span dojoattachpoint="textNode">Proszę czekać</span><br><span dojoattachpoint="additionalTextNode">Trwa wysyłanie danych...</span>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+
+
+
+
+
+
+
+	
+
+
+
+
+        
+
+
+	
+	
+	
+	
+	
+<div id="loaderSplash" style="opacity: 1; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 999999999; background: white none repeat scroll 0% 0%; display: none;">
+	<table style="height: 100%;" width="100%" border="0">
+		<tbody><tr style="color: black; z-index: 1000; background: transparent none repeat scroll 0% 0%;">
+			<td style="width: 100%;" align="center" valign="middle">
+				<div class="loadingPanelLoaderImage">
+				</div>
+				<br>
+				<div>Proszę czekać...</div>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+
+<div id="gridExportFormIdContainer"><form dojoattachpoint="containerNode" dojoattachevent="onreset:_onReset,onsubmit:_onSubmit" id="GRID_EXPORT_FORM_ID" widgetid="GRID_EXPORT_FORM_ID" action="https://pue.zus.pl/portal/obszar-ogolny.npi"></form></div>
+
+
+		<div id="asystentDialogContainer"><div class="asystentDialog dojoxFloatingPane dijitContentPane" id="asystentDialog" title="" role="group" style="position: absolute; top: 309px; left: 303px; width: 674px; height: 294px; z-index: 253975; visibility: hidden;" widgetid="asystentDialog">
+	<div dojoattachpoint="canvas" class="dojoxFloatingPaneCanvas">
+		<div role="button" dojoattachpoint="focusNode" class="focusNode">
+			<div dojoattachpoint="containerNode" role="region" tabindex="-1" class="dojoxFloatingPaneContent" style="display: none;"></div>
+			<table height="294" width="674" cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+					<tr>
+						<td alt="" height="13" width="12" background="wd_frame_01.png"></td>
+						<td alt="" height="13" width="648" background="wd_frame_02.gif"></td>
+						<td alt="" height="13" width="14" background="wd_frame_03.png"></td>
+					</tr>
+					<tr>
+						<td alt="" height="268" width="12" background="wd_frame_04.gif"></td>
+						<td>
+							
+						</td>
+						<td alt="" height="268" width="14" background="wd_frame_06.gif"></td>
+					</tr>
+					<tr>
+						<td alt="" height="13" width="12" background="wd_frame_07.png"></td>
+						<td alt="" height="13" width="648" background="wd_frame_08.gif"></td>
+						<td alt="" height="13" width="14" background="wd_frame_09.png"></td>
+					</tr>
+				</tbody>
+			</table>
+			<span dojoattachpoint="resizeHandle" class="dojoxFloatingResizeHandle" style="display: none;"></span>
+		</div>
+		<div style="position: absolute; top: 13px; left: 12px;" tabindex="0" dojoattachevent="onfocus: focus">
+			<div dojotype="dijit.layout.ContentPane" dojoattachpoint="borderPanel" style="background-color: rgb(255, 255, 255);" id="zusnpi_asystentComponent_asystentComponent_0" widgetid="zusnpi_asystentComponent_asystentComponent_0">
+	<div dojoattachpoint="wdNode" id="zusnpi_asystentComponent_asystentComponent_0_wd">
+	</div> 
+</div>
+		</div>
+	</div>
+	<div class="asystentDialogControlNode">
+		<a href="#" id="asystentDialog_close" dojoattachpoint="closeNode" dojoattachevent="onclick: close" class="dojoxFloatingCloseIcon">Zamknij</a>
+	</div>
+	<div tabindex="0" class="dojoxFloatingPaneTitle" style="display: none;">
+		<span dojoattachpoint="maxNode" dojoattachevent="onclick: maximize" class="dojoxFloatingMaximizeIcon" style="display: none;"> </span>
+		<span dojoattachpoint="restoreNode" dojoattachevent="onclick: _restore" class="dojoxFloatingRestoreIcon" style="display: none;"> </span>
+		<span dojoattachpoint="dockNode" dojoattachevent="onclick: minimize" class="dojoxFloatingMinimizeIcon" style="display: none;"> </span>
+		<span dojoattachpoint="titleNode" class="dijitInline dijitTitleNode"></span>
+	</div>
+<iframe src="index_1.html" class="dijitBackgroundIframe" style="opacity: 0.1; width: 100%; height: 100%;" tabindex="-1" role="presentation"></iframe></div></div>
+		<div style="display: none;">
+            <button id="szafirsdk-loadSzafir-action" style="display: none;"></button>
+            <button id="szafirsdk-unloadSzafir-action" style="display: none;"></button>
+            <button id="szafirsdk-startComponentUri-action" style="display: none;"></button>
+            <button id="szafirsdk-startComponent-action" style="display: none;"></button>
+            <button id="szafirsdk-getTaskListUri-action" style="display: none;"></button>
+            <button id="szafirsdk-getTaskList-action" style="display: none;"></button>
+			<button id="szafirsdk-doTaskList-action" style="display: none;"></button>
+			<button id="szafirsdk-doTaskListNoWindow-action" style="display: none;"></button>
+			<button id="szafirsdk-doTaskListNoWindow_1pass-action" style="display: none;"></button>
+			<button id="szafirsdk-doTaskListNoWindow_2pass-action" style="display: none;"></button>
+			<button id="szafirsdk-isCardInReader-action" style="display: none;"></button>
+			<button id="szafirsdk-getSignatureInfo-action" style="display: none;"></button>
+			<button id="szafirsdk-listCertificates-action" style="display: none;"></button>
+
+
+			<input id="szafirsdk-settings-uri" type="hidden">
+            <textarea id="szafirsdk-settings-xml" style="display: none;" wrap="off"></textarea>
+			<input id="szafirsdk-maketasklist-uri" type="hidden">
+            <textarea id="szafirsdk-taskList-xml" rows="8" style="display: none;" wrap="off"></textarea>
+            <textarea id="szafirsdk-maketasklist-xml" style="display: none;" wrap="off"></textarea>
+            <textarea id="szafirsdk-doTaskList-result" style="display: none;" wrap="off"></textarea>
+			<input id="szafirsdk-taskList-pass1" type="hidden">
+			<input id="szafirsdk-taskList-pass2" type="hidden">
+			<input id="szafirsdk-isCardInReader-result" type="hidden">
+			<input id="szafirsdk-signature-uri" type="hidden">
+            <textarea id="szafirsdk-getSignatureInfo-result" style="display: none;" wrap="off"></textarea>
+			<input id="szafirsdk-certificate-type" type="hidden">
+
+		</div>
+		<div id="mainBorderContainer" style="width: 100%; height: 100%;">
+			
+
+				
+
+		<div class="dijitBorderContainerNoGutter dijitContainer dijitLayoutContainer" id="dijit_layout_BorderContainer_0" style="width: 100%; height: 100%; overflow: hidden; min-height: 40em; padding: 0px;" widgetid="dijit_layout_BorderContainer_0"><div class="dijitContentPane dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-dijitContentPane dijitBorderContainerNoGutterPane dijitAlignTop" title="" role="group" id="dojox_layout_ContentPane_0" style="padding: 0px; margin: 0px; height: 78px; left: 0px; top: 0px; position: absolute; width: 1024px;" widgetid="dojox_layout_ContentPane_0">
+<div style="width: 100%; height: 15px; border-bottom: 1px solid rgb(175, 181, 177); background-image: url('top_menu.gif');">
+<!--a href="" class="menu-contrast">Wysoki kontrast</a-->
+</div>
+
+
+
+	<ul class="nav">
+		<li>
+			<a href="javascript:void(0)" tabindex="1" onclick="dojo.byId('menu_pytanie').focus(); return false;">
+				Przejdź do panelu kontaktowego
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" tabindex="2" onclick="(dijit.getFirstInTabbingOrder(dojo.byId('tabs')) ? dijit.getFirstInTabbingOrder(dojo.byId('tabs')).focus() : void(0)); return false;">
+				Przejdź do zakładek zmiany roli
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" tabindex="3" onclick="(dijit.getFirstInTabbingOrder(dojo.byId('contextPane')) ? dijit.getFirstInTabbingOrder(dojo.byId('contextPane')).focus() : void(0)); return false;">
+				Przejdź do treści strony
+			</a>
+		</li>
+			<li>
+				<a href="javascript:void(0)" tabindex="4" onclick="dojo.hash('KSI0000'); onHashChanged('KSI0000'); blur(); return false;">
+					Przejdź do Panel ogólny
+				</a>
+			</li>
+		<li>
+			<a href="javascript:void(0)" tabindex="5" onclick="dojo.hash('OBW0000'); onHashChanged('OBW0000'); blur(); return false;">
+				Przejdź do Dokumenty i wiadomości
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" tabindex="6" onclick="dojo.hash('OBW0070'); onHashChanged('OBW0070'); blur(); return false;">
+				Przejdź do Zlecenia
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" tabindex="7" onclick="dojo.hash('KUS0000'); onHashChanged('KUS0000'); blur(); return false;">
+				Przejdź do Katalog usług
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" tabindex="8" onclick="dojo.hash('OBW0080'); onHashChanged('OBW0080'); blur(); return false;">
+				Przejdź do Wyszukiwanie, mapa strony
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" tabindex="9" onclick="dojo.hash('WIZ0001'); onHashChanged('WIZ0001'); blur(); return false;">
+				Przejdź do Wizyty
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" tabindex="10" onclick="dojo.hash('KPR0001'); onHashChanged('KPR0001'); blur(); return false;">
+				Przejdź do Konfiguracja profilu - Dane profilu
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" tabindex="10" onclick="dojo.hash('OBW0081'); onHashChanged('OBW0081'); blur(); return false;">
+Mapa strony			</a>
+		</li>
+	</ul>
+
+<div style="width: 100%; padding: 5px 0px 0px; margin-bottom: 2px; border-bottom: 1px solid rgb(180, 181, 186); background-image: url('header_bkg.png'); height: 54px;">
+	<div style="left: 0px; position: absolute; top: 21px; height: 54px; white-space: nowrap;">
+		<a id="tresci_ogolnodostepne_link_id" href="http://pue.zus.pl/" target="tresci_ogolnodostepne"><img alt="" src="logo_zus_male.png" style="float: left; border: medium none; width: 67px; height: 41px; margin: 4px 19px 0px 5px;"></a>
+		<div style="text-shadow: none; font-weight: normal; margin-left: 10px; margin-top: 3px; margin-bottom: 5px;">
+
+			<h3 class="top-user">
+					<label>Jesteś zalogowany jako:</label> 
+					<label style="color: rgb(0, 0, 0); font-weight: bold;">PIOTR ZALAS</label>
+			</h3>
+		</div>
+		<div style="margin-left: 91px;">
+                    <span class="dijit dijitReset dijitInline dijitButton zusButton zus-button" widgetid="buttonWyloguj"><span class="dijitReset dijitInline dijitButtonNode" dojoattachevent="ondijitclick:_onButtonClick"><span class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" role="button" aria-labelledby="buttonWyloguj_label" style="-moz-user-select: none;" id="buttonWyloguj" tabindex="0"><span class="dijitReset dijitInline dijitIcon" dojoattachpoint="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="buttonWyloguj_label" dojoattachpoint="containerNode" aria-hidden="true">Wyloguj</span></span></span><input value="Wyloguj" class="dijitOffScreen" tabindex="-1" dojoattachpoint="valueNode" role="presentation" type="button"></span>
+		</div>
+	</div>
+	<div style="left: 395px; width: 629px; position: absolute; top: 20px; text-align: right;">
+		<ul style="height: 15px; margin-top: 2px; margin-right: 5px; list-style-type: none;">
+			<li style="display: inline;">
+				
+                <a id="menu_pytanie" href="javascript:void(0);" class="menu-pytanie" onclick="zadajPytanieZusOnClick()">
+                	Zadaj pytanie ZUS
+            	</a>
+            </li>
+			<!--<a href="http://www.zus.pl/default.asp?p=2&id=8" class="menu-pytanie" onclick="window.open('http://www.zus.pl/default.asp?p=2&id=8'); return false;">Zadaj pytanie ZUS</a>-->
+			<li style="display: inline;">
+                <a href="http://www.zus.pl/default.asp?p=2&amp;id=8" target="_top" class="menu-cit">Kontakt z COT<span>&nbsp;</span></a>
+            </li>
+            
+				<li style="display: inline;">
+                    <a href="skype:zus_centrum_obslugi_tel?call" id="cotSkypeStatus" class="skype-cot">Skype z COT</a>
+                </li>
+            
+            <li style="display: inline;">
+			    <a href="javascript:void(0)" class="menu-wd" onclick="toggleWD();">Wirtualny Doradca</a>
+            </li>
+		</ul>
+
+		<div style="margin-right: 5px; float: right;">
+			<ul id="tabs">
+
+					<li><span class="selected">Ogólny</span></li>
+
+
+
+
+						<li><a href="javascript:void(0)" class="head-menu-item-ub" onclick="changeRole('CZLONEK_RODZINY','obszar-ubezpieczonego.npi');" id="a_ubezpieczony">Ubezpieczony</a></li>
+
+
+
+
+
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--img class="dojoxPortletIcon dojoxArrowDown" role="presentation" dojoattachpoint="arrowNode" alt="" src="/css/img/font-size.jpg"-->
+
+
+</div><div class="dijitContentPane dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-dijitContentPane dijitBorderContainerNoGutterPane dijitAlignCenter dijitContentPaneSingleChild" title="" role="group" id="mainContent" style="padding: 0px; left: 0px; top: 78px; position: absolute; width: 1024px; height: 810px;" widgetid="mainContent"><!--&lt;Script language="JavaScript" type="text/javascript" src="js/kpl/platnik.js">&lt;/Script> --> 
+<div dojotype="dijit.layout.BorderContainer" style="margin: 0px; border: 0px none; width: 1024px; height: 810px; padding: 0px;" region="center" class="dijitBorderContainer dijitContainer dijitLayoutContainer" id="dijit_layout_BorderContainer_1" widgetid="dijit_layout_BorderContainer_1">
+	<div class="dojoxExpandoPane dijitExpandoPane menuContentPane dojoxExpandoLeft dijitBorderContainer-child dijitBorderContainer-dijitExpandoPane dijitBorderContainerPane dijitAlignLeft" title="" role="group" id="ksiLeftMenuId" style="margin: 0px; padding: 0px; overflow: hidden; left: 0px; top: 0px; position: absolute; height: 810px;" widgetid="ksiLeftMenuId">
+	<div dojoattachpoint="titleWrapper" class="dojoxExpandoTitle">
+		<h1>MENU</h1>
+		<a href="javascript:void(0)" class="helpIcon" dojoattachpoint="helpIconNode" dojoattachevent="onclick:openHelp" title="Pomoc"><img alt="Pomoc" src="blank.gif"></a>
+		<a href="javascript:void(0)" class="dojoxExpandoIcon dojoxExpandoIconLeft" dojoattachpoint="iconNode" dojoattachevent="onclick:toggle" title="Ukryj, pokaż menu"><img alt="Ukryj, pokaż menu" src="blank.gif"></a>
+	</div> 
+	<div class="dojoxExpandoWrapper" dojoattachpoint="cwrapper" dojoattachevent="ondblclick:_trap">
+		<div class="dojoxExpandoContent dijitExpandoPaneSingleChild" dojoattachpoint="containerNode" style="height: 773px;">
+		<div dojotype="zusnpi.layout.ScrollingContentPane" upbuttonid="scrollUpButton" downbuttonid="scrollDownButton" panetoscrollid="contentPane" class="dijitContentPane dijitContentPaneSingleChild" title="" role="group" id="zusnpi_layout_ScrollingContentPane_0" widgetid="zusnpi_layout_ScrollingContentPane_0" style="width: 251px; height: 773px;">
+			<div dojotype="dijit.layout.BorderContainer" splitter="false" gutters="false" style="border: 0px none ! important; padding: 0px; width: 251px; height: 773px;" class="dijitBorderContainerNoGutter dijitContainer dijitLayoutContainer" id="dijit_layout_BorderContainer_2" widgetid="dijit_layout_BorderContainer_2">
+				<div id="scrollUpButton" dojotype="zusnpi.button.ScrollMenuButton" region="top" class="dijitContentPane zusnpiScrollMenuButtonDisabled dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-dijitContentPane dijitBorderContainerNoGutterPane dijitAlignTop" title="" role="group" widgetid="scrollUpButton" style="left: 0px; top: 0px; position: absolute; width: 241px;"><div class="icon">&nbsp;</div></div>
+				
+				<div id="contentPane" dojotype="dijit.layout.ContentPane" region="center" style="overflow: hidden; left: 0px; top: 37px; position: absolute; width: 251px; height: 696px;" class="dijitContentPane dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-dijitContentPane dijitBorderContainerNoGutterPane dijitAlignCenter" title="" role="group" widgetid="contentPane">
+					<div region="top" dojotype="zusnpi.menu.MenuPaneGroup" class="leftMenuPaneGroup" style="background-color: transparent ! important;" id="zusnpi_menu_MenuPaneGroup_0" widgetid="zusnpi_menu_MenuPaneGroup_0">
+						<div class="zusnpiMenuPane" title="" role="group" id="KSI0000" widgetid="KSI0000">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="zusnpiMenuPaneTitle menuItemNonActive dijitFixedOpen" dojoattachpoint="titleBarNode" role="link">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" role="heading">
+			<table>
+				<tbody>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="titleNode" class="zusnpiMenuPaneTitleNode" style="-moz-user-select: none;">Panel ogólny</span></td>
+						<td rowspan="2"><div dojoattachpoint="iconNode" class="zusnpiMenuPaneIconNode "></div></td>
+					</tr>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="subtitleNode" class="zusnpiMenuPaneSubtitleNode"></span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" dojoattachpoint="containerNode" role="region" id="KSI0000_pane">
+						</div>
+		</div>
+	</div>
+</div>
+			 	<div class="zusnpiMenuPane" title="" role="group" id="OBW0000" widgetid="OBW0000">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="zusnpiMenuPaneTitle menuItemNonActive dijitClosed" dojoattachpoint="titleBarNode" role="link">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" role="button" aria-controls="OBW0000_pane" tabindex="0">
+			<table>
+				<tbody>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="titleNode" class="zusnpiMenuPaneTitleNode" style="-moz-user-select: none;">Dokumenty i wiadomości</span></td>
+						<td rowspan="2"><div dojoattachpoint="iconNode" class="zusnpiMenuPaneIconNode dokumentyMenuIcon"></div></td>
+					</tr>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="subtitleNode" class="zusnpiMenuPaneSubtitleNode">Korespondencja z ZUS</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter hide" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" dojoattachpoint="containerNode" role="region" id="OBW0000_pane">
+			<table class="zusnpiMenu dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable" role="menu" tabindex="0" dojoattachevent="onkeypress:_onKeyPress" id="zusnpi_menu_Menu_0" style="border: 0px none; width: 100%;" widgetid="zusnpi_menu_Menu_0" cellspacing="0">
+	<tbody class="dijitReset" dojoattachpoint="containerNode">
+
+
+	 			<!-- <div dojoType="zusnpi.menu.MenuItem" onHashSelected="menuSelect('/portal/obw/dokumentyRobocze/dodaj.npi');">Dodaj dokument</div> 									
+				<div dojoType="dijit.MenuSeparator"></div> -->
+				<tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="OBW0001_text OBW0001_accel" style="-moz-user-select: none;" id="OBW0001" widgetid="OBW0001">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="OBW0001_text">Wiadomości</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="OBW0001_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+				<tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_0" widgetid="dijit_MenuSeparator_0">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>	
+				<tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="OBW0011_text OBW0011_accel" style="-moz-user-select: none;" id="OBW0011" widgetid="OBW0011">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="OBW0011_text">Skrzynka odbiorcza</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="OBW0011_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+				<tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_1" widgetid="dijit_MenuSeparator_1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>	
+				<tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="OBW0021_text OBW0021_accel" style="-moz-user-select: none;" id="OBW0021" widgetid="OBW0021">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="OBW0021_text">Dokumenty wysłane</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="OBW0021_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+				<tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_2" widgetid="dijit_MenuSeparator_2">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+				<tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="OBW0041_text OBW0041_accel" style="-moz-user-select: none;" id="OBW0041" widgetid="OBW0041">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="OBW0041_text">Komunikaty</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="OBW0041_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+				<!--<div dojoType="dijit.MenuSeparator"></div>
+				<div dojoType="zusnpi.menu.MenuItem" id="OBW0051" onHashSelected="menuSelect('/portal/obw/sprawy/obwListaSprawFtl.npi');">Sprawy</div>-->
+				<tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_3" widgetid="dijit_MenuSeparator_3">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+				<tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="OBW0061_text OBW0061_accel" style="-moz-user-select: none;" id="OBW0061" widgetid="OBW0061">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="OBW0061_text">Kosz</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="OBW0061_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+				<!-- <div dojoType="zusnpi.menu.MenuItem" onHashSelected="menuSelect('/portal/obw/sofTest.npi');">Sof-test</div> -->
+			</tbody>
+</table>
+		</div>
+		</div>
+	</div>
+</div>	
+		
+		
+		<div class="zusnpiMenuPane" title="" role="group" id="OBW0070" widgetid="OBW0070">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="zusnpiMenuPaneTitle menuItemNonActive dijitClosed" dojoattachpoint="titleBarNode" role="link">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" role="button" aria-controls="OBW0070_pane" tabindex="0">
+			<table>
+				<tbody>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="titleNode" class="zusnpiMenuPaneTitleNode" style="-moz-user-select: none;">Zlecenia</span></td>
+						<td rowspan="2"><div dojoattachpoint="iconNode" class="zusnpiMenuPaneIconNode zleceniaMenuIcon"></div></td>
+					</tr>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="subtitleNode" class="zusnpiMenuPaneSubtitleNode">Autoryzacja operacji</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter hide" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" dojoattachpoint="containerNode" role="region" id="OBW0070_pane">		
+			<table class="zusnpiMenu dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable" role="menu" tabindex="0" dojoattachevent="onkeypress:_onKeyPress" id="zusnpi_menu_Menu_1" style="border: 0px none; width: 100%;" widgetid="zusnpi_menu_Menu_1" cellspacing="0">
+	<tbody class="dijitReset" dojoattachpoint="containerNode">
+				<tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="OBW0071_text OBW0071_accel" style="-moz-user-select: none;" id="OBW0071" widgetid="OBW0071">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="OBW0071_text">Operacje do potwierdzenia</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="OBW0071_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>			
+			</tbody>
+</table>	
+		</div>
+		</div>
+	</div>
+</div> 	
+
+		<div class="zusnpiMenuPane" title="" role="group" id="KUS0000" widgetid="KUS0000">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="zusnpiMenuPaneTitle menuItemNonActive dijitClosed" dojoattachpoint="titleBarNode" role="link">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" role="button" aria-controls="KUS0000_pane" tabindex="0">
+			<table>
+				<tbody>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="titleNode" class="zusnpiMenuPaneTitleNode" style="-moz-user-select: none;">Usługi</span></td>
+						<td rowspan="2"><div dojoattachpoint="iconNode" class="zusnpiMenuPaneIconNode uslugiMenuIcon"></div></td>
+					</tr>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="subtitleNode" class="zusnpiMenuPaneSubtitleNode">Katalog usług elektronicznych</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter hide" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" dojoattachpoint="containerNode" role="region" id="KUS0000_pane">		
+			<table class="zusnpiMenu dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable" role="menu" tabindex="0" dojoattachevent="onkeypress:_onKeyPress" id="zusnpi_menu_Menu_2" style="border: 0px none; width: 100%;" widgetid="zusnpi_menu_Menu_2" cellspacing="0">
+	<tbody class="dijitReset" dojoattachpoint="containerNode">
+				<tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="KUS0001_text KUS0001_accel" style="-moz-user-select: none;" id="KUS0001" widgetid="KUS0001">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="KUS0001_text">Katalog usług</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="KUS0001_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+			</tbody>
+</table>	
+		</div>
+		</div>
+	</div>
+</div>
+		 	
+		<!--
+		<div dojotype="zusnpi.menu.MenuPane" open="false" title="Płatności" subtitle="Płatności on-line za usługi ZUS" iconClass="platnosciMenuIcon" selectable="true" onHashSelected="menuSelect('/portal/obw/obszar/obwObszarPlatnosciFtl.npi');">		
+			<div dojoType="zusnpi.menu.Menu" style="border: 0px; width:100%">
+				<div dojoType="zusnpi.menu.MenuItem" id="PLA0001" onHashSelected="menuSelect('/portal/obw/naleznosci/obwListaNaleznosciFtl.npi');">Należności</div>
+				<div dojoType="dijit.MenuSeparator"></div>	
+				<div dojoType="zusnpi.menu.MenuItem" id="PLA0011" onHashSelected="menuSelect('/portal/obw/wplaty/obwListaWplatFtl.npi');">Wpłaty</div>		
+			</div>	
+		</div>	
+		-->
+		
+		<div class="zusnpiMenuPane" title="" role="group" id="zusnpi_menu_MenuPane_0" widgetid="zusnpi_menu_MenuPane_0">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="zusnpiMenuPaneTitle menuItemNonActive dijitClosed" dojoattachpoint="titleBarNode" role="link">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" role="button" aria-controls="zusnpi_menu_MenuPane_0_pane" tabindex="0">
+			<table>
+				<tbody>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="titleNode" class="zusnpiMenuPaneTitleNode" style="-moz-user-select: none;">Wyszukiwanie, mapa strony</span></td>
+						<td rowspan="2"><div dojoattachpoint="iconNode" class="zusnpiMenuPaneIconNode wyszukiwanieMenuIcon"></div></td>
+					</tr>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="subtitleNode" class="zusnpiMenuPaneSubtitleNode">Wyszukiwanie na portalu</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter hide" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" dojoattachpoint="containerNode" role="region" id="zusnpi_menu_MenuPane_0_pane">		
+			<table class="zusnpiMenu dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable" role="menu" tabindex="0" dojoattachevent="onkeypress:_onKeyPress" id="zusnpi_menu_Menu_3" style="border: 0px none; width: 100%;" widgetid="zusnpi_menu_Menu_3" cellspacing="0">
+	<tbody class="dijitReset" dojoattachpoint="containerNode">
+				<tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="OBW0080_text OBW0080_accel" style="-moz-user-select: none;" id="OBW0080" widgetid="OBW0080">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="OBW0080_text">Wyszukiwanie na portalu</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="OBW0080_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+				<tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="OBW0081_text OBW0081_accel" style="-moz-user-select: none;" id="OBW0081" widgetid="OBW0081">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="OBW0081_text">Mapa strony</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="OBW0081_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+			</tbody>
+</table>	
+		</div>
+		</div>
+	</div>
+</div>	
+
+<div class="zusnpiMenuPane" title="" role="group" id="WIZ0001" widgetid="WIZ0001">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="zusnpiMenuPaneTitle menuItemNonActive dijitClosed" dojoattachpoint="titleBarNode" role="link">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" role="button" aria-controls="WIZ0001_pane" tabindex="0">
+			<table>
+				<tbody>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="titleNode" class="zusnpiMenuPaneTitleNode" style="-moz-user-select: none;">Wizyty</span></td>
+						<td rowspan="2"><div dojoattachpoint="iconNode" class="zusnpiMenuPaneIconNode wizytyMenuIcon"></div></td>
+					</tr>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="subtitleNode" class="zusnpiMenuPaneSubtitleNode">Rezerwacja wizyty w ZUS</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter hide" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" dojoattachpoint="containerNode" role="region" id="WIZ0001_pane">
+     <table class="zusnpiMenu dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable" role="menu" tabindex="0" dojoattachevent="onkeypress:_onKeyPress" id="zusnpi_menu_Menu_4" style="border: 0px none; width: 100%;" widgetid="zusnpi_menu_Menu_4" cellspacing="0">
+	<tbody class="dijitReset" dojoattachpoint="containerNode">
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="WIZ0004_text WIZ0004_accel" style="-moz-user-select: none;" id="WIZ0004" widgetid="WIZ0004">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="WIZ0004_text">Rezerwacja wizyty</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="WIZ0004_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+        <tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_4" widgetid="dijit_MenuSeparator_4">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="WIZ0008_text WIZ0008_accel" style="-moz-user-select: none;" id="WIZ0008" widgetid="WIZ0008">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="WIZ0008_text">Przegląd i anulowanie rezerwacji</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="WIZ0008_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+        <tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_5" widgetid="dijit_MenuSeparator_5">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+    </tbody>
+</table>
+</div>
+		</div>
+	</div>
+</div>
+<div class="zusnpiMenuPane" title="" role="group" id="zusnpi_menu_MenuPane_1" widgetid="zusnpi_menu_MenuPane_1">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="zusnpiMenuPaneTitle menuItemNonActive dijitClosed" dojoattachpoint="titleBarNode" role="link">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" role="button" aria-controls="zusnpi_menu_MenuPane_1_pane" tabindex="0">
+			<table>
+				<tbody>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="titleNode" class="zusnpiMenuPaneTitleNode" style="-moz-user-select: none;">Ustawienia</span></td>
+						<td rowspan="2"><div dojoattachpoint="iconNode" class="zusnpiMenuPaneIconNode konfiguracjaMenuIcon"></div></td>
+					</tr>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="subtitleNode" class="zusnpiMenuPaneSubtitleNode">Konfiguracja profilu</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter hide" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" dojoattachpoint="containerNode" role="region" id="zusnpi_menu_MenuPane_1_pane">
+    <table class="zusnpiMenu dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable" role="menu" tabindex="0" dojoattachevent="onkeypress:_onKeyPress" id="zusnpi_menu_Menu_5" style="border: 0px none; width: 100%;" widgetid="zusnpi_menu_Menu_5" cellspacing="0">
+	<tbody class="dijitReset" dojoattachpoint="containerNode">
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="KPR0001_text KPR0001_accel" style="-moz-user-select: none;" id="KPR0001" widgetid="KPR0001">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="KPR0001_text">Dane profilu</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="KPR0001_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+        <tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_6" widgetid="dijit_MenuSeparator_6">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="KPR0002_text KPR0002_accel" style="-moz-user-select: none;" id="KPR0002" widgetid="KPR0002">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="KPR0002_text">Kanały dostępu</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="KPR0002_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+        <tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_7" widgetid="dijit_MenuSeparator_7">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="KPR0003_text KPR0003_accel" style="-moz-user-select: none;" id="KPR0003" widgetid="KPR0003">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="KPR0003_text">Role i upoważnienia</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="KPR0003_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+        <tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_8" widgetid="dijit_MenuSeparator_8">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+        <!--
+        <div id="KPR0004" dojoType="zusnpi.menu.MenuItem" onHashSelected="menuSelect('/portal/konfiguracja/zdarzeniaBiznesoweFtl.npi');">Zdarzenia biznesowe</div>
+        <div dojoType="dijit.MenuSeparator"></div>
+        -->
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="KPR0005_text KPR0005_accel" style="-moz-user-select: none;" id="KPR0005" widgetid="KPR0005">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="KPR0005_text">Ustawienia konta</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="KPR0005_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+        <tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_9" widgetid="dijit_MenuSeparator_9">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="KPR0006_text KPR0006_accel" style="-moz-user-select: none;" id="KPR0006" widgetid="KPR0006">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="KPR0006_text">Aktywacja ePłatnika</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="KPR0006_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="KPR0007_text KPR0007_accel" style="-moz-user-select: none; display: none;" id="KPR0007" widgetid="KPR0007">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="KPR0007_text">Powiązanie profilu z kontem ePUAP - udana próba podpisania dokumentu</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="KPR0007_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="KPR0008_text KPR0008_accel" style="-moz-user-select: none; display: none;" id="KPR0008" widgetid="KPR0008">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="KPR0008_text">Powiązanie profilu z kontem ePUAP - nieudana próba podpisania dokumentu</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="KPR0008_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+        <tr class="dijitMenuSeparator" style="-moz-user-select: none;" id="dijit_MenuSeparator_10" widgetid="dijit_MenuSeparator_10">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem menuItemNonActive zusnpiMenuItem" dojoattachpoint="focusNode" role="link" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" aria-labelledby="KPR0016_text KPR0016_accel" style="-moz-user-select: none;" id="KPR0016" widgetid="KPR0016">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation"><img src="blank.gif" alt="" class="dijitIcon zusnpiMenuItemIcon" dojoattachpoint="iconNode"></td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="KPR0016_text">Ustawienia subskrypcji</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode" id="KPR0016_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+	<div dojoattachpoint="arrowWrapper" style="visibility: hidden;"><img src="blank.gif" alt="" class="dijitMenuExpand"><span class="dijitMenuExpandA11y">+</span></div>
+	</td>
+</tr>
+    </tbody>
+</table>
+</div>
+		</div>
+	</div>
+</div>
+<div class="zusnpiMenuPane" title="" role="group" id="KSI0002" style="display: none;" widgetid="KSI0002">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="zusnpiMenuPaneTitle menuItemNonActive dijitClosed" dojoattachpoint="titleBarNode" role="link">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" role="button" aria-controls="KSI0002_pane" tabindex="0">
+			<table>
+				<tbody>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="titleNode" class="zusnpiMenuPaneTitleNode" style="-moz-user-select: none;">Zgłoszenie płatnika składek</span></td>
+						<td rowspan="2"><div dojoattachpoint="iconNode" class="zusnpiMenuPaneIconNode eplatnikPlatnikIcon"></div></td>
+					</tr>
+					<tr>
+						<td class="zusnpiMenuPaneTextColumn"><span dojoattachpoint="subtitleNode" class="zusnpiMenuPaneSubtitleNode">Rodzic płatnikiem składek</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter hide" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" dojoattachpoint="containerNode" role="region" id="KSI0002_pane">
+</div>
+		</div>
+	</div>
+</div>
+
+					</div>
+				</div>
+				<div dojotype="dojox.layout.ContentPane" region="bottom" class="dijitContentPane iconPane dijitContentPaneSingleChild dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-dijitContentPane dijitBorderContainerNoGutterPane dijitAlignBottom" title="" role="group" id="dojox_layout_ContentPane_1" widgetid="dojox_layout_ContentPane_1" style="left: 0px; top: 733px; position: absolute; width: 251px;">
+					<div id="scrollDownButton" dojotype="zusnpi.button.ScrollMenuButton" class="dijitContentPane zusnpiScrollMenuButtonDisabled" title="" role="group" widgetid="scrollDownButton" style="width: 241px; height: 33px;"><div class="icon">&nbsp;</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</div><div class="dijitGutter dijitGutterV dijitAlignLeft" role="presentation" id="ksiLeftMenuId_splitter" widgetid="ksiLeftMenuId_splitter" style="left: 251px; top: 0px; position: absolute; height: 810px;"></div>
+	<div dojotype="dijit.layout.BorderContainer" spliter="false" gutters="false" style="height: 810px; left: 251px; top: 0px; position: absolute; padding: 0px; width: 773px;" region="center" class="dijitBorderContainerNoGutter dijitContainer dijitBorderContainer-child dijitBorderContainer-dijitBorderContainerNoGutter dijitBorderContainerPane dijitAlignCenter dijitLayoutContainer" id="dijit_layout_BorderContainer_3" widgetid="dijit_layout_BorderContainer_3">
+		<div dojotype="dijit.layout.ContentPane" region="top" style="padding: 0px; left: 0px; top: 0px; position: absolute; width: 773px;" class="dijitContentPane dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-dijitContentPane dijitBorderContainerNoGutterPane dijitAlignTop" title="" role="group" id="dijit_layout_ContentPane_0" widgetid="dijit_layout_ContentPane_0">
+
+		</div>
+		<div dojotype="dojox.layout.ContentPane" region="center" class="dijitContentPane mainContentPane dijitContentPaneSingleChild dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-dijitContentPane dijitBorderContainerNoGutterPane dijitAlignCenter" id="contextPane" title="" role="group" widgetid="contextPane" style="left: 0px; top: 0px; position: absolute; width: 770px; height: 810px;">
+<div id="mainContentPanePlatnikMojeDaneId" style="height: 805px; background-color: white; border-bottom: 5px solid rgb(106, 107, 107) ! important; padding: 0px; width: 770px;" class="dijitBorderContainerNoGutter dijitContainer zusnpiMainContentPane dijitLayoutContainer" widgetid="mainContentPanePlatnikMojeDaneId">
+
+	<div dojotype="dijit.layout.ContentPane" class="zusnpiPageTitlePane dijitBorderContainerNoGutter-child dijitBorderContainerNoGutterPane dijitAlignTop" region="top" style="height: 37px; left: 0px; top: 0px; position: absolute; width: 770px;" id="zusnpi_layout_pagetitle_PageTitlePane_0" widgetid="zusnpi_layout_pagetitle_PageTitlePane_0">
+	<table>
+		<tbody><tr>
+			<td class="zusnpiPageTitlePaneH1">
+				<h1 id="{id}_titleComponent" title="" dojoattachpoint="titleComponent" style="height: 100%; width: 100%;" tabindex="0">Panel ogólny</h1>
+			</td>
+			<td>
+				<a href="javascript:void(0)" dojoattachpoint="showHelpComponent" style="cursor: pointer;" title="Pomoc">
+					<img alt="Pomoc" src="help.png">
+				</a>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+	
+
+	<div region="center" dojotype="dijit.layout.ContentPane" class="dijitContentPane zusnpiMainContentPaneCenter dijitContentPaneSingleChild dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-dijitContentPane dijitBorderContainerNoGutterPane dijitAlignCenter" onshow="pobierzDane();" title="" role="group" id="dijit_layout_ContentPane_1" widgetid="dijit_layout_ContentPane_1" style="left: 0px; top: 37px; position: absolute; width: 758px; height: 768px;">
+
+		<!-- glowny kontener  -->
+		<div dojotype="dijit.layout.ContentPane" style="width: 758px; overflow: auto; height: 768px;" class="dijitContentPane" title="" role="group" id="dijit_layout_ContentPane_2" widgetid="dijit_layout_ContentPane_2">
+
+			<!-- panele po lewej -->
+			<div dojotype="dojox.layout.ContentPane" style="padding: 0px; float: left; width: 49.75%;" class="dijitContentPane" title="" role="group" id="dojox_layout_ContentPane_2" widgetid="dojox_layout_ContentPane_2">
+	
+				<div class="dijitTitlePane zusnpiGridContainer dojoxPortlet zusnpilayoutTitlePane dojoxPortlet-movable" title="" role="group" widgetid="zusnpi_layout_LinkedTitlePane_0">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="dijitTitlePaneTitle dojoxPortletTitle zusnpilayoutTitlePaneTitle dijitOpen" dojoattachpoint="titleBarNode">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" style="text-align: left ! important;" aria-pressed="true" aria-controls="zusnpi_layout_LinkedTitlePane_0_pane" tabindex="0">
+		
+			<img src="title_pane_attach.png" alt="" dojoattachpoint="iconNode" class="zusnpilayoutTitlePaneTitle_HideIcon">
+			
+			<img src="blank.gif" alt="" dojoattachpoint="arrowNode" class="dojoxPortletIcon dojoxArrowDown" role="presentation">
+			<span dojoattachpoint="arrowNodeInner" class="dijitArrowNodeInner">-</span>
+			<h2 dojoattachpoint="titleNode" class="dijitTitlePaneTextNode" style="-moz-user-select: none;">Wiadomości</h2>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter dojoxPortletContentOuter" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" role="region" id="zusnpi_layout_LinkedTitlePane_0_pane">
+				<div dojotype="dijit.layout.ContentPane" class="dijitContentPane">
+					<div dojotype="dijit.layout.ContentPane">
+						<h3 class="normal dijitTitlePaneSingleChild" dojoattachpoint="containerNode" aria-hidden="false">
+					<div dojotype="dijit.layout.ContentPane" style="height: 90px; width: 375px;" class="dijitContentPane" title="" role="group" id="dijit_layout_ContentPane_3" widgetid="dijit_layout_ContentPane_3">
+						<ul>
+							<li>Wiadomości dotyczące zdarzeń biznesowych zaistniałych w systemie PUE ZUS.</li>
+						</ul>
+						<br>
+						<ul>
+							<span id="wiad">Brak nieprzeczytanych wiadomości</span>
+						</ul>
+					</div>
+				</h3>
+					</div>
+					<div dojotype="dijit.layout.ContentPane" class="dijitContentPane zusnpiShowMeLink">
+						<a href="javascript:void(0)" class="orange_arr" dojoattachpoint="linkNode" aria-describedby="zusnpi_layout_LinkedTitlePane_0">
+							<span dojoattachpoint="linkTextNode">Pokaż</span>
+							<img class="hide" src="blank.gif" dojoattachpoint="linkImageNode" alt="Wiadomości">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+				<div class="zusnpiGridContainer dojoxPortlet zusnpilayoutTitlePane dojoxPortlet-movable dijitTitlePane" title="" role="group" widgetid="zusnpi_layout_LinkedTitlePane_1">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="dijitTitlePaneTitle dojoxPortletTitle zusnpilayoutTitlePaneTitle dijitOpen" dojoattachpoint="titleBarNode">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" style="text-align: left ! important;" aria-pressed="true" aria-controls="zusnpi_layout_LinkedTitlePane_1_pane" tabindex="0">
+		
+			<img src="title_pane_attach.png" alt="" dojoattachpoint="iconNode" class="zusnpilayoutTitlePaneTitle_HideIcon">
+			
+			<img src="blank.gif" alt="" dojoattachpoint="arrowNode" class="dojoxPortletIcon dojoxArrowDown" role="presentation">
+			<span dojoattachpoint="arrowNodeInner" class="dijitArrowNodeInner">-</span>
+			<h2 dojoattachpoint="titleNode" class="dijitTitlePaneTextNode" style="-moz-user-select: none;">Komunikaty</h2>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter dojoxPortletContentOuter" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" role="region" id="zusnpi_layout_LinkedTitlePane_1_pane">
+				<div dojotype="dijit.layout.ContentPane" class="dijitContentPane">
+					<div dojotype="dijit.layout.ContentPane">
+						<h3 class="normal dijitTitlePaneSingleChild" dojoattachpoint="containerNode" aria-hidden="false">
+					<div dojotype="dijit.layout.ContentPane" style="height: 90px; width: 375px;" class="dijitContentPane" title="" role="group" id="dijit_layout_ContentPane_4" widgetid="dijit_layout_ContentPane_4">
+						<ul>
+							<li>Komunikaty administracyjne i techniczne dla użytkowników PUE ZUS.</li>
+						</ul>
+						<br>
+						<ul>
+							<span id="kom">Brak nieprzeczytanych komunikatów</span>
+						</ul>
+
+					</div>
+				</h3>
+					</div>
+					<div dojotype="dijit.layout.ContentPane" class="dijitContentPane zusnpiShowMeLink">
+						<a href="javascript:void(0)" class="orange_arr" dojoattachpoint="linkNode" aria-describedby="zusnpi_layout_LinkedTitlePane_1">
+							<span dojoattachpoint="linkTextNode">Pokaż</span>
+							<img class="hide" src="blank.gif" dojoattachpoint="linkImageNode" alt="Komunikaty">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+			<div class="zusnpiGridContainer dojoxPortlet zusnpilayoutTitlePane dojoxPortlet-movable dijitTitlePane" title="" role="group" widgetid="zusnpi_layout_LinkedTitlePane_2">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="dijitTitlePaneTitle dojoxPortletTitle zusnpilayoutTitlePaneTitle dijitOpen" dojoattachpoint="titleBarNode">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" style="text-align: left ! important;" aria-pressed="true" aria-controls="zusnpi_layout_LinkedTitlePane_2_pane" tabindex="0">
+		
+			<img src="title_pane_attach.png" alt="" dojoattachpoint="iconNode" class="zusnpilayoutTitlePaneTitle_HideIcon">
+			
+			<img src="blank.gif" alt="" dojoattachpoint="arrowNode" class="dojoxPortletIcon dojoxArrowDown" role="presentation">
+			<span dojoattachpoint="arrowNodeInner" class="dijitArrowNodeInner">-</span>
+			<h2 dojoattachpoint="titleNode" class="dijitTitlePaneTextNode" style="-moz-user-select: none;">Usługi</h2>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter dojoxPortletContentOuter" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" role="region" id="zusnpi_layout_LinkedTitlePane_2_pane">
+				<div dojotype="dijit.layout.ContentPane" class="dijitContentPane">
+					<div dojotype="dijit.layout.ContentPane">
+						<h3 class="normal dijitTitlePaneSingleChild" dojoattachpoint="containerNode" aria-hidden="false">
+					<div dojotype="dijit.layout.ContentPane" style="height: 90px; width: 375px;" class="dijitContentPane" title="" role="group" id="dijit_layout_ContentPane_5" widgetid="dijit_layout_ContentPane_5">
+						<ul>
+							<li>Katalog usług udostępnianych przez ZUS drogą elektroniczną</li>
+						</ul>
+					</div>
+				</h3>
+					</div>
+					<div dojotype="dijit.layout.ContentPane" class="dijitContentPane zusnpiShowMeLink">
+						<a href="javascript:void(0)" class="orange_arr" dojoattachpoint="linkNode" aria-describedby="zusnpi_layout_LinkedTitlePane_2">
+							<span dojoattachpoint="linkTextNode">Pokaż</span>
+							<img class="hide" src="blank.gif" dojoattachpoint="linkImageNode" alt="Usługi">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+				<br>
+			</div>
+
+			<!-- panele po prawej -->
+			<div dojotype="dojox.layout.ContentPane" style="padding: 0px; float: right; width: 49.75%;" class="dijitContentPane" title="" role="group" id="dojox_layout_ContentPane_3" widgetid="dojox_layout_ContentPane_3">
+
+				<div class="zusnpiGridContainer dojoxPortlet zusnpilayoutTitlePane dojoxPortlet-movable dijitTitlePane" title="" role="group" widgetid="zusnpi_layout_LinkedTitlePane_3">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="dijitTitlePaneTitle dojoxPortletTitle zusnpilayoutTitlePaneTitle dijitOpen" dojoattachpoint="titleBarNode">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" style="text-align: left ! important;" aria-pressed="true" aria-controls="zusnpi_layout_LinkedTitlePane_3_pane" tabindex="0">
+		
+			<img src="title_pane_attach.png" alt="" dojoattachpoint="iconNode" class="zusnpilayoutTitlePaneTitle_HideIcon">
+			
+			<img src="blank.gif" alt="" dojoattachpoint="arrowNode" class="dojoxPortletIcon dojoxArrowDown" role="presentation">
+			<span dojoattachpoint="arrowNodeInner" class="dijitArrowNodeInner">-</span>
+			<h2 dojoattachpoint="titleNode" class="dijitTitlePaneTextNode" style="-moz-user-select: none;">Skrzynka odbiorcza</h2>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter dojoxPortletContentOuter" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" role="region" id="zusnpi_layout_LinkedTitlePane_3_pane">
+				<div dojotype="dijit.layout.ContentPane" class="dijitContentPane">
+					<div dojotype="dijit.layout.ContentPane">
+						<h3 class="normal dijitTitlePaneSingleChild" dojoattachpoint="containerNode" aria-hidden="false">
+					<div dojotype="dijit.layout.ContentPane" style="height: 90px; width: 375px;" class="dijitContentPane" title="" role="group" id="dijit_layout_ContentPane_6" widgetid="dijit_layout_ContentPane_6">
+						<ul>
+							<li>Dokumenty odebrane lub wymagające potwierdzenia odbioru.</li>
+						</ul>
+						<br>
+						<ul>
+							<span id="dok">Brak nieodebranych dokumentów</span>
+						</ul>
+					</div>
+				</h3>
+					</div>
+					<div dojotype="dijit.layout.ContentPane" class="dijitContentPane zusnpiShowMeLink">
+						<a href="javascript:void(0)" class="orange_arr" dojoattachpoint="linkNode" aria-describedby="zusnpi_layout_LinkedTitlePane_3">
+							<span dojoattachpoint="linkTextNode">Pokaż</span>
+							<img class="hide" src="blank.gif" dojoattachpoint="linkImageNode" alt="Skrzynka odbiorcza">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+				
+				<!-- Program Rodzina 500 Plus -->
+				<div class="zusnpiGridContainer dojoxPortlet zusnpilayoutTitlePane dojoxPortlet-movable dijitTitlePane" title="" role="group" widgetid="zusnpi_layout_LinkedTitlePaneNoLink_0">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="dijitTitlePaneTitle dojoxPortletTitle zusnpilayoutTitlePaneTitle dijitOpen" dojoattachpoint="titleBarNode">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" style="text-align: left ! important;" aria-pressed="true" aria-controls="zusnpi_layout_LinkedTitlePaneNoLink_0_pane" tabindex="0">
+		
+			<img src="title_pane_attach.png" alt="" dojoattachpoint="iconNode" class="zusnpilayoutTitlePaneTitle_HideIcon">
+			
+			<img src="blank.gif" alt="" dojoattachpoint="arrowNode" class="dojoxPortletIcon dojoxArrowDown" role="presentation">
+			<span dojoattachpoint="arrowNodeInner" class="dijitArrowNodeInner">-</span>
+			<h2 dojoattachpoint="titleNode" class="dijitTitlePaneTextNode" style="-moz-user-select: none;">Rodzina 500+</h2>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter dojoxPortletContentOuter" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" role="region" id="zusnpi_layout_LinkedTitlePaneNoLink_0_pane">
+				<div dojotype="dijit.layout.ContentPane" class="dijitContentPane">
+					<div dojotype="dijit.layout.ContentPane">
+						<h3 class="normal dijitTitlePaneSingleChild" dojoattachpoint="containerNode" aria-hidden="false">
+						<div dojotype="dijit.layout.ContentPane" style="height: 165px; width: 375px;" class="dijitContentPane" title="" role="group" id="dijit_layout_ContentPane_7" widgetid="dijit_layout_ContentPane_7">
+							<ul>
+								<li>Program Rodzina 500+ to nieopodatkowane 500 zł miesięcznie na każde drugie i kolejne dziecko, bez dodatkowych warunków. Rodziny o niskich dochodach otrzymają wsparcie także na pierwsze dziecko lub dla jedynaka. Zgodnie z ustawą z dnia 11 lutego 2016 r. o pomocy państwa w wychowywaniu dzieci, z pomocy skorzystają rodzice oraz opiekunowie dzieci do 18 r.ż.</li>
+								<li>Złóż wniosek o świadczenie wychowawcze  z profilu „Ubezpieczony”.</li>
+							</ul>
+						</div>
+				</h3>
+					</div>
+					<div dojotype="dijit.layout.ContentPane" class="dijitContentPane zusnpiShowMeLink">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+				
+				<div class="dijitTitlePane zusnpiGridContainer dojoxPortlet zusnpilayoutTitlePane dojoxPortlet-movable" title="" role="group" widgetid="zusnpi_layout_LinkedTitlePane_4">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="dijitTitlePaneTitle dojoxPortletTitle zusnpilayoutTitlePaneTitle dijitOpen" dojoattachpoint="titleBarNode">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" style="text-align: left ! important;" aria-pressed="true" aria-controls="zusnpi_layout_LinkedTitlePane_4_pane" tabindex="0">
+		
+			<img src="title_pane_attach.png" alt="" dojoattachpoint="iconNode" class="zusnpilayoutTitlePaneTitle_HideIcon">
+			
+			<img src="blank.gif" alt="" dojoattachpoint="arrowNode" class="dojoxPortletIcon dojoxArrowDown" role="presentation">
+			<span dojoattachpoint="arrowNodeInner" class="dijitArrowNodeInner">-</span>
+			<h2 dojoattachpoint="titleNode" class="dijitTitlePaneTextNode" style="-moz-user-select: none;">Zlecenia</h2>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter dojoxPortletContentOuter" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" role="region" id="zusnpi_layout_LinkedTitlePane_4_pane">
+				<div dojotype="dijit.layout.ContentPane" class="dijitContentPane">
+					<div dojotype="dijit.layout.ContentPane">
+						<h3 class="normal dijitTitlePaneSingleChild" dojoattachpoint="containerNode" aria-hidden="false">
+					<div dojotype="dijit.layout.ContentPane" style="height: 70px; width: 375px;" class="dijitContentPane" title="" role="group" id="dijit_layout_ContentPane_8" widgetid="dijit_layout_ContentPane_8">
+						<ul>
+							<li>Operacje wymagające autoryzacji</li>
+						</ul>
+						<br>
+						<ul>
+							<span id="zle">Brak niepotwierdzonych zleceń</span>
+						</ul>
+					</div>
+				</h3>
+					</div>
+					<div dojotype="dijit.layout.ContentPane" class="dijitContentPane zusnpiShowMeLink">
+						<a href="javascript:void(0)" class="orange_arr" dojoattachpoint="linkNode" aria-describedby="zusnpi_layout_LinkedTitlePane_4">
+							<span dojoattachpoint="linkTextNode">Pokaż</span>
+							<img class="hide" src="blank.gif" dojoattachpoint="linkImageNode" alt="Zlecenia">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+			<div class="dijitTitlePane zusnpiGridContainer dojoxPortlet zusnpilayoutTitlePane dojoxPortlet-movable" title="" role="group" widgetid="zusnpi_layout_LinkedTitlePane_5">
+	<div dojoattachevent="onclick:_onTitleClick, onkeypress:_onTitleKey" class="dijitTitlePaneTitle dojoxPortletTitle zusnpilayoutTitlePaneTitle dijitOpen" dojoattachpoint="titleBarNode">
+		<div class="dijitTitlePaneTitleFocus" dojoattachpoint="focusNode" style="text-align: left ! important;" aria-pressed="true" aria-controls="zusnpi_layout_LinkedTitlePane_5_pane" tabindex="0">
+		
+			<img src="title_pane_attach.png" alt="" dojoattachpoint="iconNode" class="zusnpilayoutTitlePaneTitle_HideIcon">
+			
+			<img src="blank.gif" alt="" dojoattachpoint="arrowNode" class="dojoxPortletIcon dojoxArrowDown" role="presentation">
+			<span dojoattachpoint="arrowNodeInner" class="dijitArrowNodeInner">-</span>
+			<h2 dojoattachpoint="titleNode" class="dijitTitlePaneTextNode" style="-moz-user-select: none;">Wizyty</h2>
+		</div>
+	</div>
+	<div class="dijitTitlePaneContentOuter dojoxPortletContentOuter" dojoattachpoint="hideNode" role="presentation">
+		<div class="dijitReset" dojoattachpoint="wipeNode" role="presentation">
+			<div class="dijitTitlePaneContentInner" role="region" id="zusnpi_layout_LinkedTitlePane_5_pane">
+				<div dojotype="dijit.layout.ContentPane" class="dijitContentPane">
+					<div dojotype="dijit.layout.ContentPane">
+						<h3 class="normal dijitTitlePaneSingleChild" dojoattachpoint="containerNode" aria-hidden="false">
+					<div dojotype="dijit.layout.ContentPane" style="height: 70px; width: 375px;" class="dijitContentPane" title="" role="group" id="dijit_layout_ContentPane_9" widgetid="dijit_layout_ContentPane_9">
+						<ul>
+							<li>Informacje o godzinach przyjęć klientów w danej jednostce ZUS.</li>
+						</ul>
+					</div>
+			</h3>
+					</div>
+					<div dojotype="dijit.layout.ContentPane" class="dijitContentPane zusnpiShowMeLink">
+						<a href="javascript:void(0)" class="orange_arr" dojoattachpoint="linkNode" aria-describedby="zusnpi_layout_LinkedTitlePane_5">
+							<span dojoattachpoint="linkTextNode">Pokaż</span>
+							<img class="hide" src="blank.gif" dojoattachpoint="linkImageNode" alt="Wizyty">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+				<br>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+		</div>
+	</div>
+</div>
+</div><div class="zusnpiStatusBar dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-zusnpiStatusBar dijitBorderContainerNoGutterPane dijitAlignBottom" id="statusBar" widgetid="statusBar" style="left: 0px; top: 888px; position: absolute; width: 1016px;">
+	<span dojoattachpoint="roleNode">Ogólny</span>
+	<span dojoattachpoint="menuGroupNode"></span>
+	<span dojoattachpoint="menuItemNode"></span>
+	<span style="float: right;">
+		<span dojoattachpoint="sessionActiveTimeLabel">Do końca sesji pozostało:</span>
+		<span dojoattachpoint="sessionActiveTime">14</span>
+		<span dojoattachpoint="sessionActiveTimeMins">min.</span>
+		<span dojoattachpoint="versionInfoNode" style="margin-left: 10px;">Numer wersji: 2.39.15</span>
+		<span dojoattachpoint="unsupportedBrowserNode" class="unsupportedBrowser" style="display: none;">NIEOBSŁUGIWANA PRZEGLĄDARKA</span>
+	</span>
+</div></div></div>
+
+		
+	
+
+
+<div id="szafirsdk-applet-placeholder"><input id="szafirsdk-params" name="szafirsdk-params" value="{&quot;document_base_url&quot;:&quot;https://pue.zus.pl/portal/obszar-ogolny.npi&quot;,&quot;debug&quot;:false,&quot;load_szafir_immediately&quot;:false,&quot;sdk_location_url&quot;:&quot;/portal/podpis/lib/&quot;,&quot;cryptoapplet_jar&quot;:&quot;/portal/podpis/cryptoapplet.jar?t=170216125822&quot;,&quot;versions_file&quot;:&quot;/portal/podpis/lib/versions.xml&quot;,&quot;versions_file_applet&quot;:&quot;versions.xml&quot;}" type="hidden"><input id="szafirsdk-mode" name="szafirsdk-mode" value="SZAFIR_SDK_APPLET" type="hidden"><input id="szafirsdk-state" name="szafirsdk-state" value="UNLOADED" type="hidden"><input id="szafirsdk-temp-result" name="szafirsdk-temp-result" type="hidden"><input id="szafirsdk-error" name="szafirsdk-error" type="hidden"></div></body>
+</html>

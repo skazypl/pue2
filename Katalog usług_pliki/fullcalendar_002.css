@@ -1,0 +1,202 @@
+/* Tooltip ----------------------------------*/
+.ui-tooltip {
+	font-size: small;
+	background: #FFFFA3;
+	padding: 5px;
+	border-color: #f1D031;
+}
+
+
+/* FullCalendar ----------------------------*/
+
+.fc-agenda .fc-agenda-axis {
+	font-weight: bold;
+	padding: 0 4px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	width: 35px;
+}
+
+.fc-agenda-slots td div {
+	height: 25px;
+}
+
+/* for focus- herat */
+.fc-event-hf,
+.fc-event-hf1  {
+	border-color: #000;     /* default BORDER color */
+	/*border-style: solid !important;*/
+	border-width: 3px 3px 3px 3px !important;
+	background-color: #690; /* #abcb46 default BACKGROUND color */
+	color: #000;            /* default TEXT color */
+	/*background-image	: url('cal_add.png') !important;*/
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	opacity:0.79;
+	filter:alpha(opacity=79);   /* For IE8 and earlier */
+}
+
+/* Wizyty ---------------------------------*/
+.slot-zajety,
+.fc-agenda .slot-zajety .fc-event-time,
+.slot-zajety a {
+    font-size: 0;              /* Napisy niewidoczne */
+}
+
+
+a.slot-zajety,
+a.slot-wolny,
+a.slot-rezerwacja
+{
+	border-radius: 4px 4px 4px 4px !important;
+	border-style: solid !important;
+	border-width: 1px 1px 1px 1px !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+
+
+a.slot-zajety
+{
+	border-color: #bf710c !important;     /* border color */
+	background-image	: url('cal_remove.png') !important;
+	background-color	: #bf710c !important;
+}
+
+
+.slot-wolny,
+.fc-agenda .slot-wolny .fc-event-time,
+.slot-wolny a {
+	font-size: 0;              /* Napisy niewidoczne */
+}
+
+a.slot-wolny
+{
+	border-color: #678f00 !important;     /* border color */
+	cursor: pointer !important;
+	background-image	: url('cal_add.png') !important;
+	background-color	: #eaf3c6 !important;
+}
+
+
+.slot-rezerwacja,
+.fc-agenda .slot-rezerwacja .fc-event-time,
+.slot-rezerwacja a {
+	font-size: 0;              /* Napisy niewidoczne */
+}
+
+a.slot-rezerwacja
+{
+	border-color: #678f00 !important;     /* border color */
+	cursor: pointer !important;
+	background-image	: url('ok.png') !important;
+	background-color: #ABCB46 !important;          /* background color */
+}
+
+a.slot-nowy,
+.fc-agenda .fc-event-time .slot-nowy,
+.slot-nowy a {
+	border-color: #668e00 !important;
+	background-color: #aaca45 !important;
+	border-radius: 4px 4px 4px 4px !important;
+	border-style: solid !important;
+	border-width: 1px 1px 1px 1px !important;
+}
+
+a.slot-zapisany,
+.fc-agenda .fc-event-time .slot-zapisany,
+.slot-zapisany a {
+	border-color: #668e00 !important;
+	background-color: #e8f1cd !important;
+	border-radius: 4px 4px 4px 4px !important;
+	border-style: solid !important;
+	border-width: 1px 1px 1px 1px !important;
+}
+
+a.slot-usuniety,
+.fc-agenda .fc-event-time .slot-usuniety,
+.slot-usuniety a {
+	border-color: #668e00 !important;
+	background-color: #c9cacb !important;
+	border-radius: 4px 4px 4px 4px !important;
+	border-style: solid !important;
+	border-width: 1px 1px 1px 1px !important;
+}
+/*
+a.termin-nowy{
+	background-image: url(termin_nowy.png);
+	background-size: 1.5em;
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 25px;
+	margin-left: 5px;
+	padding-left: 27px;
+	padding-top: 6px;
+}
+
+a.termin-zapisany{
+	background-image: url(termin_zapisany.png);
+	background-size: 1.5em;
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 25px;
+	margin-left: 5px;
+	padding-left: 27px;
+	padding-top: 6px;
+}
+
+a.termin-usuniety{
+	background-image: url(termin_usuniety.png);
+	background-size: 1.5em;
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 25px;
+	margin-left: 5px;
+	padding-left: 27px;
+	padding-top: 6px;
+}
+*/
+
+a.termin-nowy,
+a.termin-zapisany,
+a.termin-usuniety {
+	background-size: 1.5em !important;
+	background-position: left center !important;
+	background-repeat: no-repeat !important;
+	display: inline-block !important;
+	height: 25px !important;
+	margin-left: 5px !important;
+	padding-left: 27px !important;
+	padding-top: 6px !important;
+}
+
+a.termin-nowy{
+	background-image: url(termin_nowy.png);
+}
+
+a.termin-zapisany{
+	background-image: url(termin_zapisany.png);
+}
+
+a.termin-usuniety{
+	background-image: url(termin_usuniety.png);
+}
+
+.dzien-wolny{
+	background-color: #eaeaea;
+}
+
+.dzien-zastpestwo{
+	background-color: #ba6209;
+}
+
+.jedno-lokal{
+	background-color: #eaeaea;
+	margin: 3px 2px !important;
+}
+

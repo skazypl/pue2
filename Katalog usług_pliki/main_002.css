@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.dialogcontent {
+	padding: 0px !important;
+	width: 100% !important;
+	overflow-y: scroll !important;
+	height: 95% !important;
+	display: block !important;
+	background-color: white;
+}

@@ -1,0 +1,523 @@
+@charset "UTF-8";
+.hide{position:absolute;top:0;left:-10000px;width:1px;height:1px;overflow:hidden}
+.noMarginLF fieldset{margin-left:0!important;margin-right:0!important;}
+.dijitDeleteButtonInner{background-image:url(../js/dojo/dijit/themes/claro/images/dialogCloseIcon.png);background-repeat:no-repeat;background-position:-2px 53%;width:16px;border:1px solid #FFF;text-indent:-1em!important}
+.asystentDialog,.asystentDialog .dojoxFloatingPaneCanvas{background-color:transparent}
+.asystentDialog{-webkit-box-shadow:none;overflow:visible}
+.asystentDialogControlNode{width:30px;height:30px;position:absolute;right:-30px}
+.asystentDialogControlNode .dojoxFloatingCloseIcon{text-indent: -9999px;width:26px;height:26px;background:url(img/ico_zwin.png) no-repeat center center}
+.asystentDialogControlNode .dojoxFloatingCloseIcon:focus, .asystentDialogControlNode .dojoxFloatingCloseIcon:hover{text-indent: -9999px;background-image:url(img/ico_zwin_hover.png)}
+.unsupportedBrowser{font-weight:bold;color:#F00}
+.zusnpiMenuPane{width:100%;margin-bottom:2px;text-shadow:none}
+.zusnpiMenuPane .dijitFixedOpen,.zusnpiMenuPane .dijitOpen{background-color:#abcb46}
+.zusnpiMenuPane .dijitFixedClosed,.zusnpiMenuPane .dijitClosed{background-color:#d9d9d9}
+.zusnpiMenuPaneTitle{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;padding-top:3px;padding-bottom:3px;margin-bottom:2px;cursor:pointer;height:48px;border-color:#b1b1b1;border-style:solid;border-width:1px}
+.zusnpiMenuPaneTitleHover{border-color:#719007}
+.zusnpiMenuPaneTitleNode{font-size:13px;font-weight:700}
+.zusnpiMenuPaneTitleNode,.zusnpiMenuPaneSubtitleNode{display:block}
+.zusnpiMenuPaneIconNode{height:24px;width:25px;margin-top:4px;background-repeat:no-repeat}
+.zusnpiMenuPaneTextColumn{width:200px}
+.zusnpiMenu{border-style:none;margin:0;}
+.zusnpiMenu tr{margin:1px 0;padding:1px 0}
+.exampleIcon{background-image:url(img/options.jpg);background-repeat:no-repeat;background-position:center center;background-color:transparent}
+.zusnpiMenuItem td{border-radius:5px;border-color:#b1b1b1;border-style:solid;border-width:1px}
+.zusnpiMenuItem td.dijitMenuItemIconCell{border-right:hidden;border-top-right-radius:0;border-bottom-right-radius:0}
+.zusnpiMenuItem td.dijitMenuItemLabel{border-left:hidden;border-right:hidden;border-radius:0}
+.zusnpiMenuItem td.dijitMenuArrowCell{border-left:hidden;border-top-left-radius:0;border-bottom-left-radius:0}
+.zusnpiMenuItemIcon{margin-left:11px;margin-right:3px;width:13px;background-image:url(img/menu_item_b.jpg);background-repeat:no-repeat;background-position:center center;background-color:transparent}
+.menuItemActive .zusnpiMenuItemIcon{background-image:url(img/menu_item_a.jpg)}
+.zusnpiMenuItemDisabled .zusnpiMenuItemIcon{background-image:url(img/menu_item_c.jpg)}
+.zusnpiMenuItemDisabled {color : #b1b1b1;}
+.zusnpiMenuItemDisabled td{border-color:#b1b1b1}
+.zusnpiStatusBar{background-color:transparent;background-image:url(img/footer.jpg);background-repeat:repeat-x;color:#636466;margin-top:2px;height:14px;padding:4px}
+.uslugiMenuIcon{background-image:url(img/uslugi.png)}
+.wyszukiwanieMenuIcon{background-image:url(img/ico_haslo_og.png)}
+.rodzina500MenuIcon{background-image:url(img/rodz500.png); width:58px;}
+.dokumentyMenuIcon{background-image:url(img/wiad.png)}
+.zleceniaMenuIcon{background-image:url(img/zlec.png)}
+.wizytyMenuIcon{background-image:url(img/wizyty.png)}
+.wizytyMonitMenuIcon{background-image:url(img/calendar.png)}
+.wizytyKonfMenuIcon{background-image:url(img/wizyty_konf.png)}
+.ePlatnikMenuIcon{background-image:url(img/eplatnik.png)}
+.komornikMenuIcon{background-image:url(img/komor.png)}
+.lekarzMenuIcon{background-image:url(img/lekarz.png)}
+.swiadczeniobiorcaMenuIcon{background-image:url(img/swiad.png)}
+.ubezpieczonyMenuIcon{background-image:url(img/ubezp.png)}
+.eplatnikDokumentyIcon{background-image:url(img/dokum.png)}
+.eplatnikKomunikatyIcon{background-image:url(img/komunikat.png)}
+.eplatnikUbezpieczeniIcon{background-image:url(img/ubezpieczeni.png)}
+.eplatnikWiadomosciIcon{background-image:url(img/wiadom.png)}
+.panelAdministracyjnyMenuIcon{background-image:url(img/admin.png)}
+.helpIcon{width:19px;height:19px;background-repeat:no-repeat;background-image:url(img/help.png);cursor:pointer}
+.helpIcon:focus,.helpIcon:hover{background-image:url(img/help_hover.png)}
+.claro .dijitMenuItemLabel{background-image:none!important;position:inherit;background-position:left center;background-repeat:no-repeat}
+html{height:100%}
+body{background-color:#eaeaea;background-image:url(img/body_header.png), url(img/footer.jpg);background-position:center top;background-repeat:repeat-x, repeat-x;text-shadow:none;color:#212324;font-family:Tahoma, Helvetica, sans-serif;width:1024px;height:100%;margin:0 auto;padding:0}
+body.f-smaller{font-size:12px}
+body,body.default{font-size:13px}
+body.f-larger{font-size:14px}
+a{text-decoration:none;font-weight:700;color:#56595C}
+.dialogSwfContent{width:100%!important;overflow-y:scroll!important;height:98%!important;display:block!important;background-color:green;padding:0!important}
+#cit{background-image:url(img/ico_cit_og.jpg);background-repeat:no-repeat;color:#212324;display:block;font-family:Oswald,Tahoma,Helvetica,sans-serif;font-size:12px;font-weight:400;height:60px;padding-left:0;padding-right:4px;padding-top:55px;text-align:center;width:63px;float:left;margin:15px 0 15px 27px}
+#cit:focus,#cit:hover{background-image:url(img/ico_cit_og_up.jpg);text-decoration:none}
+#zus{background-image:url(img/logo_zus.jpg);background-repeat:no-repeat;background-position:top center;background-color:#eaeaea;width:245px;height:40px;padding-top:55px;text-align:center;margin-top:15px}
+#pue{background-image:url(img/logo_pue.jpg);background-repeat:no-repeat;background-position:top center;background-color:#eaeaea;width:245px;height:40px;padding-top:70px;text-align:center}
+#eplatnik{background-image:url(img/ico_platnik_og.jpg);background-repeat:no-repeat;color:#212324;display:block;font-family:Oswald,Tahoma,Helvetica,sans-serif;font-size:12px;font-weight:400;height:60px;padding-left:0;padding-right:4px;padding-top:55px;text-align:center;width:63px;float:left;margin:15px 0}
+#eplatnik:focus,#eplatnik:hover{background-image:url(img/ico_platnik_og_up.jpg);text-decoration:none}
+#npi{background-image:url(img/ico_npi_og.jpg);background-repeat:no-repeat;color:#212324;display:block;font-family:Oswald,Tahoma,Helvetica,sans-serif;font-size:12px;font-weight:400;height:60px;padding-left:0;padding-right:4px;padding-top:55px;text-align:center;width:63px;float:left;margin:15px 0}
+#npi:focus,#npi:hover{background-image:url(img/ico_npi_og_up.jpg);text-decoration:none}
+#wd{background-image:url(img/ico_wd_og.jpg);background-repeat:no-repeat;color:#212324;display:block;font-family:Oswald,Tahoma,Helvetica,sans-serif;font-size:12px;font-weight:400;height:60px;padding-left:0;padding-right:4px;padding-top:55px;text-align:center;width:63px;float:left;margin:15px 0}
+#wd:focus,#wd:hover{background-image:url(img/ico_wd_og_up.jpg);text-decoration:none}
+#a_menu_maximal{background-image:url(img/panel-max.png);background-position:right center;background-repeat:no-repeat;color:#212324;display:block;font-family:Oswald,Tahoma,Helvetica,sans-serif;font-size:120%;font-weight:400;padding-left:20px;text-align:left;margin:0}
+#dolneMenu{background-image:url(img/menu_item_1.jpg);background-repeat:no-repeat;background-position:left;padding-left:20px;padding-right:20px}
+.claro .dijitContentPane{border-style:none;padding:0}
+.claro .dijitMenuItemIcon{background-image:url(img/menu_item_2a.jpg);background-repeat:no-repeat;background-position:0 0}
+.menuContentPane .dijitMenu{background-image:none;background-color:transparent;background-position:right;background-repeat:repeat-y;border-color:#919090!important}
+.claro .dijitMenuItem td{padding-top:7px;padding-bottom:7px}
+.dijitMenuItemSelected .dijitMenuItem{background-color:transparent!important;background-image:none}
+.leftMenuPaneGroup{background-color:transparent!important;padding-left:0}
+.leftMenuPaneGroup td.dijitMenuItemLabel{width:218px}
+.claro .dijitMenuItemHover .dijitMenuItemLabel,.claro .dijitMenuItemSelected .dijitMenuItemLabel,.claro .dijitMenuItemActive .dijitMenuItemLabel{background-image:url(img/menu_item_2a_up.jpg);background-position:left center;background-repeat:no-repeat;font-weight:400}
+.claro .dojoxExpandoClosed{border:none!important}
+.leftMenuPaneGroup .dijitTitlePaneContentOuter{background-color:transparent!important;border-style:none!important}
+.leftMenuPaneGroup .dijitTitlePaneTitle{background:none!important;border-style:none!important;padding:7px 7px 7px 0}
+.leftMenuPaneGroup .dijitTitlePaneTitle .dijitTitlePaneTextNode{font-weight:700;background-image:url(img/menu_item_1.jpg);background-position:left center;background-repeat:no-repeat;padding-left:15px;margin:5px 0}
+.leftMenuPaneGroup .dijitTitlePaneTitleHover .dijitTitlePaneTextNode,.leftMenuPaneGroup .dijitFixedOpen .dijitTitlePaneTextNode{background-image:url(img/menu_item_1_up.jpg);background-position:left center;background-repeat:no-repeat;color:#6E9A1E}
+.leftMenuPaneGroup .dijitTitlePane{background:url(img/h-line.jpg) repeat-x scroll bottom center transparent;padding-bottom:5px}
+.lastItem{background:none;padding-bottom:5px}
+.dijitContentPane .mainContentPane{background-color:transparent!important;background-position:left;background-repeat:repeat-y;border-style:none!important;margin:0 0 0 3px;padding:0}
+.dijitContentPane .mainContentPane .ePlatnikPane{background-image:url(img/platnik_bkg.png);background-position:center 34px;background-repeat:no-repeat}
+.zusnpiMainContentPaneCenter{background-color:#FFF;border-right:1px solid #CFCFCF!important;border-left:1px solid #CFCFCF!important;padding-left:5px!important;padding-right:5px!important}
+.claro .zusnpilayoutTitlePane .dijitContentPane{background:none;overflow:hidden;margin:0;padding:0}
+.claro .dijitTitlePaneContentInner{padding:0}
+.claro .dijitTitlePaneContentOuter{background:transparent!important;border:1px solid #b5bcc7;border-top:none;border-bottom:none}
+.claro .dijitTitlePaneTitleFocus{margin-top:1px;margin-bottom:2px;background:none;min-height:18px;padding:2px 3px 3px 7px}
+.zusnpiGridContainer{-moz-border-radius:3px;-webkit-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;background-color:#AACA45!important;margin:6px 0 10px;padding:0 0 2px!important}
+.dojoxPortlet{margin-bottom:0!important}
+.claro .zusnpiGridContainer .dijitTitlePaneContentInner{background-color:#fff;padding:0}
+.zusnpiGridContainer .dijitTitlePaneTextNode,.zusnpiGridContainer .dijitTitlePaneFocused .dijitTitlePaneTextNode{color:#000!important;text-shadow:none}
+.claro .dijitTitlePaneTitle{background-color:#AACA45;background-image:none;border-color:#C9CACB;padding:0}
+.claro .dijitTitlePaneTextNode{display:block;font-weight:700;padding-top:2px}
+.zusnpilayoutTitlePaneTitle_ShowIcon{display:inline!important;width:16px;height:16px}
+.claro .zusnpiContentPaneTitle .dijitContentPane{background:red;border-radius:6px 6px;-moz-border-radius:6px;-webkit-border-radius:6px 6px;padding:25px 0}
+.zusnpiContentPaneBody{background:#FF0;border:none;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;padding:0}
+.dojoxExpandoTitle{border-style:none!important}
+.dijitGutterV{background-color:transparent!important;width:0!important}
+.mainContentPane .dijitGutterV{background:none!important;width:1px!important}
+.dijitSelectMenu .dijitMenuTable{width:100%;border-collapse:collapse}
+.dijitSelectMenu .dijitSelectSelectedOption *{font-weight:400}
+.claro .dijitMenuPane#cit{background-color:#fff;background-image:url(img/ico_cit_green.jpg);background-repeat:no-repeat;background-position:0 0}
+.claro .dijitMenuActive .dijitMenuItemHover{background-color:#E7F1CE;color:#000!important;font-weight:700;border-color:#C9CBBD!important;border-style:solid none!important;border-width:1px}
+.dijitReset .dijitMenuSeparator{background:none;height:1px}
+.dijitReset .dijitMenuSeparator .dijitMenuSeparatorTop{border-style:none;margin:0}
+.dijitReset .dijitMenuSeparator .dijitMenuSeparatorBottom{border:none;margin:0}
+.claro .dojoxGrid{background:none;font-family:Tahoma,Helvetica,sans-serif;border-style:none}
+.dojoxGridFStatusTipDialog{display:none;}
+.dojoxGridView{left:0!important}
+.claro .dojoxGridRow{background-color:transparent;background-image:none}
+.claro .dojoxGridMasterHeader{background-image:none;background-color:#EAEAEA;border-bottom-color:#c9cacb;filter:none;border-style:none}
+.claro .zusnpiTitlePaneFHCC .dojoxGridMasterHeader{background-image:none;background-color:#EAEAEA;border-bottom-color:#c9cacb;margin-left:0;filter:none;border-style:none}
+.claro .zusnpiTitlePaneFHCC{background-color:#EAEAEA;border-left:1px #C9CACB solid;border-right:1px #C9CACB solid}
+.claro .dojoxGridSortNode{font-weight:400;text-shadow:none}
+.claro .dojoxGridHeader .dojoxGridCell,.claro .dojoxGridHeader .dojoxGridCellOver{text-align:center;vertical-align:middle;background:none;border-left-width:0;border-top-width:0;border-color:#EAEAEA #C9CACB #C9CACB #EAEAEA}
+.claro .dojoxGridCell,.claro .dojoxGridCellOver{border-left-width:0;border-top-width:0}
+.claro .dojoxGridHeader tr:first-child .dojoxGridCell{border-top-width:0;border-left-width:0}
+.claro .dojoxGridRowSelected .dojoxGridCell{border-bottom-color:#e5dac8;border-top-width:0}
+.claro .dojoxGridCellFocus{border-bottom:1px solid #e5dac8!important;border-right:1px solid #e5dac8!important;border-top-width:0!important;border-left-width:0!important}
+.claro .dojoxGridFBar{background-image:none!important;background-color:#eaeaea;border-bottom:1px #C9CACB solid;border-left:none}
+.dojoxGridFBarInfoTD{background:none!important;border:none!important}
+.claro .dojoxGridRowTable tr{background-color:#FFF;background-image:none}
+.claro .dojoxGridRowOdd .dojoxGridRowTable tr{background-color:#F7F7F7;background-image:none}
+.claro .dojoxGridRowOver .dojoxGridCell{background-color:#E8F1CD;background-image:none;border-bottom-color:#aaca45;border-top-color:#aaca45;border-top-width:0}
+.claro .dojoxGridCellFocus .dojoxGridRowOver,.claro .dojoxGridRowOver .dojoxGridCellFocus,.dojoxGridRowOver.dojoxGridCellFocus,.dojoxGridCellFocus.dojoxGridRowOver{border-bottom:1px solid #aaca45!important;border-top:0 solid #aaca45!important;border-left:0 solid transparent!important}
+.dojoxGridDescription{color:#212324;font-family:Tahoma, Helvetica, sans-serif;font-weight:700;text-shadow:none}
+.dojoxGridActivedSwitch{color:#212324;font-family:Tahoma, Helvetica, sans-serif;font-weight:700;cursor:pointer;float:left;text-shadow:none;margin:1px 4px 0}
+.dojoxGridInactiveSwitch{color:#C76301;font-family:Tahoma, Helvetica, sans-serif;font-weight:700;cursor:pointer;float:left;text-shadow:none;margin:1px 4px 0}
+.dojoxGridPaginatorGotoDiv{background-image:url(img/ico_navi_og_gotoside.jpg);background-repeat:no-repeat;background-position:0 0;background-color:transparent;cursor:pointer;height:16px!important;width:13px!important;margin:4px 6px 0 2px}
+.dojoxGridfirstPageBtnDisable{background-image:url(img/ico_navi_og_first.jpg);background-repeat:no-repeat;background-position:0 0;background-color:transparent;float:left;height:12px!important;width:14px!important;margin-top:2px;margin-left:2px;margin-right:2px}
+.dojoxGridfirstPageBtn{background:url(img/ico_navi_og_first_up.jpg);background-repeat:no-repeat;background-position:0 0;background-color:transparent;float:left;height:12px!important;width:14px!important;margin-top:2px;margin-left:2px;margin-right:2px}
+.dojoxGridprevPageBtnDisable{background:url(img/ico_navi_og_prev.jpg);background-repeat:no-repeat;background-position:0 0;background-color:transparent;float:left;height:12px!important;width:6px!important;margin-top:2px;margin-left:2px;margin-right:25px}
+.dojoxGridprevPageBtn{background:url(img/ico_navi_og_prev_up.jpg);background-repeat:no-repeat;background-position:0 0;background-color:transparent;float:left;height:12px!important;width:6px!important;margin-top:2px;margin-left:2px;margin-right:25px}
+.dojoxGridnextPageBtnDisable{background:url(img/ico_navi_og_next.jpg);background-repeat:no-repeat;background-position:top right;background-color:transparent;float:left;height:12px!important;width:14px!important;margin-top:2px;margin-left:17px;margin-right:4px}
+.dojoxGridnextPageBtn{background:url(img/ico_navi_og_next_up.jpg);background-repeat:no-repeat;background-position:top right;background-color:transparent;float:left;height:12px!important;width:14px!important;margin-top:2px;margin-left:17px;margin-right:4px}
+.dojoxGridlastPageBtnDisable{background:url(img/ico_navi_og_last.jpg);background-repeat:no-repeat;background-position:0 0;background-color:transparent;float:left;height:12px!important;width:14px!important;margin-top:2px;margin-left:0;margin-right:16px}
+.dojoxGridlastPageBtn{background:url(img/ico_navi_og_last_up.jpg);background-repeat:no-repeat;background-position:0 0;background-color:transparent;float:left;height:12px!important;width:14px!important;margin-top:2px;margin-left:0;margin-right:16px}
+.dojoxGridActived{color:#212324;font-family:Tahoma, Helvetica, sans-serif;font-weight:700;text-shadow:none;cursor:pointer;float:left;text-decoration:none!important;margin:1px 3px 0}
+.dojoxGridInactived{color:#C76301;font-family:Tahoma, Helvetica, sans-serif;font-weight:700;cursor:pointer;float:left;margin:1px 3px 0}
+.tundra .dojoxPortlet .dijitClosed .dojoxArrowDown,.soria .dojoxPortlet .dijitClosed .dojoxArrowDown,.nihilo .dojoxPortlet .dijitClosed .dojoxArrowDown,.claro .dojoxPortlet .dijitClosed .dojoxArrowDown{background-image:url(img/min_to_bottom.png);background-color:transparent;background-repeat:no-repeat;background-position:0 0!important;width:19px;height:19px}
+.tundra .dojoxPortlet .dijitOpen .dojoxArrowDown,.soria .dojoxPortlet .dijitOpen .dojoxArrowDown,.nihilo .dojoxPortlet .dijitOpen .dojoxArrowDown,.claro .dojoxPortlet .dijitOpen .dojoxArrowDown{background-image:url(img/min_to_top.png);background-color:transparent;background-repeat:no-repeat;background-position:0 0!important;width:19px;height:19px}
+.claro .dojoxGridPaginator{background-image:none;background-color:#eaeaea;border-bottom:1px solid #C9CACB;padding-top:3px;padding-bottom:3px}
+.zusnpilayoutTitlePane .zusnpilayoutTabContainer{width:100%;height:100%}
+.zusnpilayoutTitlePane .zusnpilayoutTableContainer-labelCell{text-align:right;background-color:#FFF}
+.zusnpilayoutTitlePane .zusnpilayoutTableContainer-valueCell{text-align:left;background-color:#FFF}
+h1{font-weight:400;font-size:200%;font-family:Cuprum, Tahoma, Helvetica, sans-serif;margin:0}
+.zusnpiPageTitlePaneH1 h1{font-size:16px;font-family:Oswald, Tahoma, Helvetica, sans-serif}
+h2{font-weight:400;font-size:190%;font-family:Cuprum, Tahoma, Helvetica, sans-serif;margin:0}
+.dijitTitlePaneTitleFocus h2{font-size:100%!important}
+h3{font-weight:400;font-size:180%;font-family:Cuprum, Tahoma, Helvetica, sans-serif;margin:0}
+h4{font-weight:400;font-size:170%;font-family:Cuprum, Tahoma, Helvetica, sans-serif;margin:0}
+h5{font-weight:400;font-size:160%;font-family:Cuprum, Tahoma, Helvetica, sans-serif;margin:0}
+h6{font-weight:400;font-size:150%;font-family:Cuprum, Tahoma, Helvetica, sans-serif;margin:0}
+a:focus,a:hover{color:#000;text-decoration:underline;cursor:pointer}
+a.linkDisabled{text-decoration:none;font-weight:700;color:#56595C;cursor:default}
+a.orange_arr{background-image:url(img/arrow.png);background-repeat:no-repeat;background-position:right center;color:#c76301;cursor:pointer;font-weight:700;padding-right:10px;text-decoration:none}
+a:focus,a:link,a:hover,a:visited{border:0;outline:0}
+p{padding:8px 0}
+.border-line{width:1px;background-color:#f8f8f8}
+.main-menu-title{background-color:#eaeaea;font-size:50%}
+.main-menu-title01{background-image:url(img/menu-header_01.jpg);background-repeat:no-repeat;width:13px;height:10px}
+.main-menu-title02{background-image:url(img/menu-header_02.jpg);width:13px;height:10px;background-repeat:repeat-x}
+.main-menu-title03{background-image:url(img/menu-header_03.jpg);width:21px;height:10px;background-repeat:no-repeat}
+.main-menu-title04{background-image:url(img/menu-header_04.jpg);width:13px;height:33px;background-repeat:repeat-y}
+.main-menu-title05{background-image:url(img/menu-header_05.jpg);width:21px;height:33px;background-repeat:repeat-y}
+.main-menu-title06{background-image:url(img/menu-header_06.jpg);width:13px;height:10px;background-repeat:no-repeat}
+.main-menu-title07{background-image:url(img/menu-header_07.jpg);background-repeat:repeat-x}
+.main-menu-title08{background-image:url(img/menu-header_08.jpg);width:21px;height:10px;background-repeat:no-repeat}
+.main-menu-title09{background-image:url(img/menu-header_09.jpg);width:13px;height:4px;background-repeat:no-repeat}
+.main-menu-title10{background-image:url(img/menu-header_10.jpg);width:226px;height:4px;background-repeat:no-repeat;background-color:#eaeaea}
+.main-menu-title11{background-image:url(img/menu-header_11.jpg);background-repeat:repeat-x}
+.main-menu-title12{background-image:url(img/menu-header_12.jpg);background-repeat:no-repeat;width:21px;height:4px}
+a.menu-minimal{background-image:url(img/menu_minimal.jpg);background-repeat:no-repeat;background-position:left center;padding-left:15px;font-weight:400;font-size:190%;font-family:Oswald, Tahoma, Helvetica, sans-serif;color:#212324;display:block;margin:0}
+a.menu-maximal{background-image:url(img/menu_maximal.jpg);background-repeat:no-repeat;background-position:left center;padding-left:15px;font-weight:400;font-size:190%;font-family:Cuprum, Tahoma, Helvetica, sans-serif;color:#212324;display:block;margin:0}
+a.menu-font-size{background-image:url(img/font-size.jpg);background-repeat:no-repeat;background-position:right top;padding-bottom:3px;padding-right:30px;padding-left:5px}
+a.menu-settings{background-image:url(img/options.jpg);background-repeat:no-repeat;background-position:right top;padding-bottom:3px;padding-right:25px}
+a.menu-logout{background-image:url(img/logout.jpg);background-repeat:no-repeat;background-position:right top;padding-bottom:3px;padding-left:5px;padding-right:20px;margin-right:20px}
+a.menu-contrast{background-image:url(img/view.png);background-repeat:no-repeat;background-position:right top;padding-bottom:3px;padding-right:30px;padding-left:5px}
+a.menu-wd{background-image:url(img/ico_wd.png);background-position:right center;background-repeat:no-repeat;color:#4F4C54;display:inline-block;font-size:11px;height:20px;margin-left:16px;padding-right:31px;padding-top:6px;text-decoration:none;text-shadow:none;cursor:pointer}
+a.menu-wd:focus,a.menu-wd:hover{background-image:url(img/ico_wd_hover.png);text-decoration:underline}
+a.menu-pytanie{background-image:url(img/ico_zad_pyt.png);background-position:right center;background-repeat:no-repeat;color:#4F4C54;display:inline-block;font-size:11px;height:20px;margin-left:16px;padding-right:31px;padding-top:6px;text-decoration:none;text-shadow:none;cursor:pointer}
+a.menu-pytanie:focus,a.menu-pytanie:hover{background-image:url(img/ico_zad_pyt_hover.png);text-decoration:underline}
+a.menu-cit{background-image:url(img/ico_cit.png);background-position:right center;background-repeat:no-repeat;color:#4F4C54;display:inline-block;font-size:11px;height:20px;margin-left:16px;padding-right:31px;padding-top:6px;text-decoration:none;text-shadow:none;cursor:pointer}
+a.menu-cit:focus,a.menu-cit:hover{background-image:url(img/ico_cit_hover.png);text-decoration:underline}
+a.skype-cot{background-image:url(img/ico_skype_on.png);background-position:right center;background-repeat:no-repeat;font-size:11px;height:20px;margin-left:16px;padding-right:31px;padding-top:8px;padding-bottom:8px;text-decoration:none;text-shadow:none;cursor:pointer}
+a.skype-cot:focus,a.skype-cot:hover{background-image:url(img/ico_skype_on_hover.png);text-decoration:underline}
+#tabs{width:100%;list-style:none;display:inline-block;margin:0;padding:0}
+#tabs li{float:left;margin:0}
+#tabs li a{border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;background-position:center bottom;background-repeat:repeat-x;background-image:url(img/tab_02.png);border-top:1px #696969 solid;border-left:1px #696969 solid;border-right:1px #696969 solid;display:block;height:19px;font-weight:700;font-size:11px;line-height:21px;margin-top:5px;text-shadow:none;text-decoration:none;cursor:pointer;padding:0 15px}
+#tabs li.eplatnik a{background-image:url(img/tab_08.png);color:#fff}
+#tabs li a:focus,#tabs li a:hover{color:#000;text-decoration:underline}
+#tabs li span{border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;background-position:center bottom;background-repeat:repeat-x;background-image:url(img/tab_02.png);display:block;height:19px;font-weight:700;font-size:11px;line-height:26px;margin-top:5px;text-shadow:none;text-decoration:none;cursor:default;border-left:1px solid #696969;border-right:1px solid #696969;padding:0 15px}
+#tabs .selected{background-image:url(img/tab_05.png);height:22px;margin-top:3px;color:#000}
+#tabs .selected:focus,#tabs .selected:hover{background-image:url(img/tab_05.png);height:22px;margin-top:2px}
+.claro .dijitTabContainerTop-tabs .dijitTabInnerDiv,.claro .dijitTabContainerTop-tabs .dijitTabContent{border-radius:4px 4px 0 0}
+.claro .dijitTabContainerTop-tabs .dijitTab{padding-top:6px;margin-right:0}
+.claro .dijitTabContainerTop-tabs .dijitTabChecked .dijitChecked{padding-top:12px!important}
+.claro .dijitTabContainerTop-tabs .dijitTabChecked .dijitTab{padding-top:3px}
+.claro .dijitTabContainerTop-tabs .dijitTabContent{background-image:url(img/tab_02c.png);background-position:center bottom;height:14px;border-style:none solid;padding:3px 6px}
+.claro .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabContent{background-image:url(img/tab_05c.png);background-position:center bottom;border-style:none solid;padding:6px 6px 4px}
+.dijitTab .tabLabel{font-weight:700;font-size:11px;text-shadow:none;padding:2px 0 0}
+.claro .dijitTabCloseButton{margin-left:0;margin-right:0}
+.claro .dijitTabStripIcon{background:url(form/images/buttonArrows.png) no-repeat scroll -75px 50% transparent;height:15px;width:15px;margin:0 auto}
+.claro .dijitTabStripSlideRightIcon,.claro .tabStripButtonDisabled .dijitTabStripSlideRightIcon{background-image:url(img/panel-max.png);background-position:0 0;height:16px;width:16px}
+.claro .dijitTabStripSlideLeftIcon,.claro .tabStripButtonDisabled .dijitTabStripSlideLeftIcon{background-image:url(img/panel-min.png);background-position:0 0;height:16px;width:16px}
+.claro .dijitTabStripMenuIcon{background-image:url(img/panel-max-down.png);background-position:0 0;height:16px;width:16px}
+.claro .dijitTabListContainer-top .tabStripButton{background-color:transparent;background-image:none}
+.claro .dijitTabListContainer-top .tabStripButtonDisabled,.claro .dijitTabListContainer-bottom .tabStripButtonDisabled{background-color:transparent;border:none;border-bottom:1px solid #B5BCC7}
+.claro .tabStripButton{background-color:transparent!important;border:none;border-bottom:1px solid #B5BCC7}
+.claro .dijitTabContainerTop-dijitContentPane,.claro .dijitTabContainerLeft-dijitContentPane,.claro .dijitTabContainerBottom-dijitContentPane,.claro .dijitTabContainerRight-dijitContentPane,.claro .dijitAccordionContainer-dijitContentPane{background-color:#fff}
+.dijitTabListWrapper{height:35px!important}
+.claro .dijitTabPaneWrapper{background:none repeat scroll 0 0 #fff;border-style:solid none}
+.claro .dijitTabContainerTop-tabs .dijitTabInnerDiv{margin-left:2px}
+.zusnpiTextBlock{padding-bottom:7px}
+#mainTabContainer .dijitTabPaneWrapper{border-style:solid}
+a.works-minimal{background-image:url(img/menu_maximal.jpg);background-repeat:no-repeat;background-position:right center;padding-right:15px;font-weight:400;font-size:190%;font-family:Cuprum, Tahoma, Helvetica, sans-serif;color:#212324;display:block;text-align:right;margin:0}
+a.works-maximal{background-image:url(img/menu_minimal.jpg);background-repeat:no-repeat;background-position:right center;padding-right:15px;font-weight:400;font-size:190%;font-family:Cuprum, Tahoma, Helvetica, sans-serif;color:#212324;display:block;text-align:right;margin:0}
+.works-header01{background-image:url(img/works-header_01.jpg);background-repeat:no-repeat;width:21px;height:10px}
+.works-header02{background-image:url(img/works-header_02.jpg);background-repeat:repeat-x}
+.works-header03{background-image:url(img/works-header_03.jpg);width:13px;height:10px;background-repeat:repeat-x}
+.works-header04{background-image:url(img/works-header_04.jpg);width:750px;height:33px;background-repeat:repeat-y}
+.works-header05{background-image:url(img/works-header_05.jpg);width:13px;height:1px;background-repeat:repeat-y}
+td.head-menu-item-og-01{background-image:url(img/head_menu_item_ub_01.gif);background-repeat:no-repeat;background-position:right center;padding-left:18px;width:3px}
+.footer-heade	/*wydłużenie stopki*/{width:729px}
+.works-footer{background-image:url(img/works-footer.jpg);width:707px;height:4px;background-repeat:no-repeat;color:#eaeaea}
+.works-header06{background-image:url(img/works-header_06.jpg);width:21px;height:10px;background-repeat:no-repeat}
+.works-header07{background-image:url(img/works-header_07.jpg);background-repeat:repeat-x}
+.works-header08{background-image:url(img/works-header_08.jpg);width:13px;height:10px;background-repeat:no-repeat}
+.works-header09{background-image:url(img/works-header_09.jpg);width:21px;height:4px;background-repeat:no-repeat}
+.works-header10{background-image:url(img/works-header_10.jpg);background-repeat:repeat-x}
+.works-header11{background-image:url(img/works-header_11.jpg);width:707px;height:4px;background-repeat:no-repeat;color:#eaeaea}
+.works-header12{background-image:url(img/works-header_12.jpg);width:13px;height:4px;background-repeat:no-repeat}
+.footer-header01{background-image:url(img/footer-header_01.jpg);background-repeat:no-repeat;width:21px;height:10px}
+.footer-header02{background-image:url(img/footer-header_02.jpg);background-repeat:repeat-x}
+.footer-header03{background-image:url(img/footer-header_03.jpg);width:13px;height:10px;background-repeat:repeat-x}
+.footer-header04{background-image:url(img/footer-header_04.jpg);width:21px;height:33px;background-repeat:repeat-y}
+.footer-header05{background-image:url(img/footer-header_05.jpg);width:13px;height:1px;background-repeat:repeat-y}
+.footer-header06{background-image:url(img/footer-header_06.jpg);width:21px;height:10px;background-repeat:no-repeat}
+.footer-header07{background-image:url(img/footer-header_07.jpg);background-repeat:repeat-x}
+.footer-header08{background-image:url(img/footer-header_08.jpg);width:13px;height:10px;background-repeat:no-repeat}
+.footer-header09{background-image:url(img/footer-header_09.jpg);width:21px;height:4px;background-repeat:no-repeat}
+.footer-header10{background-image:url(img/footer-header_10.jpg);background-repeat:repeat-x}
+.footer-header11{background-image:url(img/footer-header_11.jpg);height:4px;background-repeat:no-repeat;color:#eaeaea}
+.footer-header12{background-image:url(img/footer-header_12.jpg);width:13px;height:4px;background-repeat:no-repeat}
+.cit .dijitTitlePaneTitleHover .dijitTitlePaneTextNode,.cit .dijitFixedOpen .dijitTitlePaneTextNode,.cit .dijitTitlePaneTitle .dijitTitlePaneTextNode{background:none;background-repeat:no-repeat;background-image:none;font-family:Oswald,Tahoma,Helvetica,sans-serif;font-weight:400;text-shadow:1px 1px 0 #FFF;color:#212324;border:none}
+legend{font-weight:700;background-color:#AACA45;color:#000;text-shadow:0 0 0;border-radius:6px 6px;-moz-border-radius:6px;-webkit-border-radius:6px 6px;padding:3px 10px}
+fieldset{-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;border:1px solid #CFCFCF;background-color:#f5f5f5;margin:10px;padding:11px}
+.claro .dijitComboBox .dijitArrowButtonInner,.claro fieldset .dijitComboBox .dijitArrowButtonInner
+/* strzalka do rozwijania Combo Boxa */{height:21px!important;-moz-border-radius:0 5px 5px 0}
+.claro .dijitComboBox .dijitButtonNode,.claro fieldset .dijitComboBox .dijitButtonNode
+/* strzalka do rozwijania Combo Boxa */{-moz-border-radius:0 6px 6px 0;height:27px}
+.claro .dijitComboBoxMenu .dijitMenuItemSelected{background-color:#E7F1CE;color:#000;font-weight:400;border-color:#C9CBBD}
+.claro .dijitTextBox,.claro fieldset .dijitTextBox{height:27px;-moz-border-radius:6px}
+.dj_gecko .claro .dijitTextBox .dijitInputInner,.dj_webkit .claro .dijitTextBox .dijitInputInner{height:20px;padding:2px}
+.dijitTextBox input{float:left}
+.claro .dijitTextBoxReadOnly, .claro .dijitTextBoxReadOnly .dijitInputContainer{background-color:#EEF2E1;}
+.claro .dijitTextBox .dijitInputField{height:22px;margin:1px 2px}
+.claro .dijitTextBoxError,.claro .dijitTextBoxError .dijitButtonNode{color:red;border-color:red}
+.claro .dijitTextBoxWarn,.claro .dijitTextBoxWarn .dijitButtonNode{border-color:#f5d709;}
+fieldset form>table td:first-child{padding-right:10px}
+fieldset form>div{padding-right:8%;padding-left:5%}
+.colspanTableContainer-table{padding:0 20px;}
+fieldset .colspanTableContainer-table[cols="2"]{}
+fieldset .tableContainer-labelCell{text-align:right;color:#6A6B6B;text-shadow:1px 1px 0 #FFF}
+fieldset .tableContainer-valueCell{text-align:left;width:200px}
+fieldset .dijitTableLayout[cols="2"] .colspanTableContainer-table .tableContainer-labelCell{width: 10%;}
+fieldset .dijitTableLayout[cols="2"] .colspanTableContainer-table .tableContainer-valueCell{width: 40%;}
+fieldset .dijitTableLayout[cols="2"] .colspanTableContainer-table .tableContainer-valueCell[colspan="2"]{width: 90%;}
+.dijitTableLayout[cols="3"] .colspanTableContainer-table .tableContainer-labelCell{width: 10%;}
+.dijitTableLayout[cols="3"] .colspanTableContainer-table .tableContainer-valueCell{width: 23%;}
+fieldset .dijitTableLayout[cols="4"] .colspanTableContainer-table .tableContainer-labelCell{width: 10%;}
+fieldset .dijitTableLayout[cols="4"] .colspanTableContainer-table .tableContainer-valueCell{width: 15%;}
+fieldset .dijitTableLayout[cols="4"] .colspanTableContainer-table .tableContainer-valueCell[colspan="3"]{width: 40%;}
+fieldset .dijitTableLayout[cols="4"] .colspanTableContainer-table .tableContainer-valueCell[colspan="5"]{width: 65%;}
+fieldset .dijitTableLayout[cols="4"] .colspanTableContainer-table .tableContainer-valueCell[colspan="7"]{width: 90%;}
+/*fieldset .tableContainer-valueCell[class*="colspanTableContainer"]{width:12.5%;}*/
+/*fieldset .tableContainer-valueCell[class*="colspanTableContainer"][colspan="2"]{width:25%;}*/
+/*fieldset .tableContainer-valueCell[class*="colspanTableContainer"][colspan="3"]{width:37.5%;}*/
+/*fieldset .tableContainer-labelCell[class*="colspanTableContainer"]{width:12.5%;}*/
+[class*="colspanTableContainer"] .dijitTextBox{width:100%;}
+.claro .dijitButton .dijitButtonNode{background-image:url(img/button2.png);width:auto;height:20px!important;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;background-position:0 0;border-color:#696969;border-style:none solid;padding:0 5px 2px}
+.dojoxFileInput .dojoxInputNode{cursor:pointer!important}
+a:focus img[title="Pomoc"] {border: 1px white solid}
+.claro .dijitButton .dijitButtonNode:focus,.claro .dijitButtonNode .dijitButtonFocused,.claro .dijitButton .dijitButtonNode:hover{background-image:url(img/button2_hover.png);color:#FFF;height:20px!important;background-position:0 0;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-color:#000;border-style:none solid;padding:0 5px 2px}
+.claro .dijitButtonText{font-weight:700;font-size:12px;padding-top:3px;padding-left:8px;padding-right:8px;color:#4f4c54;text-shadow:0 0 0 #212324}
+.claro .dijitButtonText:focus,.claro .dijitButtonText:hover{color:#4f4c54}
+.claro .dijitDropDownButton .dijitButtonNode,.claro .dijitComboButton .dijitButtonNode{background-image:url(img/button2.png);height:20px!important;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-color:#859555;border-style:none solid;padding:0 7px 2px 2px}
+.claro .dijitButton .dijitButtonNode,.claro .dijitDropDownButton .dijitButtonNode,.claro .dijitComboButton .dijitButtonNode,.claro .dijitToggleButton .dijitButtonNode{box-shadow:none}
+.claro .dijitArrowButtonInner{border-left:1px solid #96A855;height:17px}
+.claro .dijitButtonDisabled .dijitButtonNode{background-image:url(img/button2_gray.png);background-color:#fff;border:1px solid #696969;border-style:none solid}
+.claro .dijitButtonDisabled .dijitButtonNode:focus,.claro .dijitButtonDisabled .dijitButtonNode:hover{background-image:url(img/button2_gray.png);text-shadow:0 0 0 #212324;border-color:#696969}
+.claro .dijitSelect{height:30px;-moz-border-radius:6px;border-radius:6px}
+.claro .dijitSelect .dijitButtonContents{height:29px;padding-right:3px;padding-left:3px;border:none;-moz-border-radius:6px 0 0 6px;border-color:#CFCFCF!important}
+.claro .dijitSelectHover .dijitButtonContents{background-color:transparent;border-color:#CFCFCF!important}
+.claro .dijitSelect .dijitArrowButton{border-radius:0 6px 6px 0;-moz-border-radius:0 6px 6px 0;-webkit-border-radius:0 6px 6px 0;border:none;background-color:transparent;background-image:none;padding:0 1px}
+.claro .dijitSelect .dijitArrowButton .dijitArrowButtonInner{border:1px solid #707070;margin-right:3px;background-color:#f1f1f1;margin-bottom:1px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
+.zusButtonLight{background-image:url(img/button2_grid.png);width:auto;height:20px;border-radius:4px!important;-moz-border-radius:4px!important;-webkit-border-radius:4px!important;border:1px #7E942C solid;border-style:none solid}
+.zusButtonLightDisabled{background-image:url(img/button2_grid_gray.png);border-color:#B5B5B5}
+.zusButtonLightHover{background-image:url(img/button2_grid_hover.png)}
+.zusButtonLight .dijitButtonText{color:#56595C;font-size:11px;font-weight:400;height:16px;margin-top:1px}
+.zusButtonLightHover .dijitButtonText{margin-top:1px;font-size:11px;color:#212223!important}
+.tableContainer-labelCell{color:#212324;text-align:right;padding:6px 15px 0}
+.tableContainer-valueCell{font-style:normal;text-decoration:none;padding:6px 0 0}
+.zusnpiButtonsContainer{text-align:center;float:none; overflow: hidden;}
+.zusnpiButtonsContainer .zusButtonWithContentRightColumnFloatToLeft{width:260px;display:block;margin:1px 0 0 14px}
+.zusnpiButtonsContainer .dijitButton .dijitButtonNode{-moz-border-radius:6px;-webkit-border-radius:6px;background:#F2F7E1;border-radius:6px;border:1px #DBE4AD solid;color:#212324;font-weight:400;height:48px!important;margin-bottom:5px;text-align:left}
+.zusnpiButtonsContainer .dijitButton .dijitButtonNode:focus,.zusnpiButtonsContainer .dijitButton .dijitButtonNode:hover{-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;background:#E8F2CD;border:1px #DBE4AD solid;height:48px!important;margin-bottom:5px}
+.zusnpiButtonsContainer .dijitButtonText{color:#212324;padding:0}
+.zusnpiButtonsContainer .zusButtonWithContentIconLargeText{font-size:100%;text-shadow:none;padding-left:5px;padding-top:10px;padding-bottom:0;line-height:25px}
+.zusnpiButtonsContainer .zusButtonWithContentIconSmallText{font-size:12px;font-weight:400;text-shadow:none;padding-left:5px;padding-top:0;padding-bottom:10px}
+.zusnpiButtonsContainer .zusButtonWithContentWrapSize{width:auto;height:auto}
+.zusnpiButtonsContainer .zusButtonWithContentWrapOut{float:none;position:relative;top:0;bottom:0;padding:11px 5px 5px 10px}
+.zusnpiButtonsContainer .zusButtonWithContentWrapIn{top:3px;bottom:0;position:relative}
+.zusnpiButtonsContainer .zusButtonWithContentLeftColumnFloatToRight{width:46px;height:38px;vertical-align:middle}
+.zusnpiButtonsContainer .dijitButtonDisabled .dijitButtonText:focus,.zusnpiButtonsContainer .dijitButtonDisabled .dijitButtonNode:focus,.zusnpiButtonsContainer .dijitButtonDisabled .dijitButtonText:hover,.zusnpiButtonsContainer .dijitButtonDisabled .dijitButtonNode:hover{background-image:none;background-color:#F2F7E1}
+.zusnpiButtonsContainer .dijitButtonDisabed .dijitButtonNode:focus,.zusnpiButtonsContainer .dijitButtonDisabed .dijitButtonNode:hover{background:#F2F7E1}
+.claro .dijitDialog{border:1px solid #C9CACB;border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0}
+.claro .dijitDialogPaneContent{border-top:none;background-color:#FFF}
+.claro .dijitDialogTitleBar{background-image:none;background-color:#AACA45;border:none;min-height:20px}
+.claro .dijitDialogTitle{color:#000;text-shadow:none;font-weight:700;font-size:13px;text-align:left;vertical-align:middle;margin:0;padding:5px}
+.zusnpiPageTitle{padding:8px 0 0!important}
+.zusnpiPageIcon{vertical-align:middle;float:left;margin-right:4px}
+.zusnpiPageTitle div{padding:3px 0 0 15px}
+.zusnpiPageTitle h1{font-family:Oswald, Tahoma, Helvetica, sans-serif;font-size:130%;font-weight:400;text-transform:uppercase}
+.zusnpiPageTitleRightContent h1{font-family:Oswald, Tahoma, Helvetica, sans-serif;font-size:130%;font-weight:400;text-transform:uppercase;margin-top:9px}
+.zusnpiPageTitleRightContent hr{background:url(img/h-line.jpg) repeat-x scroll 0 0 transparent;border:none;height:2px;clear:both;margin:0 10px 1px 0}
+.zusnpiPageTitlePane{background-color:#6A6B6B;color:#fff;font-size:16px;text-shadow:0 0 1px #000;font-family:Oswald, Tahoma, Helvetica, sans-serif;text-transform:uppercase;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;margin:0;padding:0}
+.zusnpiPageTitlePane table{margin:6px 0 3px 16px;padding:0}
+.zusnpiPageTitlePane img{vertical-align:bottom;margin:0 0 2px 6px}
+.zusnpiChangeContextPane{background-color:#fff;padding-top:3px;padding-bottom:3px;border-bottom:1px solid #CFCFCF!important}
+.zusnpiChangeContextPane table{margin:0}
+.zusnpiChangeContextPaneChange{cursor:pointer;margin-top:8px;margin-right:5px;color:#a54625}
+.zusnpiChangeContextPaneChange:focus,.zusnpiChangeContextPaneChange:hover{color:#a54625;text-decoration:underline}
+.zusnpiChangeContextPaneLabel{margin-top:6px;text-shadow:none}
+.zusnpiChangeContextPaneValue{margin-top:6px;font-weight:700}
+.dijitContentPane .zusnpiMainContentPane{background-color:#fff;border:none;-moz-border-radius:5px;-webkit-border-radius:5px 5px 5px 5px;border-radius:5px 5px 5px 5px;margin:0;padding:0}
+#shit{width:708px;height:73px;padding:0}
+.zusnpiInfoField{margin-bottom:5px;width:100%;text-align:left;border:1px #cbcbcb solid;background:#fff;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;padding:1px 8px 2px}
+.dijitTitlePaneContentInner .zusnpiInfoField{width:98%;margin:5px}
+.zusnpimessagebox .zusnpiInfoField{width:100%;text-align:left;border:none;background:none;padding:0}
+.zusnpiTextParagraph{border:none;width:700px;text-shadow:none;margin:5px 10px 10px 0;padding:0}
+.claro .zusnpimessagebox{-moz-border-radius:5px 5px 3px 3px;-webkit-border-radius:5px 5px 3px 3px;border-radius:5px 5px 3px 3px;margin:10px 10px 10px 0}
+.claro .zusnpimessagebox .dijitTitlePaneTitle{background:none;min-height:17px;padding:0 7px 3px}
+.claro .zusnpimessagebox .dijitTitlePaneContentOuter{background:#fff;border:1px solid #b5bcc7;border-top:none;border-bottom:none;padding-bottom:2px}
+.zusnpiInfoField td:first-child{padding-right:4px;padding-top:3px;width:22px}
+.claro .zusnpimessagebox .dijitTitlePaneContentInner{background-color:#FFF;padding:11px}
+#dFloatingPane .dijitButtonNode{background-image:url(img/wd_max.jpg);background-repeat:no-repeat}
+#dFloatingPane .slideButton .dijitButtonNode{height:170px;border:none;background-color:transparent;-moz-box-shadow:none}
+#dFloatingPane .iconExpand{background-color:transparent!important}
+.claro .zusnpilayoutTitlePane .dijitContentPane .zusnpiShowMeLink{float:right;font-size:12px;margin-bottom:7px;text-align:right;text-shadow:none;width:100%;padding:2px 10px 0 0}
+.claro .zusnpilayoutTitlePane .dijitContentPane ul{padding-left:20px;margin:6px 10px 0 3px}
+.claro .dijitTree{border-bottom:1px solid #B5BCC7}
+.claro .dijitTreeRowHover,.claro .dijitTreeRowActive,.claro .dijitTreeRowSelected{background-color:#E7F1CE;border-color:#C9CBBD}
+.claro .dijitContentPaneLoading{background:url(img/12.gif) no-repeat scroll left center transparent;padding-left:25px}
+.splashscreen{opacity:1.0;filter:alpha(opacity=100);position:relative;top:-100%;left:0;width:100%;height:100%;z-index:999999999;background:#FFF}
+.loadingPanelLoaderImage{background-image:url(img/10.gif);width:48px;height:48px}
+.jQuerySplash{background-image:url(img/10.gif);width:48px;height:48px;margin-left:auto;margin-right:auto}
+.iconPane{height:40px}
+#scrollUpButton,#scrollDownButton{min-height:30px;margin-right:10px;margin-top:7px;background-color:transparent}
+#scrollUpButton .icon,#scrollDownButton .icon{background-repeat:no-repeat;background-position:center;width:90px;padding-left:150px}
+#scrollUpButton span,#scrollUpButton .icon,#scrollDownButton span,#scrollDownButton .icon{float:left;display:inline}
+#scrollUpButton.zusnpiScrollMenuButtonEnabled .icon{background-image:url(img/menu_roll_up.png)}
+#scrollUpButton.zusnpiScrollMenuButtonEnabled .icon:focus,#scrollUpButton.zusnpiScrollMenuButtonEnabled .icon:hover{background-image:url(img/menu_roll_up_hover.png)}
+#scrollUpButton.zusnpiScrollMenuButtonDisabled .icon{background-image:url(img/menu_roll_up_gray.png)}
+div#scrollDownButton.zusnpiScrollMenuButtonEnabled .icon{background-image:url(img/menu_roll_down.png)}
+div#scrollDownButton.zusnpiScrollMenuButtonEnabled .icon:focus,div#scrollDownButton.zusnpiScrollMenuButtonEnabled .icon:hover{background-image:url(img/menu_roll_down_hover.png)}
+div#scrollDownButton.zusnpiScrollMenuButtonDisabled .icon{background-image:url(img/menu_roll_down_gray.png)}
+hr{background:url(img/h-line.jpg) repeat-x scroll 0 0 transparent;border:none;height:2px;margin:0 0 0 7px}
+.claro .dojoxGridHeader th:last-child{border-right:none!important}
+.roundButtonLeft:focus,.roundButtonLeft:hover{background:url(img/icolink_01_hover.png) no-repeat scroll 0 0 transparent}
+.roundButtonLeft{height:22px;width:5px;background:url(img/icolink_01.gif) no-repeat scroll 0 0 transparent}
+.roundButtonCenter{height:22px;padding-left:8px;padding-right:8px;padding-top:2px;font-weight:700;text-shadow:0 0 0 #212324;background:url(img/icolink_02.gif) repeat-x scroll 0 0 transparent;color:#256797}
+.roundButtonRight{background-image:url(img/ico_link_epl.gif);height:22px;width:22px}
+.zusnpiButtonPanel{width:auto;border-left:1px solid #B5BCC7!important;border-right:1px solid #B5BCC7!important;background-color:#eaeaea;margin:0}
+.zusnpiReturnLink   {   background-repeat:no-repeat;min-height:19px;background-position:right center;padding-top:3px;padding-bottom:5px}
+.zusnpiReturnLink a {   text-decoration:none;display:inline-block;padding-right:26px    }
+.zusnpiReturnLink img   {   vertical-align:bottom;margin-top:5px;margin-left:3px;margin-right:21px  }
+a.zusnpiReturnLink_backA     { background-image:url(img/back.png); background-position:right; background-repeat:no-repeat; padding-right: 26px; height: 19px}
+a.zusnpiReturnLink_backA:focus, a.zusnpiReturnLink_backA:hover    { background-image: url(img/back_hover.png); text-decoration: underline }
+a.zusnpiReturnLink_backADisabled	{ background-image:url(img/back_disabled.png); text-decoration:none; background-position:right; background-repeat:no-repeat; padding-right: 26px; height: 19px}
+a.zusnpiReturnLink_nextA     { background-image:url(img/next.png); background-position:right; background-repeat:no-repeat; padding-right: 26px; height: 19px}
+a.zusnpiReturnLink_nextA:focus, a.zusnpiReturnLink_nextA:hover    { background-image: url(img/next_hover.png); text-decoration: underline }
+a.zusnpiReturnLink_nextADisabled	{ background-image: url(img/next_disabled.png); text-decoration:none; background-position:right; background-repeat:no-repeat; padding-right: 26px; height: 19px}
+a.zusnpiReturnLink_acceptA    { background-image:url(img/accept.png); background-position:right; background-repeat:no-repeat; padding-right: 26px; height: 19px}
+a.zusnpiReturnLink_acceptA:focus, a.zusnpiReturnLink_acceptA:hover    { background-image: url(img/accept_hover.png); text-decoration: underline }
+a.zusnpiReturnLink_acceptADisabled     { background-image: url(img/accept_disabled.png); text-decoration:none; background-position:right; background-repeat:no-repeat; padding-right: 26px; height: 19px}
+.dojoxGridFCBoxSelCol,.dojoxGridFCBoxCondition{height:auto}
+.dojoxGridFDTitlePane{width:560px;height:400px}
+.dojoxGridFDTitlePane .dijitDialogPaneContent{height:360px!important;padding:7px 14px 9px}
+.dojoxGridFDPaneRulePane{height:290px;overflow:auto;position:relative}
+.dojoxGridFCBox{height:180px}
+.dojoxGridFDPaneAddCBoxBtn{margin-top:9px}
+.dojoxGridFDPaneAddCBoxBtnIcon{background-image:url(img/plus.png);background-position:0 0;height:19px;width:19px}
+.dijitButtonHover .dojoxGridFDPaneAddCBoxBtnIcon{background-image:url(img/plus_hover.png)}
+.dojoxGridFDPaneBtns .dijitButton{margin:2px}
+.dojoxGridFDPaneBtns .dijitButton .dijitButtonNode{width:70px}
+.claro .dijitAccordionTitle{background-image:none;background-color:#EAEAEA}
+.claro .dijitAccordionInnerContainer{border-color:#C9C9C9}
+.claro .dijitAccordionInnerContainerSelected,.claro .dijitAccordionInnerContainerSelected .dijitAccordionTitle{background-color:#ABCB46;border-color:#76777B}
+.dojoxGridFDPane .dijitAccordionTitle{height:37px;padding:0}
+.dojoxEllipsis,.dojoxEllipsisShown{font-size:14px;color:#7E7E80;padding:0 0 0 14px}
+.dijitAccordionInnerContainerSelected .dojoxEllipsis{color:#000}
+.dojoxGridFCBoxRemoveCBoxBtnIcon{background-image:url(img/exit.png);background-position:0 0;height:19px;width:19px}
+.dijitButtonHover .dojoxGridFCBoxRemoveCBoxBtnIcon{background-image:url(img/exit_hover.png);background-position:0 0}
+.dojoxGridFDPane .dijitAccordionTitle .dijitButton{margin:4px 6px 4px 0}
+.claro .dijitAccordionContainer .dijitAccordionChildWrapper{border:1px #76777B solid;margin:0 3px 4px}
+.dojoxGridFCBoxField{padding-left:1px}
+.fc-widget-header,.fc-widget-content{border-color:#AACA45}
+.zusnpiGridContainer select{border:1px solid #AACA45;margin:8px 3px}
+.zusnpiGridContainer option:focus,.zusnpiGridContainer option:hover{background-color:#E8F2CD}
+.platnikLeftMenuCenter{width:145px;height:22px;padding-left:8px;padding-right:8px;padding-top:2px;font-weight:700;text-shadow:0 0 0 #212324;text-decoration:none;background:url(img/icolink_02.png) repeat-x scroll 0 0 transparent;color:#4f4c54}
+.platnikLeftMenuCenter:focus,.platnikLeftMenuCenter:hover{color:#000;background:url(img/icolink_02_hover.png) repeat-x scroll 0 0 transparent;text-decoration:underline}
+.platnikLeftMenuRight{background-image:url(img/icolink_kreat_og_03.png);height:22px;width:22px}
+.platnikLeftMenuRight:focus,.platnikLeftMenuRight:hover{background-image:url(img/icolink_kreat_og_03_hover.png)}
+table th.subgrid{background-color:#EAEAEA}
+tr.subgrid.expanded{background-color:#e8f1cd}
+table tr.subgrid.highlight{background-color:#aaca45}
+div.subgrid.toggle_selected{background-image:url(zwin.png)}
+div.subgrid.toggle{background-image:url(rozwin.png)}
+@font-face{font-family:Oswald;font-style:normal;font-weight:400;src:local('Oswald'), local(Oswald), url(fonts/oswald.woff) format('woff')}
+.dijitTabDisabled{opacity:0.65;color:#EEE}
+.prev{background-image:url(img/min_to_left.png);background-position:right center;background-repeat:no-repeat;display:inline-block;height:25px;padding-right:25px;padding-top:6px;text-decoration:none;text-shadow:none;cursor:pointer}
+.next{background-image:url(img/min_to_right.png);background-position:left center;background-repeat:no-repeat;display:inline-block;height:25px;margin-right:10px;padding-left:25px;padding-top:6px;text-decoration:none;text-shadow:none;cursor:pointer}
+.zajety{background-image:url(img/cal_remove.png);background-size:1.5em;background-position:left center;background-repeat:no-repeat;display:inline-block;height:25px;margin-left:5px;padding-left:27px;padding-top:6px;text-decoration:none;text-shadow:none;cursor:pointer;font-weight:400}
+.wolny{background-image:url(img/cal_add.png);background-size:1.5em;background-position:left center;background-repeat:no-repeat;display:inline-block;height:25px;margin-left:5px;padding-left:27px;padding-top:6px;text-decoration:none;text-shadow:none;cursor:pointer;font-weight:400}
+.rezerwacja{background-image:url(img/ok2.png);background-size:1.5em;background-position:left center;background-repeat:no-repeat;display:inline-block;height:25px;margin-left:5px;padding-left:27px;padding-top:6px;text-decoration:none;text-shadow:none;cursor:pointer;font-weight:400}
+.tydzien{width:145px;margin:5px}
+.legenda{display:table-cell;width:50%;text-align:left}
+.kalendarz{display:table-cell;width:50%;text-align:right;margin-right:0}
+.infoSpecjalista{padding-left:15px;padding-top:5px}
+.zdjecieSpecjalisty{background-image:url(img/tmpZdjecieSpecjalisty.jpg);background-position:left center;background-repeat:no-repeat;display:inline-block;width:100px;height:130px;margin-left:5px;padding-left:17px;padding-top:6px}
+.dj_webkit .dijitTextBoxDisabled INPUT{color:#333}
+.claro .dijitCalendar{background-color:#ACCB4A;background-image:url(img/calendar_bkg.png);background-position:0 0}
+.claro .dijitCalendarIncrementControl{background-image:none;background-position:0 0;height:12px;width:6px}
+.claro .dijitCalendarIncrease,.claro .dijitCalendarArrowHover .dijitCalendarIncrease{background-image:url(img/ico_navi_og_next_up.png);background-position:0 0}
+.claro .dijitCalendarDecrease,.claro .dijitCalendarArrowHover .dijitCalendarDecrease{background-image:url(img/ico_navi_og_prev_up.png);background-position:0 0;margin-right:10px}
+.claro .dijitCalendarPreviousMonth .dijitCalendarDateLabel,.claro .dijitCalendarNextMonth .dijitCalendarDateLabel{color:#AACB4A;border-color:transparent}
+.claro .dijitCalendarMonthContainer th{padding-bottom:10px}
+.claro .dijitCalendarPreviousYear,.claro .dijitCalendarNextYear,.claro .dijitCalendarPreviousYearHover,.claro .dijitCalendarNextYearHover{background:none;border:none;font-size:14px;font-weight:700;padding:0}
+.claro .dijitCalendarHoveredDate .dijitCalendarDateLabel{/*border:1px #232323 dotted;*/color:#000;background-color:#ACCB4A}
+.claro .dijitCalendarYearLabel span{vertical-align:top;padding:1px 0 0}
+.claro .dijitCalendarYearLabel{margin:10px 0 0}
+.zusnpiDijitCalendarTable{width:100% !important;}
+.zusnpiDijitCalendarContainer{min-width:220px;}
+.claro div#ObslugaUbezpieczonych_podstawaKoduTytuluUbezpieczeniaTree
+.dijitTreeRow,.dijitTreeContent{white-space:normal}
+#logRegWyloguj{background-image:url(img/back.png);background-position:right center;background-repeat:no-repeat;color:#56595C;cursor:pointer;display:block;float:right;font-weight:700;height:23px;line-height:19px;text-decoration:none;margin:7px 10px 0 0;padding:3px 25px 0 0}
+#widget_opcjeDodatkowe_dropdown,#widget_opcjeDodatkowe_dropdown li,#widget_opcjeDodatkowe_dropdown ul,#widget_opcjeDodatkowe_dropdown .dijitBackgroundIframe{max-width:500px!important;white-space:normal!important}
+#widget_opcjeDodatkowe_dropdown li.dijitMenuItem{white-space:normal!important;padding:4px}
+.cal-legenda-item{margin-top:6px}
+.cal-legenda-item LABEL{margin-left:5px}
+.cal-legenda-item DIV{background-position:center;background-repeat:no-repeat;height:26px;width:52px;vertical-align:middle}
+.cal-legenda-zajety{background-image:url(img/cal_leg_zaj.png)}
+.cal-legenda-wolny{background-image:url(img/cal_leg_wol.png)}
+.cal-legenda-rezerwacja{background-image:url(img/cal_leg_rez.png)}
+.cal-legenda-nowy{background-image:url(img/cal_leg_now.png)}
+.cal-legenda-zapisany{background-image:url(img/cal_leg_zap.png)}
+.cal-legenda-usuniety{background-image:url(img/cal_leg_usu.png)}
+.cal-legenda-zastepstwo{background-color:#ba6209}
+.cal-legenda-dzien-wolny{background-color:#eaeaea}
+.normal,h3.top-user{font-size:100%}
+.asystentDialog .focusNode,.dijitTitlePaneTitle{cursor:pointer}
+.zusnpiMenuPane .dijitTitlePaneContentOuter,.claro .dijitMenu,.claro .zusnpiMenuPane .dijitTitlePaneContentOuter{border-style:none}
+.zusnpiMenuItemActive td,.zusnpiMenuItemHover td,.claro .dijitTitlePaneTitleHover,.zusnpiMenuPaneFocused .zusnpiMenuPaneTitle,.zusnpiMenuItemFocused td{border-color:#696969}
+.menuItemActive.zusnpiMenuItem td,.claro .dijitCalendar .dijitDropDownButton .dijitButtonNode{background-color:#FFF}
+.konfiguracjaMenuIcon,.eplatnikUstawieniaIcon,.obslugaProfiliMenuIcon{background-image:url(img/prof.png)}
+.platnikMenuIcon,.eplatnikPlatnikIcon{background-image:url(img/platn.png)}
+.platnosciMenuIcon,.eplatnikPlatnosciIcon{background-image:url(img/plat.png)}
+.dijitContentPane .dijitBorderContainerPane,.claro .dijitMenuItem,.dijitTitlePaneTitleFocus,.claro .dojoxGridCellOver .dojoxGridSortNode{background:none}
+.expandoMenuTitleHidden .dojoxExpandoTitle,.leftMenuPaneGroup .dijitTitlePaneTitle .dijitArrowNode,.claro .zusnpiGridContainer .zusnpilayoutTitlePaneTitle_ShowIcon,.zusnpilayoutTitlePaneTitle_HideIcon,.claro .zusnpimessagebox .dojoxPortletIcon,.claro .zusnpimessagebox .zusnpilayoutTitlePaneTitle_ShowIcon,.claro .dijitCalendarSelectedYear{display:none}
+.dijit .layout .ContentPane,.zusnpiPageTitlePane td{margin:0;padding:0}
+.claro .dijitSplitContainer-child,.claro .dijitBorderContainer-child,a.image,a.image:focus,a.image:hover,a img{border:0}
+.dijitContentPane .dijitTitlePaneTitle,.claro .noborderSelect.dijitTextBox,.claro .dijitTextBox .noborderSelect .dijitButtonNode,div.noborderSelect.dijitComboBoxDisabled .dijitArrowButtonInner{background:none;border:none}
+.claro .dijitMenuPassive .dijitMenuItemHover,.claro .dijitMenuPassive .dijitMenuItemSelected,.claro .dijitMenuPassive .dijitMenuItemActive{background-color:transparent;font-weight:400}
+.claro .dijitMenuItemSelected,.claro .dijitMenuItemActivate,.claro .dijitMenuActive .dijitMenuItemHover,.claro .dijitMenuActive .dijitMenuItemSelected{background-color:transparent;font-weight:700}
+.claro .dojoxGridMasterHeader .dojoxGridRowTable,.zusButtonLight .dijitButtonNode,.claro .dijitAccordionContainer{border:none}
+.claro .dojoxGridRowSelected .dojoxGridRowTable tr,.claro .dijitCalendarPreviousMonth,.claro .dijitCalendarNextMonth{background-color:#E8F1CD}
+.claro .dojoxPortlet .dojoxPortletIcon,.dijitButtonDisabled .dojoxGridFDPaneAddCBoxBtnIcon{background-position:0 0}
+.zusnpiformtextboxViewTextBox,.claro .noborderSelect{text-align:center;font-style:normal;font-weight:700}
+a.orange_arr:focus,a.orange_arr:hover,a.menu-minimal:focus,a.menu-minimal:hover,a.menu-maximal:focus,a.menu-maximal:hover,.claro .dijitTabContainerTop-tabs:focus,.claro .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabContent:focus,.dijitTab:focus,.dijitTab .tabLabel:hover{text-decoration:underline}
+#tabs li.eplatnik a:focus,#tabs li.eplatnik a:hover,.claro .zusnpimessagebox .dijitTitlePaneTextNode,.claro .zusnpimessagebox .dijitTitlePaneFocused .dijitTitlePaneTextNode{color:#fff}
+#mainTabContainer .dijitTab,fieldset form>table{padding-top:10px}
+a.works-minimal:focus,a.works-minimal:hover,a.works-maximal:focus,a.works-maximal:hover{text-decoration:none}
+.works-header,.footer-header{color:#eaeaea}
+td.head-menu-item-ub-01,td.head-menu-item-sw-01,td.head-menu-item-pl-01,td.head-menu-item-lk-01,td.head-menu-item-km-01{background-image:url(img/head_menu_item_ub_01.gif);background-repeat:no-repeat;width:3px}
+.claro .dijitButtonDisabled .dijitButtonText,.zusButtonLightDisabled .dijitButtonText:focus,.zusButtonLightDisabled .dijitButtonText:hover,.zusButtonLightDisabled .dijitButtonText{color:#6A6A69}
+.dijitToggleButton,.dijitButton,.dijitDropDownButton,.dijitComboButton {margin: 0.1em;}
+.claro .dijitSelectHover,.claro .dijitTextBoxHover{background-image:none;background-color:#E8F2CD}
+.zusnpiPageTitle h2,.zusnpiPageTitleRightContent h2{font-family:Oswald, Tahoma, Helvetica, sans-serif;font-size:12px;font-weight:400;text-transform:uppercase}
+.zusnpiPageTitle hr,.zusnpiIconsBarSeparator{background:url(img/h-line.jpg) repeat-x scroll 0 0 transparent;border:none;height:2px;margin:0 10px 5px 0}
+.zusnpiPageTitleRightContent,.zusnpiGridOutline{padding:0!important}
+.claro .dojoxGridLoading,.claro .dijitTreeExpandoLoading,.claro .dojoxGridExpandoLoading .dojoxGridExpandoNode,.dojoxBusyButtonIcon{background-image:url(img/12.gif)}
+.claro .dijitTreeRow,.claro .dijitTreeNode .dojoDndItemBefore,.claro .dijitTreeNode .dojoDndItemAfter,.claro .dijitCalendarDateTemplate,.claro .dijitCalendarMonthMenu .dijitCalendarMonthLabelHover{background-image:none}
+.zusnpiReset,.dijitContentPane .zusnpiReset{margin:0;padding:0}
+.dojoxGridFDPaneAddCBoxBtn.dijitButton .dijitButtonNode:focus,.dojoxGridFDPaneAddCBoxBtn.dijitButton .dijitButtonNode,.dojoxGridFDPaneAddCBoxBtn.dijitButton .dijitButtonNode:hover,.dojoxGridFDPane .dijitAccordionTitle .dijitButton .dijitButtonNode:focus,.dojoxGridFDPane .dijitAccordionTitle .dijitButton .dijitButtonNode,.dojoxGridFDPane .dijitAccordionTitle .dijitButton .dijitButtonNode:hover{border-style:none;padding:0}
+.dojoxGridFDPaneAddCBoxBtn .dijitButtonNode,.noborderSelect.dijitTextBoxDisabled,.noborderSelect.dijitTextBoxDisabled .dijitInputContainer,.noborderSelect.dijitComboBox .dijitButtonNode{border:none;background:none}
+.dojoxGridFCBoxCondition,.dojoxGridFCBoxValue{margin-top:4px}
+.dojoxGridFDPane .dijitAccordionTitleFocus,.claro .dijitCalendar .dijitButtonText{margin-right:0}
+.zajety:focus,.zajety:hover,.wolny:focus,.wolny:hover,.rezerwacja:focus,.rezerwacja:hover{cursor:default}
+.claro .dijitPopup { border:1px solid #C9CBBD;padding:1px 0;}
+.nav {margin:0; padding:0; position:absolute; top:0; list-style: none;}
+.nav a {display:inline; z-index:100; position:absolute; left:-9000em; width:230px; padding:5px 10px; font-size:1.27em; text-decoration:none; text-align:center; }
+.nav a:hover, .nav a:focus, .nav a:active {left:0; top:0; position:absolute; background: #696969; border: 2px solid #FFFFFF; border-radius: 5px; font-size: 16px; font-weight: normal; font-family: 'Oswald', Tahoma, Helvetica, sans-serif; color: #FFFFFF; text-shadow: 0px 0px 1px black;}
+#OBW0073.legendHide legend, .legendHide legend {display: none;}
+/*[customclass="zlaTable"][cols="3"] .zlaTable-valueCell{width: 40%;}*/
+fieldset .zlaTable-valueCell .dijitContentPane{overflow: hidden;}
+fieldset .zlaTable-valueCell {
+    text-align: right;
+    width: inherit;
+}
+
+.dijitCalendarDateTemplate.dijitCalendarCurrentDate {
+    /* cell for today's date */
+    text-decoration:underline;
+    font-weight:bold;
+}

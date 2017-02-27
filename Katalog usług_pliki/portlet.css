@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.titleNodeZus {
+	color: black;
+}
+
+.show_iconNodeZus {
+	display: inline;
+	width: 16px;
+	height: 16px;
+}
+
+.hide_iconNodeZus {
+	display: none;
+}
+
+.widokTextBox {
+	text-align: center;
+}
+
+.tableContainerZus-labelCell {
+	text-align: right;
+	background-color: white;
+}
+
+.tableContainerZus-valueCell {
+	text-align: left;
+	background-color: white;
+}

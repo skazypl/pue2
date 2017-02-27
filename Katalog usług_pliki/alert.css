@@ -1,0 +1,149 @@
+.zus-alert-confirm-dialog {
+	width: 400px;
+	max-height: 650px;
+	min-height: 200px;
+	padding: 0px !important;
+}
+
+.zus-alert-confirm-border-container {
+	background-color: white !important;
+	height: 170px;
+	width: 100%;
+}
+
+.zus-error-border-container {
+	background-color: white !important;
+	height: 350px;
+	width: 100%;
+}
+
+.zus-alert-confirm-content {
+	overflow: hidden !important;
+	text-align: left;
+	padding: 0px !important;
+	border-width: 0px !important;
+}
+
+.zus-alert-confirm-content-smaller {
+	height: 60% !important;
+}
+
+.zus-error-content {
+	overflow: hidden !important;
+	text-align: left;
+	padding: 0px !important;
+	border-width: 0px !important;
+	height: 40% !important;
+	display: none !important;
+}
+
+.zus-error-content-visible {
+	display: inline !important;
+	top: 215px !important;
+}
+
+.zus-alert-confirm-textarea, .zus-error-confirm-textarea, .zus-alert-textarea-readonly {
+	
+	width: 95% !important;
+	max-height: 350px;
+	
+	overflow: auto !important;
+	
+	color: black !important;
+	font-size: 1pc !important;
+	font-family: sans-serif !important;
+	text-align: left;
+	
+	background: none !important;
+	border-width: 0px !important;
+	resize: none;
+}
+
+.zus-error-confirm-textarea {
+	height: 85% !important;
+}
+
+.zus-alert-confirm-textarea {
+	height: 98% !important;
+}
+
+.zus-alert-textarea-readonly {
+    height: 95% !important;
+}
+
+.zus-alert-confirm-textarea-details {
+	max-height: 200px !important;
+	height: 100px !important;
+	font-size: 12px !important;
+	text-align: left;
+	border: 1px solid black !important;
+}
+
+.zus-alert-confirm-buttons {
+	overflow: hidden !important;
+	border-width: 0px !important;
+	padding: 0px !important;
+	width: 95% !important;
+}
+
+.zus-choose-context-dialog {
+	width: 600px;
+	max-height: 650px;
+	min-height: 200px;
+	padding: 0px !important;
+}
+
+.zus-choose-context-border-container {
+	background-color: white !important;
+	height: 400px;
+	width: 100%;
+}
+
+.zus-choose-context-custom {
+	padding: 3px;
+	border-top:1px solid #CFCFCF !important;
+	border-left:1px solid #CFCFCF !important;
+	border-right:1px solid #CFCFCF !important;
+}
+
+.zus-choose-context-buttons {
+	margin-top: 5px;
+}
+
+.zus-choose-context-grid {
+	border:1px solid #CFCFCF !important;
+}
+
+.zus-dodaj-platnika-dialog{
+    min-width: 900px;
+    max-height: 650px;
+    min-height: 200px;
+    padding: 0px !important;
+}
+
+.zus-kle-walidacja-dialog{
+	min-width: 100px;
+	max-height: 650px;
+	min-height: 100px;
+	padding: 0px !important;
+}
+
+.zus-pismo-przewodnie-dialog{
+    background-color: #ffffff;
+}
+
+.zus-kle-pismo-przewodnie-dialog{
+	width:460px;
+}
+
+.zus-kle-bledne-zla-dialog{
+	min-width: 510px;
+	max-height: 650px;
+	min-height: 100px;
+	padding: 0px !important;
+}
+
+.anulowanie-zestawu-zla-dialog{
+	width: 510px;
+	padding: 0px !important;
+}

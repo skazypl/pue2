@@ -1,0 +1,397 @@
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/claro.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/dijit.css ::::: */
+
+.dijitReset { margin: 0px; border: 0px none; padding: 0px; font: inherit; color: inherit; }
+.dijitInline { display: inline-block; border: 0px none; padding: 0px; vertical-align: middle; }
+.dijitOffScreen { position: absolute; left: 50%; top: -10000px; }
+.dijitBackgroundIframe { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: -1; border: 0px none; padding: 0px; margin: 0px; }
+.dijitContainer { overflow: hidden; }
+.dijitButtonNode * { vertical-align: middle; }
+.dijitStretch { white-space: nowrap; background-repeat: repeat-x; }
+.dijitToggleButton, .dijitButton, .dijitDropDownButton, .dijitComboButton { margin: 0.2em; vertical-align: middle; }
+.dijitButtonContents { display: block; }
+.dj_gecko .dijitToolbar .dijitButtonNode::-moz-focus-inner { padding: 0px; }
+.dijitButtonNode { border: 1px solid gray; margin: 0px; vertical-align: middle; line-height: inherit; }
+.dijitButtonNode, .dijitButtonNode * { cursor: pointer; }
+.dijitLayoutContainer { position: relative; display: block; overflow: hidden; }
+body .dijitAlignTop, body .dijitAlignBottom, body .dijitAlignLeft, body .dijitAlignRight { position: absolute; overflow: hidden; }
+.dijitBorderContainer, .dijitBorderContainerNoGutter { position: relative; overflow: hidden; }
+.dijitBorderContainerPane, .dijitBorderContainerNoGutterPane { position: absolute ! important; z-index: 2; }
+.dijitGutter { position: absolute; font-size: 1px; }
+.dijitContentPane { display: block; overflow: auto; }
+.dijitContentPaneSingleChild { overflow: hidden; }
+.dijitTitlePane { display: block; overflow: hidden; }
+.dijitTitlePaneTitle { cursor: pointer; }
+.dijitFixedOpen, .dijitFixedClosed { cursor: default; }
+.dijitTitlePaneTitle * { vertical-align: middle; }
+.dijitTitlePane .dijitArrowNodeInner { display: none; }
+.dijitMenu { border: 1px solid black; background-color: white; }
+.dijitMenuTable { border-collapse: collapse; border-width: 0px; background-color: white; }
+.dijitMenuItem { text-align: left; white-space: nowrap; padding: 0.1em 0.2em; cursor: pointer; }
+.dijitMenuItemIcon, .dijitMenuExpand { background-repeat: no-repeat; }
+.dijitMenuItemLabel { position: relative; vertical-align: middle; }
+.dijitMenuExpandA11y { display: none; }
+.dijitMenuSeparator td { border: 0px none; padding: 0px; }
+.dijitMenuSeparatorTop { height: 50%; margin: 3px 0px 0px; font-size: 1px; }
+.dijitMenuSeparatorBottom { height: 50%; margin: 0px 0px 3px; font-size: 1px; }
+.dijitToggleButtonIconChar { display: none ! important; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/icons/commonIcons.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Common.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/Common.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/Button.css ::::: */
+
+.claro .dijitButtonNode { transition-property: background-color; transition-duration: 0.3s; }
+.claro .dijitButton .dijitButtonNode, .claro .dijitDropDownButton .dijitButtonNode, .claro .dijitComboButton .dijitButtonNode, .claro .dijitToggleButton .dijitButtonNode { border: 1px solid rgb(118, 157, 192); padding: 2px 4px 4px; background-image: url('button.png'); background-position: center top; background-repeat: repeat-x; background-color: rgb(233, 244, 254); border-radius: 4px; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15); }
+.claro .dijitButtonText { padding: 0px 0.3em; text-align: center; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/Checkbox.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/RadioButton.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/Select.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/layout/TabContainer.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Dialog.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/layout/AccordionContainer.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/layout/ContentPane.css ::::: */
+
+.claro .dijitContentPane { padding: 8px; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Calendar.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Menu.css ::::: */
+
+.claro .dijitMenu { background-repeat: repeat-y; background-color: rgb(255, 255, 255); border: 1px solid rgb(118, 157, 192); margin: -1px 0px; }
+.claro .dijitMenuItem { background-image: url('menuhighlight.png'); background-position: 0px -40px; background-repeat: repeat-x; }
+.claro .dijitMenuTable { border-collapse: separate; border-spacing: 0px; padding: 0px; }
+.claro .dijitMenuItem td { padding: 1px; }
+.claro td.dijitMenuItemIconCell { padding: 2px; margin: 0px 0px 0px 4px; }
+.claro td.dijitMenuItemLabel { padding-top: 5px; padding-bottom: 5px; }
+.claro .dijitMenuExpand { width: 7px; height: 7px; background-image: url('spritearrows.png'); background-position: -14px 0px; margin-right: 3px; }
+.claro .dijitMenuSeparatorTop { height: auto; margin-top: 1px; border-bottom: 1px solid rgb(181, 188, 199); }
+.claro .dijitMenuSeparatorBottom { height: auto; margin-bottom: 1px; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/Slider.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/ColorPalette.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/InlineEditBox.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/ProgressBar.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/TimePicker.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/layout/BorderContainer.css ::::: */
+
+.claro .dijitBorderContainer { padding: 5px; }
+.claro .dijitSplitContainer-child, .claro .dijitBorderContainer-child { border: 1px solid rgb(181, 188, 199); }
+.claro .dijitSplitterV, .claro .dijitGutterV { background: transparent none repeat scroll 0% 0%; border: 0px none; width: 5px; margin: 0px; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Tree.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Toolbar.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Editor.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/icons/editorIcons.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/TitlePane.css ::::: */
+
+.claro .dijitTitlePaneTitle { background-color: rgb(239, 239, 239); background-image: url('titlebar.png'); background-repeat: repeat-x; border: 1px solid rgb(181, 188, 199); padding: 0px 7px 3px; min-height: 17px; }
+.claro .dijitTitlePaneTitleFocus { margin-top: 3px; padding-bottom: 2px; }
+.claro .dijitTitlePaneContentOuter { background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-width: medium 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(181, 188, 199) rgb(181, 188, 199); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+.claro .dijitTitlePaneContentInner { padding: 10px; }
+.claro .dijitTitlePaneTextNode { margin-left: 4px; margin-right: 4px; vertical-align: text-top; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/NumberSpinner.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/claro_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/dijit_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/Common_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/Button_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/layout/TabContainer_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/Slider_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/form/Select_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Dialog_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Editor_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/icons/editorIcons_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/icons/commonIcons_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/TitlePane_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Menu_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Calendar_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/TimePicker_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dijit/themes/claro/Toolbar_rtl.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/layout/resources/ExpandoPane.css ::::: */
+
+.dojoxExpandoPane { overflow: hidden; z-index: 440 ! important; }
+.dojoxExpandoPane .dojoxExpandoWrapper { overflow: hidden; }
+.dojoxExpandoBottom .dojoxExpandoIcon, .dojoxExpandoTop .dojoxExpandoIcon, .dojoxExpandoLeft .dojoxExpandoIcon { float: right; margin-right: 2px; }
+.dojoxExpandoIcon { width: 14px; cursor: pointer; background-position: -60px 0px; background-repeat: no-repeat; height: 14px; }
+.dijitBorderContainer-dijitExpandoPane { border: medium none ! important; }
+.claro .dojoxExpandoTitle { font-weight: bold; border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(118, 157, 192) rgb(118, 157, 192) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background-color: rgb(205, 232, 255); background-image: url('accordion.png'); background-position: 0px 0px; background-repeat: repeat-x; padding: 5px 7px 2px; min-height: 17px; color: rgb(74, 74, 74); }
+.claro .dojoxExpandoRight .dojoxExpandoTitle, .claro .dojoxExpandoLeft .dojoxExpandoTitle, .claro .dojoxExpandoClosed .dojoxExpandoTitle { background-color: rgb(230, 230, 231); }
+.claro .dojoxExpandoIcon { background-image: url('spriteroundediconssmall.gif'); }
+.dojoxExpandoIconLeft { background-position: 0px 0px; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/resources/Grid.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/resources/claroGrid.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/resources/Grid.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/enhanced/resources/claro/EnhancedGrid.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/resources/claroGrid.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/resources/Grid.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/enhanced/resources/EnhancedGrid.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/enhanced/resources/Common.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/enhanced/resources/Filter.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/enhanced/resources/Pagination.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/enhanced/resources/DnD.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/enhanced/resources/Sorter.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/widget/Toaster/Toaster.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/html/resources/ellipsis.css ::::: */
+
+.dojoxEllipsisShown::after { content: "…"; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/enhanced/resources/claro/Common.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/grid/enhanced/resources/claro/Filter.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/widget/Wizard/Wizard.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/highlight/resources/highlight.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/layout/resources/FloatingPane.css ::::: */
+
+.dojoxFloatingPane { background-color: rgb(255, 255, 255); position: relative; border: 1px solid rgb(222, 222, 222); overflow: hidden; box-shadow: 0px 5px 10px rgb(173, 173, 173); }
+.dojoxFloatingPaneTitle { background: rgb(250, 250, 250) none repeat-x scroll left bottom; border: 1px solid rgb(191, 191, 191); padding: 4px 4px 2px; cursor: pointer; white-space: nowrap; }
+.dojoxFloatingCloseIcon { background: transparent url('tabclose.png') no-repeat scroll center center; width: 16px; height: 16px; overflow: hidden; float: right; }
+.dojoxFloatingMinimizeIcon { background: transparent url('spritearrows_001.png') no-repeat scroll 0px center; width: 7px; margin: 0px 4px; overflow: hidden; float: right; }
+.dojoxFloatingMaximizeIcon { background: transparent url('spritearrows_001.png') no-repeat scroll -21px center; width: 7px; margin: 0px 4px; overflow: hidden; float: right; }
+.dojoxFloatingRestoreIcon { background: transparent url('spritearrows_001.png') no-repeat scroll 0px center; width: 7px; margin: 0px 4px; float: right; display: none; }
+.dojoxFloatingResizeHandle { background: transparent url('resize.png') no-repeat scroll right bottom; position: absolute; right: 0px; bottom: 0px; width: 16px; height: 16px; cursor: nw-resize; }
+.dojoxFloatingCloseIcon { width: 15px; height: 15px; overflow: hidden; float: right; cursor: pointer; }
+.dojoxFloatingPaneContent { overflow: auto; background-color: rgb(255, 255, 255); height: 100%; width: 100%; }
+.dojoxFloatingPaneCanvas { background-color: rgb(255, 255, 255); }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/layout/resources/ResizeHandle.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/button/button.css ::::: */
+
+.zus-button { text-align: center; width: auto; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/dialog/alert.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/dialog/choose-working-place.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/layout/bottomButtonsPanel.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/form/textbox/dualCurrencyTextBox.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/form/textbox/viewTextBox.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/form/fieldset/fieldset.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/asystentComponent/slideButton.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/swfDialog/main.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/controls/css/zusnpi/portlet/portlet.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/css/ZusExpandoPane.css ::::: */
+
+.dojoxExpandoPane { overflow: hidden; z-index: 440 ! important; width: 251px; }
+.dojoxExpandoPane .dojoxExpandoWrapper { overflow: hidden; }
+.dojoxExpandoPane .dojoxExpandoTitle .helpIcon { margin-left: 7px; margin-top: 8px; }
+.dojoxExpandoPane .dojoxExpandoTitle h1, .dojoxExpandoPane .dojoxExpandoTitle .helpIcon { float: left; }
+.dojoxExpandoBottom .dojoxExpandoIcon, .dojoxExpandoTop .dojoxExpandoIcon, .dojoxExpandoLeft .dojoxExpandoIcon { float: right; margin-right: 8px; }
+.dojoxExpandoTitle, .dojoxExpandoWrapper { width: 251px; }
+.dojoxExpandoIcon { cursor: pointer; background-position: -260px 0px; background-repeat: no-repeat; height: 19px; width: 19px; margin-top: 8px; }
+.dijitBorderContainer-dijitExpandoPane { border: medium none ! important; }
+.claro .dojoxExpandoTitle { font-weight: bold; border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(118, 157, 192) rgb(118, 157, 192) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background-color: rgb(205, 232, 255); background-image: url('accordion_001.png'); background-position: 0px 0px; background-repeat: repeat-x; padding: 5px 7px 2px; min-height: 30px; color: rgb(74, 74, 74); float: left; }
+.claro .dojoxExpandoRight .dojoxExpandoTitle, .claro .dojoxExpandoLeft .dojoxExpandoTitle, .claro .dojoxExpandoClosed .dojoxExpandoTitle { background-color: rgb(230, 230, 231); }
+.claro .dojoxExpandoTitle { padding: 0px; height: 37px; background-image: url('menu.jpg'); background-repeat: no-repeat; }
+.claro .dojoxExpandoTitle h1 { font-size: 16px; font-weight: normal; font-family: "Oswald",Tahoma,Helvetica,sans-serif; color: rgb(255, 255, 255); text-shadow: 0px 0px 1px black; padding: 8px 0px 0px 8px; }
+.claro .dojoxExpandoIcon { background-image: url('min_to_left.png'); }
+.claro .dojoxExpandoIcon:focus, .claro .dojoxExpandoIcon:hover { background-image: url('min_to_left_hover.png'); }
+.dojoxExpandoIconLeft { background-position: 0px 0px; }
+/* ::::: https://pue.zus.pl/portal/css/main.css ::::: */
+
+.hide { position: absolute; top: 0px; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.asystentDialog, .asystentDialog .dojoxFloatingPaneCanvas { background-color: transparent; }
+.asystentDialog { box-shadow: none; overflow: visible; }
+.asystentDialogControlNode { width: 30px; height: 30px; position: absolute; right: -30px; }
+.asystentDialogControlNode .dojoxFloatingCloseIcon { text-indent: -9999px; width: 26px; height: 26px; background: transparent url('ico_zwin.png') no-repeat scroll center center; }
+.asystentDialogControlNode .dojoxFloatingCloseIcon:focus, .asystentDialogControlNode .dojoxFloatingCloseIcon:hover { text-indent: -9999px; background-image: url('ico_zwin_hover.png'); }
+.unsupportedBrowser { font-weight: bold; color: rgb(255, 0, 0); }
+.zusnpiMenuPane { width: 100%; margin-bottom: 2px; text-shadow: none; }
+.zusnpiMenuPane .dijitFixedOpen, .zusnpiMenuPane .dijitOpen { background-color: rgb(171, 203, 70); }
+.zusnpiMenuPane .dijitFixedClosed, .zusnpiMenuPane .dijitClosed { background-color: rgb(217, 217, 217); }
+.zusnpiMenuPaneTitle { border-radius: 5px; padding-top: 3px; padding-bottom: 3px; margin-bottom: 2px; cursor: pointer; height: 48px; border-color: rgb(177, 177, 177); border-style: solid; border-width: 1px; }
+.zusnpiMenuPaneTitleNode { font-size: 13px; font-weight: 700; }
+.zusnpiMenuPaneTitleNode, .zusnpiMenuPaneSubtitleNode { display: block; }
+.zusnpiMenuPaneIconNode { height: 24px; width: 25px; margin-top: 4px; background-repeat: no-repeat; }
+.zusnpiMenuPaneTextColumn { width: 200px; }
+.zusnpiMenu { border-style: none; margin: 0px; }
+.zusnpiMenu tr { margin: 1px 0px; padding: 1px 0px; }
+.zusnpiMenuItem td { border-radius: 5px; border-color: rgb(177, 177, 177); border-style: solid; border-width: 1px; }
+.zusnpiMenuItem td.dijitMenuItemIconCell { border-right: medium hidden; border-top-right-radius: 0px; border-bottom-right-radius: 0px; }
+.zusnpiMenuItem td.dijitMenuItemLabel { border-left: medium hidden; border-right: medium hidden; border-radius: 0px; }
+.zusnpiMenuItem td.dijitMenuArrowCell { border-left: medium hidden; border-top-left-radius: 0px; border-bottom-left-radius: 0px; }
+.zusnpiMenuItemIcon { margin-left: 11px; margin-right: 3px; width: 13px; background-image: url('menu_item_b.jpg'); background-repeat: no-repeat; background-position: center center; background-color: transparent; }
+.zusnpiStatusBar { background-color: transparent; background-image: url('footer.jpg'); background-repeat: repeat-x; color: rgb(99, 100, 102); margin-top: 2px; height: 14px; padding: 4px; }
+.uslugiMenuIcon { background-image: url('uslugi.png'); }
+.wyszukiwanieMenuIcon { background-image: url('ico_haslo_og.png'); }
+.dokumentyMenuIcon { background-image: url('wiad.png'); }
+.zleceniaMenuIcon { background-image: url('zlec.png'); }
+.wizytyMenuIcon { background-image: url('wizyty.png'); }
+.helpIcon { width: 19px; height: 19px; background-repeat: no-repeat; background-image: url('help.png'); cursor: pointer; }
+.helpIcon:focus, .helpIcon:hover { background-image: url('help_hover.png'); }
+.claro .dijitMenuItemLabel { background-image: none ! important; position: inherit; background-position: left center; background-repeat: no-repeat; }
+html { height: 100%; }
+body { background-color: rgb(234, 234, 234); background-image: url('body_header.png'), url('footer.jpg'); background-position: center top; background-repeat: repeat-x, repeat-x; text-shadow: none; color: rgb(33, 35, 36); font-family: Tahoma,Helvetica,sans-serif; width: 1024px; height: 100%; margin: 0px auto; padding: 0px; }
+body, body.default { font-size: 13px; }
+a { text-decoration: none; font-weight: 700; color: rgb(86, 89, 92); }
+.claro .dijitContentPane { border-style: none; padding: 0px; }
+.menuContentPane .dijitMenu { background-image: none; background-color: transparent; background-position: right center; background-repeat: repeat-y; border-color: rgb(145, 144, 144) ! important; }
+.claro .dijitMenuItem td { padding-top: 7px; padding-bottom: 7px; }
+.leftMenuPaneGroup { background-color: transparent ! important; padding-left: 0px; }
+.leftMenuPaneGroup td.dijitMenuItemLabel { width: 218px; }
+.leftMenuPaneGroup .dijitTitlePaneContentOuter { background-color: transparent ! important; border-style: none ! important; }
+.dijitContentPane .mainContentPane { background-color: transparent ! important; background-position: left center; background-repeat: repeat-y; border-style: none ! important; margin: 0px 0px 0px 3px; padding: 0px; }
+.zusnpiMainContentPaneCenter { background-color: rgb(255, 255, 255); border-right: 1px solid rgb(207, 207, 207) ! important; border-left: 1px solid rgb(207, 207, 207) ! important; padding-left: 5px ! important; padding-right: 5px ! important; }
+.claro .zusnpilayoutTitlePane .dijitContentPane { background: transparent none repeat scroll 0% 0%; overflow: hidden; margin: 0px; padding: 0px; }
+.claro .dijitTitlePaneContentInner { padding: 0px; }
+.claro .dijitTitlePaneContentOuter { background: transparent none repeat scroll 0% 0% ! important; border-width: medium 1px; border-style: none solid; border-color: -moz-use-text-color rgb(181, 188, 199); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+.claro .dijitTitlePaneTitleFocus { margin-top: 1px; margin-bottom: 2px; background: transparent none repeat scroll 0% 0%; min-height: 18px; padding: 2px 3px 3px 7px; }
+.zusnpiGridContainer { border-radius: 3px; background-color: rgb(170, 202, 69) ! important; margin: 6px 0px 10px; padding: 0px 0px 2px ! important; }
+.dojoxPortlet { margin-bottom: 0px ! important; }
+.claro .zusnpiGridContainer .dijitTitlePaneContentInner { background-color: rgb(255, 255, 255); padding: 0px; }
+.zusnpiGridContainer .dijitTitlePaneTextNode, .zusnpiGridContainer .dijitTitlePaneFocused .dijitTitlePaneTextNode { color: rgb(0, 0, 0) ! important; text-shadow: none; }
+.claro .dijitTitlePaneTitle { background-color: rgb(170, 202, 69); background-image: none; border-color: rgb(201, 202, 203); padding: 0px; }
+.claro .dijitTitlePaneTextNode { display: block; font-weight: 700; padding-top: 2px; }
+.dojoxExpandoTitle { border-style: none ! important; }
+.dijitGutterV { background-color: transparent ! important; width: 0px ! important; }
+.dijitReset .dijitMenuSeparator { background: transparent none repeat scroll 0% 0%; height: 1px; }
+.dijitReset .dijitMenuSeparator .dijitMenuSeparatorTop { border-style: none; margin: 0px; }
+.dijitReset .dijitMenuSeparator .dijitMenuSeparatorBottom { border: medium none; margin: 0px; }
+.tundra .dojoxPortlet .dijitOpen .dojoxArrowDown, .soria .dojoxPortlet .dijitOpen .dojoxArrowDown, .nihilo .dojoxPortlet .dijitOpen .dojoxArrowDown, .claro .dojoxPortlet .dijitOpen .dojoxArrowDown { background-image: url('min_to_top.png'); background-color: transparent; background-repeat: no-repeat; background-position: 0px 0px ! important; width: 19px; height: 19px; }
+h1 { font-weight: 400; font-size: 200%; font-family: Cuprum,Tahoma,Helvetica,sans-serif; margin: 0px; }
+.zusnpiPageTitlePaneH1 h1 { font-size: 16px; font-family: Oswald,Tahoma,Helvetica,sans-serif; }
+h2 { font-weight: 400; font-size: 190%; font-family: Cuprum,Tahoma,Helvetica,sans-serif; margin: 0px; }
+.dijitTitlePaneTitleFocus h2 { font-size: 100% ! important; }
+h3 { font-weight: 400; font-size: 180%; font-family: Cuprum,Tahoma,Helvetica,sans-serif; margin: 0px; }
+a:focus, a:hover { color: rgb(0, 0, 0); text-decoration: underline; cursor: pointer; }
+a.orange_arr { background-image: url('arrow.png'); background-repeat: no-repeat; background-position: right center; color: rgb(199, 99, 1); cursor: pointer; font-weight: 700; padding-right: 10px; text-decoration: none; }
+a:focus, a:link, a:hover, a:visited { border: 0px none; outline: 0px none; }
+a.menu-wd { background-image: url('ico_wd.png'); background-position: right center; background-repeat: no-repeat; color: rgb(79, 76, 84); display: inline-block; font-size: 11px; height: 20px; margin-left: 16px; padding-right: 31px; padding-top: 6px; text-decoration: none; text-shadow: none; cursor: pointer; }
+a.menu-wd:focus, a.menu-wd:hover { background-image: url('ico_wd_hover.png'); text-decoration: underline; }
+a.menu-pytanie { background-image: url('ico_zad_pyt.png'); background-position: right center; background-repeat: no-repeat; color: rgb(79, 76, 84); display: inline-block; font-size: 11px; height: 20px; margin-left: 16px; padding-right: 31px; padding-top: 6px; text-decoration: none; text-shadow: none; cursor: pointer; }
+a.menu-pytanie:focus, a.menu-pytanie:hover { background-image: url('ico_zad_pyt_hover.png'); text-decoration: underline; }
+a.menu-cit { background-image: url('ico_cit.png'); background-position: right center; background-repeat: no-repeat; color: rgb(79, 76, 84); display: inline-block; font-size: 11px; height: 20px; margin-left: 16px; padding-right: 31px; padding-top: 6px; text-decoration: none; text-shadow: none; cursor: pointer; }
+a.menu-cit:focus, a.menu-cit:hover { background-image: url('ico_cit_hover.png'); text-decoration: underline; }
+a.skype-cot { background-image: url('ico_skype_on.png'); background-position: right center; background-repeat: no-repeat; font-size: 11px; height: 20px; margin-left: 16px; padding-right: 31px; padding-top: 8px; padding-bottom: 8px; text-decoration: none; text-shadow: none; cursor: pointer; }
+a.skype-cot:focus, a.skype-cot:hover { background-image: url('ico_skype_on_hover.png'); text-decoration: underline; }
+#tabs { width: 100%; list-style: outside none none; display: inline-block; margin: 0px; padding: 0px; }
+#tabs li { float: left; margin: 0px; }
+#tabs li a { border-radius: 4px 4px 0px 0px; background-position: center bottom; background-repeat: repeat-x; background-image: url('tab_02.png'); border-top: 1px solid rgb(105, 105, 105); border-left: 1px solid rgb(105, 105, 105); border-right: 1px solid rgb(105, 105, 105); display: block; height: 19px; font-weight: 700; font-size: 11px; line-height: 21px; margin-top: 5px; text-shadow: none; text-decoration: none; cursor: pointer; padding: 0px 15px; }
+#tabs li a:focus, #tabs li a:hover { color: rgb(0, 0, 0); text-decoration: underline; }
+#tabs li span { border-radius: 4px 4px 0px 0px; background-position: center bottom; background-repeat: repeat-x; background-image: url('tab_02.png'); display: block; height: 19px; font-weight: 700; font-size: 11px; line-height: 26px; margin-top: 5px; text-shadow: none; text-decoration: none; cursor: default; border-left: 1px solid rgb(105, 105, 105); border-right: 1px solid rgb(105, 105, 105); padding: 0px 15px; }
+#tabs .selected { background-image: url('tab_05.png'); height: 22px; margin-top: 3px; color: rgb(0, 0, 0); }
+#tabs .selected:focus, #tabs .selected:hover { background-image: url('tab_05.png'); height: 22px; margin-top: 2px; }
+.claro .dijitButton .dijitButtonNode { background-image: url('button2.png'); width: auto; height: 20px ! important; border-radius: 4px; background-position: 0px 0px; border-color: rgb(105, 105, 105); border-style: none solid; padding: 0px 5px 2px; }
+.claro .dijitButton .dijitButtonNode:focus, .claro .dijitButtonNode .dijitButtonFocused, .claro .dijitButton .dijitButtonNode:hover { background-image: url('button2_hover.png'); color: rgb(255, 255, 255); height: 20px ! important; background-position: 0px 0px; border-radius: 4px; border-color: rgb(0, 0, 0); border-style: none solid; padding: 0px 5px 2px; }
+.claro .dijitButtonText { font-weight: 700; font-size: 12px; padding-top: 3px; padding-left: 8px; padding-right: 8px; color: rgb(79, 76, 84); text-shadow: 0px 0px 0px rgb(33, 35, 36); }
+.claro .dijitButtonText:focus, .claro .dijitButtonText:hover { color: rgb(79, 76, 84); }
+.claro .dijitButton .dijitButtonNode, .claro .dijitDropDownButton .dijitButtonNode, .claro .dijitComboButton .dijitButtonNode, .claro .dijitToggleButton .dijitButtonNode { box-shadow: none; }
+.zusnpiPageTitlePane { background-color: rgb(106, 107, 107); color: rgb(255, 255, 255); font-size: 16px; text-shadow: 0px 0px 1px rgb(0, 0, 0); font-family: Oswald,Tahoma,Helvetica,sans-serif; text-transform: uppercase; border-radius: 5px 5px 0px 0px; margin: 0px; padding: 0px; }
+.zusnpiPageTitlePane table { margin: 6px 0px 3px 16px; padding: 0px; }
+.zusnpiPageTitlePane img { vertical-align: bottom; margin: 0px 0px 2px 6px; }
+.dijitContentPane .zusnpiMainContentPane { background-color: rgb(255, 255, 255); border: medium none; border-radius: 5px; margin: 0px; padding: 0px; }
+.claro .zusnpilayoutTitlePane .dijitContentPane .zusnpiShowMeLink { float: right; font-size: 12px; margin-bottom: 7px; text-align: right; text-shadow: none; width: 100%; padding: 2px 10px 0px 0px; }
+.claro .zusnpilayoutTitlePane .dijitContentPane ul { padding-left: 20px; margin: 6px 10px 0px 3px; }
+.splashscreen { opacity: 1; position: relative; top: -100%; left: 0px; width: 100%; height: 100%; z-index: 999999999; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.loadingPanelLoaderImage { background-image: url('10.gif'); width: 48px; height: 48px; }
+.iconPane { height: 40px; }
+#scrollUpButton, #scrollDownButton { min-height: 30px; margin-right: 10px; margin-top: 7px; background-color: transparent; }
+#scrollUpButton .icon, #scrollDownButton .icon { background-repeat: no-repeat; background-position: center center; width: 90px; padding-left: 150px; }
+#scrollUpButton span, #scrollUpButton .icon, #scrollDownButton span, #scrollDownButton .icon { float: left; display: inline; }
+#scrollUpButton.zusnpiScrollMenuButtonDisabled .icon { background-image: url('menu_roll_up_gray.png'); }
+div#scrollDownButton.zusnpiScrollMenuButtonDisabled .icon { background-image: url('menu_roll_down_gray.png'); }
+@font-face {
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Oswald"), local("Oswald"), url('oswald.woff') format("woff");
+}
+.normal, h3.top-user { font-size: 100%; }
+.asystentDialog .focusNode, .dijitTitlePaneTitle { cursor: pointer; }
+.zusnpiMenuPane .dijitTitlePaneContentOuter, .claro .dijitMenu, .claro .zusnpiMenuPane .dijitTitlePaneContentOuter { border-style: none; }
+.konfiguracjaMenuIcon, .eplatnikUstawieniaIcon, .obslugaProfiliMenuIcon { background-image: url('prof.png'); }
+.platnikMenuIcon, .eplatnikPlatnikIcon { background-image: url('platn.png'); }
+.dijitContentPane .dijitBorderContainerPane, .claro .dijitMenuItem, .dijitTitlePaneTitleFocus, .claro .dojoxGridCellOver .dojoxGridSortNode { background: transparent none repeat scroll 0% 0%; }
+.expandoMenuTitleHidden .dojoxExpandoTitle, .leftMenuPaneGroup .dijitTitlePaneTitle .dijitArrowNode, .claro .zusnpiGridContainer .zusnpilayoutTitlePaneTitle_ShowIcon, .zusnpilayoutTitlePaneTitle_HideIcon, .claro .zusnpimessagebox .dojoxPortletIcon, .claro .zusnpimessagebox .zusnpilayoutTitlePaneTitle_ShowIcon, .claro .dijitCalendarSelectedYear { display: none; }
+.dijit .layout .ContentPane, .zusnpiPageTitlePane td { margin: 0px; padding: 0px; }
+.claro .dijitSplitContainer-child, .claro .dijitBorderContainer-child, a.image, a.image:focus, a.image:hover, a img { border: 0px none; }
+.dijitContentPane .dijitTitlePaneTitle, .claro .noborderSelect.dijitTextBox, .claro .dijitTextBox .noborderSelect .dijitButtonNode, div.noborderSelect.dijitComboBoxDisabled .dijitArrowButtonInner { background: transparent none repeat scroll 0% 0%; border: medium none; }
+.claro .dojoxPortlet .dojoxPortletIcon, .dijitButtonDisabled .dojoxGridFDPaneAddCBoxBtnIcon { background-position: 0px 0px; }
+a.orange_arr:focus, a.orange_arr:hover, a.menu-minimal:focus, a.menu-minimal:hover, a.menu-maximal:focus, a.menu-maximal:hover, .claro .dijitTabContainerTop-tabs:focus, .claro .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabContent:focus, .dijitTab:focus, .dijitTab .tabLabel:hover { text-decoration: underline; }
+.dijitToggleButton, .dijitButton, .dijitDropDownButton, .dijitComboButton { margin: 0.1em; }
+.nav { margin: 0px; padding: 0px; position: absolute; top: 0px; list-style: outside none none; }
+.nav a { display: inline; z-index: 100; position: absolute; left: -9000em; width: 230px; padding: 5px 10px; font-size: 1.27em; text-decoration: none; text-align: center; }
+.nav a:hover, .nav a:focus, .nav a:active { left: 0px; top: 0px; position: absolute; background: rgb(105, 105, 105) none repeat scroll 0% 0%; border: 2px solid rgb(255, 255, 255); border-radius: 5px; font-size: 16px; font-weight: normal; font-family: "Oswald",Tahoma,Helvetica,sans-serif; color: rgb(255, 255, 255); text-shadow: 0px 0px 1px black; }
+/* ::::: https://pue.zus.pl/portal/css/help.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/widget/Portlet/Portlet.css ::::: */
+
+.dojoxPortlet { margin-bottom: 5px; }
+.dojoxPortlet .dijitTitlePaneTitle .dojoxPortletIcon { width: 15px; height: 15px; float: right; cursor: pointer; background-repeat: no-repeat; }
+.dojoxPortlet .dijitTitlePaneTitle { font-weight: bold; font-size: 0.9em; }
+.claro .dojoxPortlet .dojoxPortletIcon { background-image: url('spriteroundediconssmall.gif'); }
+.tundra .dojoxPortlet .dijitOpen .dojoxArrowDown, .soria .dojoxPortlet .dijitOpen .dojoxArrowDown, .nihilo .dojoxPortlet .dijitOpen .dojoxArrowDown, .claro .dojoxPortlet .dijitOpen .dojoxArrowDown { background-position: -15px top; }
+.dojoxPortlet div.dojoxPortletContentOuter { background: rgb(255, 255, 255) url('validationinputbg.gif') repeat-x scroll left top; }
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/layout/resources/GridContainer.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/mdnd/resources/dnd.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/dojo/dojox/widget/Calendar/Calendar.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/kpr/wizyty/fullcalendar/jquery/lib/jquery/plugins/tooltip/css/jquery.tooltip.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/kpr/wizyty/fullcalendar/jquery/jquery-ui-1.8.20.custom.css ::::: */
+
+.ui-helper-clearfix::before, .ui-helper-clearfix::after { content: ""; display: table; }
+.ui-helper-clearfix::after { clear: both; }
+button.ui-button::-moz-focus-inner { border: 0px none; padding: 0px; }
+/* ::::: https://pue.zus.pl/portal/js/kpr/wizyty/fullcalendar/fullcalendar.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/kpr/wizyty/fullcalendar/fullcalendar.wiz.css ::::: */
+
+/* ::::: https://pue.zus.pl/portal/js/kpr/wizyty/fullcalendar/fullcalendar.print.css?media=print ::::: */
+
+/* ::::: https://pue.zus.pl/portal/szafirsdk_web/szafirsdk-styles.css ::::: */
+

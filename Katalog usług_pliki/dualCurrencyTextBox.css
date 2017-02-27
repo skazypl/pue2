@@ -1,0 +1,45 @@
+.zus-dual-currency-label {
+	float: left;
+}
+
+.zus-dual-currency-left {
+	margin-right: 0px !important;
+	padding-right: 0px !important;
+	border-right: 0px !important;
+}
+
+.zus-dual-currency-left-float {
+		float: left;
+}
+
+.zus-dual-currency-separator {
+/* when not using dijittextbox class with this style uncomment this and comment width - this values are appropiate for soria theme while using dijittextbox class is theme-universal way
+background-color: #FFFFFF !important;
+border-top: 1px solid #8BA0BD;
+border-bottom: 1px solid #8BA0BD;
+*/
+	width: 9px !important;
+	height: 23px !important;
+	vertical-align: middle !important;
+	margin-right: 0px !important;
+	padding-right: 0px;
+	border-right: 0px !important;
+	margin-left: 0px !important;
+	padding-left: 0px;
+	border-left: 0px !important;
+	float: left;
+}
+
+.zus-dual-currency-separator-disabled {
+	width: 0px !important;
+}
+
+.zus-dual-currency-right {
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+	border-left: 0px !important;
+}
+
+.zus-dual-currency-input-align-right {
+	text-align: right;
+}

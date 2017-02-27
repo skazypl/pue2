@@ -1,0 +1,289 @@
+	
+	.dojoxExpandoPane {
+		overflow:hidden;
+		z-index:440 !important;
+		width: 251px;
+	}
+	
+	.dojoxExpandoPane .dojoxExpandoWrapper {
+		overflow:hidden;
+	}
+	.dojoxExpandoClosed .dojoxExpandoTitleNode, .dojoxExpandoClosed .dojoxExpandoTitle h1, .dojoxExpandoClosed .dojoxExpandoTitle .helpIcon {
+		display:none;
+	}
+	
+	.dojoxExpandoPane .dojoxExpandoTitle .helpIcon {
+		margin-left: 7px;
+		margin-top: 8px;
+	}
+	
+	.dojoxExpandoPane .dojoxExpandoTitle h1, .dojoxExpandoPane .dojoxExpandoTitle .helpIcon {
+		float: left;
+	}
+	
+	.dojoxExpandoClosed .dojoxExpandoWrapper * {
+		overflow:hidden !important;
+	}
+	.dojoxExpandoTitleNode {
+		padding-right:6px;
+		padding-left:6px;
+	}
+	.dojoxExpandoIcon .a11yNode {
+		display:none;
+		visibility:hidden;
+	}
+	.dojoxExpandoBottom .dojoxExpandoIcon,
+	.dojoxExpandoTop .dojoxExpandoIcon,
+	.dojoxExpandoLeft .dojoxExpandoIcon {
+		float:right;
+		margin-right:8px;
+	}
+	.dojoxExpandoRight .dojoxExpandoIcon {
+		float:left;
+		margin-left:2px;
+	}
+	
+	.dojoxExpandoTitle, .dojoxExpandoWrapper {
+		width: 251px;
+	}
+	
+	.dojoxExpandoIcon {
+		cursor:pointer;
+		background-position:-260px 0px;
+		background-repeat: no-repeat;
+		height: 19px;
+		width: 19px;
+		margin-top: 8px;
+	}
+	.dojoxExpandoClosed .dojoxExpandoIcon {
+		background-position: 0px 0px;
+		margin:0 auto;
+	}
+	
+	.dijitBorderContainer-dijitExpandoPane {
+		border: none !important;
+	}
+	
+	.soria .dojoxExpandoTitle {
+		height:16px;
+		font-size:0.9em;
+		font-weight:bold;
+		padding:3px;
+		padding-top:6px;
+		padding-bottom:5px;
+		background:#F0F4FC url("../../../dijit/themes/soria/images/tabContainerSprite.gif") repeat-x scroll 0pt -50px;
+		border-left: 1px solid #B1BADF;
+		border-right: 1px solid #B1BADF;
+	}
+	
+	.soria .dojoxExpandoClosed .dojoxExpandoTitle {
+		background: none;
+		background-color: #F0F4FC;
+		border: none;
+	}
+	
+	.soria .dojoxExpandoClosed {
+		background: none;
+		background-color: #F0F4FC;
+		border: 1px solid #B1BADF !important;
+	}
+	
+	.soria .dojoxExpandoIcon {
+		background-image: url('../../../dijit/themes/soria/images/spriteRoundedIconsSmall.png');
+	}
+	
+	.dj_ie6 .soria .dojoxExpandoIcon {
+		background-image: url('../../../dijit/themes/soria/images/spriteRoundedIconsSmall.gif');
+	}
+		
+	
+	.tundra .dojoxExpandoTitle {
+		font-weight: bold;
+		padding: 5px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		background: #fafafa url("../../../dijit/themes/tundra/images/accordionItemActive.gif") repeat-x scroll left top;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+	}
+		
+	.tundra .dojoxExpandoClosed .dojoxExpandoTitle {
+		background: none;
+		background-color: #fafafa;
+		border: none;
+		padding:3px;
+	}
+	
+	.tundra .dojoxExpandoClosed {
+		background: none;
+		background-color: #fafafa;
+		border: 1px solid #ccc !important;
+	}
+	.tundra .dojoxExpandoRight .dojoxExpandoTitle,
+	.tundra .dojoxExpandoLeft .dojoxExpandoTitle,
+	.tundra .dojoxExpandoClosed .dojoxExpandoTitle,
+	.tundra .dojoxExpandoClosed {
+		background-color: #fafafa;
+	}
+	
+	.tundra .dojoxExpandoIcon {
+		background-image: url('../../../dijit/themes/tundra/images/spriteRoundedIconsSmall.gif');
+	}
+	
+	.tundra .dojoxExpandoClosed .dojoxExpandoIconLeft,
+	.tundra .dojoxExpandoClosed .dojoxExpandoIconRight,
+	.tundra .dojoxExpandoClosed .dojoxExpandoIconTop,
+	.tundra .dojoxExpandoClosed .dojoxExpandoIconBottom {
+		margin-top: 3px;
+	}
+	
+	
+	.claro .dojoxExpandoTitle {
+		font-weight: bold;
+		border:1px solid #769DC0;
+		border-bottom:none;
+        background-color:#cde8ff;
+		background-image: url("../../../dijit/themes/claro/layout/images/accordion.png");
+        background-position:0px 0px;
+        background-repeat:repeat-x;
+		padding: 5px 7px 2px 7px;
+        min-height:30px;
+        color:#4a4a4a;
+        float:left;
+	}
+		
+	.claro .dojoxExpandoClosed .dojoxExpandoTitle {
+		background: none;
+		background-color: #E6E6E7;
+		border: none;
+		padding:0px;
+	}
+	
+	.claro .dojoxExpandoClosed {
+		background: none;
+		background-color: #E6E6E7;
+	}
+	.claro .dojoxExpandoRight .dojoxExpandoTitle,
+	.claro .dojoxExpandoLeft .dojoxExpandoTitle,
+	.claro .dojoxExpandoClosed .dojoxExpandoTitle{
+		background-color: #E6E6E7;
+	}
+	
+
+	.claro .dojoxExpandoClosed .dojoxExpandoTitle{
+		background-image: url('img/close_menu_portal.jpeg') !important;
+		background-repeat: no-repeat;
+		width: 36px !important;
+		height: 37px !important;
+		background-position:0 0;
+	}
+	
+	
+	.claro .dojoxExpandoTitle {
+		padding: 0;
+		height: 37px;
+		background-image: url('img/menu.jpg');
+		background-repeat: no-repeat;
+	}
+	
+	.claro .dojoxExpandoTitle h1 {
+		font-size: 16px;
+		font-weight: normal;
+		font-family: 'Oswald', Tahoma, Helvetica, sans-serif;
+		color: #FFFFFF;
+		text-shadow: 0px 0px 1px black;
+		padding: 8px 0 0 8px
+	}
+	
+	.claro .dojoxExpandoIcon {
+		background-image: url('img/min_to_left.png');
+	}
+	
+	.claro .dojoxExpandoIcon:focus,
+	.claro .dojoxExpandoIcon:hover
+	{
+    	background-image: url("img/min_to_left_hover.png");
+	}	
+	
+	.claro .dojoxExpandoClosed .dojoxExpandoIconLeft,
+	.claro .dojoxExpandoClosed .dojoxExpandoIconRight,
+	.claro .dojoxExpandoClosed .dojoxExpandoIconTop,
+	.claro .dojoxExpandoClosed .dojoxExpandoIconBottom {
+		background-image: url('img/min_to_right.png');
+		margin-top: 8px;
+	}
+	
+	
+	.nihilo .dojoxExpandoPane {
+		background: #fafafa;
+	}
+	
+	.nihilo .dojoxExpandoTitle {
+		height:16px;
+		font-size:0.9em;
+		font-weight:bold;
+		padding:3px;
+		padding-top:6px;
+		padding-bottom:5px;
+		background:#fafafa url("../../../dijit/themes/nihilo/images/tabContainerSprite.gif") repeat-x scroll 0pt -50px;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+	}
+	
+	.nihilo .dojoxExpandoClosed .dojoxExpandoTitle {
+		background: none;
+		background-color: #fafafa;
+		border: none;
+	}
+	
+	.nihilo .dojoxExpandoClosed {
+		background: none;
+		background-color: #fafafa;
+		border: 1px solid #ccc !important;
+	}
+	
+	.nihilo .dojoxExpandoIcon {
+		background-image: url('../../../dijit/themes/nihilo/images/spriteRoundedIconsSmall.png');
+	}
+	
+	.dj_ie6 .nihilo .dojoxExpandoIcon {
+		background-image: url('../../../dijit/themes/nihilo/images/spriteRoundedIconsSmall.gif');
+	}
+		
+	.nihilo .dojoxExpandoTop {
+		border-bottom:1px solid #ccc;
+		border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
+	}
+	
+	
+	
+	.dojoxExpandoClosed .dojoxExpandoIcon {
+	}
+	.dojoxExpandoIconLeft {
+	  background-position: 0 0;
+	}
+	.dojoxExpandoClosed .dojoxExpandoIconLeft {
+		margin-right: 8px;
+	}
+	.dojoxExpandoIconRight {
+	  background-position: -30px 0;
+	}
+	.dojoxExpandoClosed .dojoxExpandoIconRight {
+	  background-position: 0 0;
+		margin-left: 4px;
+	}
+	.dojoxExpandoIconBottom {
+	  background-position: -15px 0;
+	}
+	.dojoxExpandoClosed .dojoxExpandoIconBottom {
+	  background-position: -45px 0;
+		margin-top:1px;
+	}
+	.dojoxExpandoIconTop {
+	  background-position: -45px 0;
+	}
+	.dojoxExpandoClosed .dojoxExpandoIconTop {
+	  background-position: -15px 0;
+	}
