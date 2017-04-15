@@ -1,7 +1,7 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AtelierComponent }   from './atelier.component';
-
+import { LoginComponent } from './login.component';
 
 import { RenderComponent } from './render.component';
 import { TestComponent } from './TestComponent'
@@ -27,6 +27,7 @@ import { InboxComponent } from './home_components/inbox.component';
 const routes: Routes = [
 	{ path: '', redirectTo: '/main', pathMatch: 'full' },
 	{ path: 'main',  component: HomeComponent },
+	{ path: 'login',  component: LoginComponent },
 	{ path: 'test',  component: AtelierComponent },
 	{ path: 'services',  component: ServicesComponent },
 	{ path: 'messages',  component: MessagesComponent, children: [

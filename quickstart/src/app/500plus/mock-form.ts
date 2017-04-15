@@ -153,7 +153,7 @@ const layout_dict =
 								"id": "cokolsiek"
 							}
 						]
-					}
+					},
 					{
 						"type": "PanelComponent",
 						"id": "panel1",

@@ -1,8 +1,9 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpModule,
+    JsonpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
-
+import { MyHttp } from './service/http.service';
 
 import { AppComponent }  from './app.component';
 
@@ -71,57 +72,76 @@ import { ProgressBarComponent } from "./Components/FormComponents/ProgressBarCom
 import {HeadingComponent} from "./Components/FrontComponents/HeadingComponent";
 import {PanelGroupComponent} from "./Components/FrontComponents/PanelGroupComponent";
 import {ContentComponent} from "./Components/FrontComponents/ContentComponent";
-
+import { LoginComponent } from './login.component';
+import { LoginService } from './login.service';
+import { GlyphiconComponent } from './Components/FormComponents/GlyphiconComponent'
 
 @NgModule({
-  imports:      [ BrowserModule,
-  				  	    AppRoutingModule,
-					        HttpModule,
-    				      JsonpModule,
-					        FormsModule,
-  				      ],
-  declarations: [ AppComponent,
-  				  	HomeComponent,
-  				  	PageNotFoundComponent,
-  				  	AtelierComponent,
-  				  	DashboardComponent,
-  				  	NavbarComponent,
-  				  	MessagesComponent,
-  				  	RenderComponent,
-					Notify,
-					ServicesComponent,
-					MeetingComponent,
-					KolejkaComponent,
-					UmowComponent,
-					UrzedowanieComponent,
-					OpinionComponent,
-					RatingComponent,
-					ZwolnienieComponent,
-					PracodawcaComponent,
-					LekarzComponent,
-					PacjentComponent,
-					EmailComponent,
-					ListaComponent,
-					BreadCrumbComponent,
-					InboxComponent,
-					TextBox,
-					TestComponent,
-					RowComponent,
-					PanelComponent,
-					PeselComponent,
-					ProgressBarComponent,
-          SubmitComponent,
-          FormComponent,
-					PasswordComponent,
-					LabelComponent,
-          HeadingComponent,
-          PanelGroupComponent,
-          ContentComponent
-				],
-  bootstrap:    [ AppComponent ],
-  entryComponents: [TestComponent, TextBox, RowComponent, PanelComponent, PeselComponent, PasswordComponent,
-  					 LabelComponent, SubmitComponent, FormComponent, HeadingComponent, PanelGroupComponent, 
-  					 ContentComponent, ProgressBarComponent]
+    imports:      [ BrowserModule,
+                                    AppRoutingModule,
+                                    HttpModule,
+                                    JsonpModule,
+                                    FormsModule,
+                                    MyHttp,
+                                    LoginService,
+                                ],
+    declarations: [ AppComponent,
+                    HomeComponent,
+                    PageNotFoundComponent,
+                    AtelierComponent,
+                    DashboardComponent,
+                    NavbarComponent,
+                    MessagesComponent,
+                    RenderComponent,
+                    Notify,
+                    ServicesComponent,
+                    MeetingComponent,
+                    KolejkaComponent,
+                    UmowComponent,
+                    UrzedowanieComponent,
+                    OpinionComponent,
+                    RatingComponent,
+                    ZwolnienieComponent,
+                    PracodawcaComponent,
+                    LekarzComponent,
+                    PacjentComponent,
+                    EmailComponent,
+                    ListaComponent,
+                    BreadCrumbComponent,
+                    InboxComponent,
+                    TextBox,
+                    TestComponent,
+                    RowComponent,
+                    PanelComponent,
+                    PeselComponent,
+                    ProgressBarComponent,
+                    LoginComponent,
+                    SubmitComponent,
+                    FormComponent,
+                    PasswordComponent,
+                    LabelComponent,
+                    HeadingComponent,
+                    PanelGroupComponent,
+                    ContentComponent,
+                    GlyphiconComponent,
+                ],
+    bootstrap:    [ AppComponent ],
+    entryComponents: [TestComponent,
+                        TextBox,
+                        RowComponent,
+                        PanelComponent,
+                        PeselComponent,
+                        PasswordComponent,
+                        LabelComponent,
+                        SubmitComponent,
+                        FormComponent,
+                        HeadingComponent,
+                        PanelGroupComponent,
+                        ContentComponent,
+                        ProgressBarComponent,
+                        LoginComponent,
+                        GlyphiconComponent,
+                        ]
 
 })
 export class AppModule { }
