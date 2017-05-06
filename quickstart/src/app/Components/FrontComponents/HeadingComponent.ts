@@ -6,6 +6,7 @@ import {ProviderTypeEnum} from "../ComponentsCore/ProviderTypeEnum";
 import {ComponentsRegister, Register, Attr} from "../ComponentsRegister";
 import {Docs} from "../ComponentsCore/Interfaces/DescribeInterface";
 import { SetterAlg } from "../ComponentsRegister";
+import {SizeProperties} from '../ComponentsCore/MainClasses/SizeProperties';
 
 @Component({
   selector: 'heading',
@@ -31,6 +32,27 @@ export class HeadingComponent extends FrontEndClass implements RenderFromJSON
   name: string;
   @SetterAlg()
   backgroundColor: string;
+
+  @Attr({info:"id elementu", default : "", name:""})
+  @SetterAlg()
+  id:number;
+  parsed:any;
+
+  @SetterAlg()
+  visible:boolean;
+
+  @Attr({info:"Rozmiar elementu", default : ({}), name:""})
+  @SetterAlg({field: "size", func: (ci: HeadingComponent, v: any) => {ci.setGridClass({"size": v})}})
+  public size:SizeProperties;
+
+  @Attr({info:"Kolor tekstu", default : "black", name:""})
+  @SetterAlg()
+  public textColor:string;
+
+  public grid_class:string;
+  @Attr({info:"Rodzaj kursora", default : "pointer", name:""})
+  @SetterAlg()
+  cursor:string;
 
   constructor (reg : ComponentsRegister )
   {

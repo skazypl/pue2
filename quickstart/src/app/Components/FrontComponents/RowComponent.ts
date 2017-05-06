@@ -39,14 +39,19 @@ export class RowComponent extends FrontEndClass implements RenderFromJSON, OnIni
   visible:boolean;
 
   @Attr({info:"Rozmiar elementu", default : ({}), name:""})
+ @SetterAlg({field: "size", func: (ci: RowComponent, v: any) => {ci.setGridClass({"size": v})}})
   public size:SizeProperties;
+
   @Attr({info:"Kolor tla", default : "transparent", name:""})
+  
   public backgroundColor:string;
   @Attr({info:"Kolor tekstu", default : "black", name:""})
+
   public textColor:string;
 
   public grid_class:string;
   @Attr({info:"Rodzaj kursora", default : "pointer", name:""})
+  @SetterAlg()
   cursor:string;
 
   @ViewChild('target', { read: ViewContainerRef }) target: ViewContainerRef;
