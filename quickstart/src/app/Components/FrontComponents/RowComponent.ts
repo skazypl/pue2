@@ -12,6 +12,7 @@ import {Container} from "../ComponentsCore/Interfaces/ContainerInterface";
 import {Register} from "../ComponentsRegister";
 import { Attr, SetterAlg } from "../ComponentsRegister";
 import {FrontEndClass} from "../ComponentsCore/MainClasses/FrontEndClass";
+import {SizeProperties} from '../ComponentsCore/MainClasses/SizeProperties';
 
 @Component
 ({
@@ -34,7 +35,20 @@ export class RowComponent extends FrontEndClass implements RenderFromJSON, OnIni
   id:number;
   parsed:any;
 
+  @SetterAlg()
   visible:boolean;
+
+  @Attr({info:"Rozmiar elementu", default : ({}), name:""})
+  public size:SizeProperties;
+  @Attr({info:"Kolor tla", default : "transparent", name:""})
+  public backgroundColor:string;
+  @Attr({info:"Kolor tekstu", default : "black", name:""})
+  public textColor:string;
+
+  public grid_class:string;
+  @Attr({info:"Rodzaj kursora", default : "pointer", name:""})
+  cursor:string;
+
   @ViewChild('target', { read: ViewContainerRef }) target: ViewContainerRef;
 
   constructor(private cfr: ComponentFactoryResolver) {
