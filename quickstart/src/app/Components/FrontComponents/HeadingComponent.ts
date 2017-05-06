@@ -1,11 +1,11 @@
-import {Component, Input, Provider,} from '@angular/core'
+import {Component, Input, Provider, Injectable } from '@angular/core'
 import { FormClass } from '../FormComponents/FormClass'
 import { FormsModule }   from '@angular/forms';
 import {FrontEndClass} from "../ComponentsCore/MainClasses/FrontEndClass";
 import {ProviderTypeEnum} from "../ComponentsCore/ProviderTypeEnum";
 import {ComponentsRegister, Register, Attr} from "../ComponentsRegister";
 import {Docs} from "../ComponentsCore/Interfaces/DescribeInterface";
-
+import { SetterAlg } from "../ComponentsRegister";
 
 @Component({
   selector: 'heading',
@@ -21,11 +21,15 @@ import {Docs} from "../ComponentsCore/Interfaces/DescribeInterface";
 )
 export class HeadingComponent extends FrontEndClass implements RenderFromJSON
 {
+  //textType:ProviderTypeEnum;
 
-
-  textType:ProviderTypeEnum;
-  @Attr({info:"Tekst ssna górnej belce", default : "", name:""})
+  @Attr({info:"Tekst na górnej belce", default : "", name:""})
+  @SetterAlg()
   text: string;
+  @Attr({info:"Nazwa?", default : "test", name:""})
+  @SetterAlg()
+  name: string;
+  @SetterAlg()
   backgroundColor: string;
 
   constructor (reg : ComponentsRegister )

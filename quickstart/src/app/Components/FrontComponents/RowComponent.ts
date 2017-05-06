@@ -10,7 +10,8 @@ import {ViewContainer} from "@angular/core/src/linker/view_container";
 import {ComponentCreator} from "../ComponentsCore/ComponentCreator";
 import {Container} from "../ComponentsCore/Interfaces/ContainerInterface";
 import {Register} from "../ComponentsRegister";
-import { SetterAlg } from "../ComponentsRegister";
+import { Attr, SetterAlg } from "../ComponentsRegister";
+import {FrontEndClass} from "../ComponentsCore/MainClasses/FrontEndClass";
 
 @Component
 ({
@@ -26,8 +27,9 @@ import { SetterAlg } from "../ComponentsRegister";
     tag : "kontener"
   }
 )
-export class RowComponent implements RenderFromJSON, OnInit, Container{
+export class RowComponent extends FrontEndClass implements RenderFromJSON, OnInit, Container{
 
+  @Attr({info:"id elementu", default : "", name:""})
   @SetterAlg()
   id:number;
   parsed:any;
@@ -35,7 +37,9 @@ export class RowComponent implements RenderFromJSON, OnInit, Container{
   visible:boolean;
   @ViewChild('target', { read: ViewContainerRef }) target: ViewContainerRef;
 
-  constructor(private cfr: ComponentFactoryResolver) {}
+  constructor(private cfr: ComponentFactoryResolver) {
+    super();
+  }
 
   ngOnInit(): void {}
 

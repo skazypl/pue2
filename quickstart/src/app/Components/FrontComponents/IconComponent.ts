@@ -9,6 +9,7 @@ import {Observable} from "rxjs";
 import {MenuService} from "../../menu-service";
 import {TimerObservable} from "rxjs/observable/TimerObservable";
 import { Attr, Register} from "../ComponentsRegister";
+import { SetterAlg } from "../ComponentsRegister";
 
 @Injectable()
 @Component
@@ -26,9 +27,11 @@ import { Attr, Register} from "../ComponentsRegister";
 export class IconComponent extends FrontEndClass implements RenderFromJSON {
 
   @Attr({info:"Która ikona", default : "glyphicon glyphicon-", name:""})
+  @SetterAlg({field: "class", func: (ci: any, v: any) => {ci.class = "glyphicon glyphicon-" + v}})
   class:string;
 
   @Attr({info:"Wielkość ikony", default : "small", name:""})
+  @SetterAlg()
   font_size:string;
   constructor(private cfr: ComponentFactoryResolver, private peopleServicee : MenuService, private http: Http) {
     super();

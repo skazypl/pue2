@@ -5,6 +5,7 @@ import {FrontEndClass} from "./ComponentsCore/MainClasses/FrontEndClass";
 import {ComponentsRegister} from "./ComponentsRegister";
 import {PanelComponent} from "./FrontComponents/PanelComponent";
 import {RowComponent} from "./FrontComponents/RowComponent";
+import {HeadingComponent} from "./FrontComponents/HeadingComponent";
 import {IconComponent} from "./FrontComponents/IconComponent";
 import {ComponentCreator} from "./ComponentsCore/ComponentCreator";
 import { KeysPipe } from '../keys.pipe';
@@ -19,7 +20,8 @@ export class StyleGuideComponent implements OnInit {
   static components = {
     'Panel' : PanelComponent,
     'Row' : RowComponent,
-    'Icon' : IconComponent
+    'Icon' : IconComponent,
+    'Heading' : HeadingComponent,
   };
 
   obj:any;
@@ -31,25 +33,33 @@ export class StyleGuideComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.jsonVal = {};
+    this.valMap = new Map();
+
     let compFactory =
       this.cfr.resolveComponentFactory(StyleGuideComponent.components[this.route.snapshot.params['category']]);
     this.main = this.target.createComponent(compFactory).instance;
     const that = <RenderFromJSON> this.main;
-    that.renderJSON({'title' : 'ok'});
+    //that.renderJSON({'title' : 'ok'});
 
-    ComponentCreator.setObjectProperty(that.constructor.name, 'title', that, 'okey');
+    //ComponentCreator.setObjectProperty(that.constructor.name, 'title', that, 'okey');
 
     this.front = <FrontEndClass> this.main;
     this.obj = this.front;
 
-    this.updateJSON();
+    console.log("paramsy")
+    console.log(this.obj.params)
 
-    for (let param of this.obj.params) {
-      if (this.isObject(this.obj[param.name])) {
-        this.jsonVal[param.name] = {};
+    for (let parametr of this.obj.params) {
+      if (this.isObject(this.obj[parametr.name])) {
+        this.jsonVal[parametr.name] = {};
       }
     }
+
+    console.log("kolejny step")
     // const reg = new RegExp('"info":"(\w|\s)*",');
+    this.updateJSON();
+    console.log("koniec onINit")
   }
 
   private main: any;
@@ -75,14 +85,14 @@ export class StyleGuideComponent implements OnInit {
   }
 
   updateJSON() {
-    for (let param of this.obj.params) {
-      if (this.obj[param.name]) {
-        this.valMap.set(param.name, this.jsonVal[param.name]);
-        this.jsonVal[param.name] = this.obj[param.name]
+    for (let parametr of this.obj.params) {
+      if (this.obj[parametr.name]) {
+        this.valMap.set(parametr.name, this.jsonVal[parametr.name]);
+        this.jsonVal[parametr.name] = this.obj[parametr.name]
       }
-      if (typeof param.default != undefined) {
-        this.valMap.set(param.name, param.default);
-        this.jsonVal[param.name] = param.default;
+      if (typeof parametr.default != undefined) {
+        this.valMap.set(parametr.name, parametr.default);
+        this.jsonVal[parametr.name] = parametr.default;
       }
     }
   }
@@ -92,35 +102,40 @@ export class StyleGuideComponent implements OnInit {
   }
 
   makeString(obj: any) {
+    console.log("robie string z")
+    console.log(obj)
     return JSON.stringify(obj)
   }
 
-  attr_change () {
+  attr_change (zewn: any, wewn: any) {
+    console.log("attr change")
+    console.log(zewn)
+    console.log(zewn.default)
     var className: string = this.obj.constructor.name;
 
-    for (let param of this.obj.params) {
+    for (let parametr of this.obj.params) {
 
-      if (this.isObject(this.jsonVal[param.name])) {
+      if (this.isObject(this.jsonVal[parametr.name])) {
         ComponentCreator.setObjectProperty(
-                          className, param.name, this.obj, this.jsonVal[param.name]);
+                          className, parametr.name, this.obj, this.jsonVal[parametr.name]);
       }
       else {
         var realVal: any;
-        switch (param.type) {
+        switch (parametr.type) {
           case "boolean":
-            realVal = (this.jsonVal[param.name] == 'true') || (this.jsonVal[param.name]);
+            realVal = (this.jsonVal[parametr.name] == 'true') || (this.jsonVal[parametr.name]);
             break;
 
           case "number":
-            realVal = Number(this.jsonVal[param.name]);
+            realVal = Number(this.jsonVal[parametr.name]);
             break;
           
           default:
-            realVal = this.jsonVal[param.name];
+            realVal = this.jsonVal[parametr.name];
             break;
         }
 
-        ComponentCreator.setObjectProperty(className, param.name, this.obj, realVal);
+        ComponentCreator.setObjectProperty(className, parametr.name, this.obj, realVal);
       }
     }
   }
